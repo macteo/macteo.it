@@ -1,7 +1,7 @@
 bundle exec jekyll build
 git add .
-MESSAGE="$0"
-if [ $# -eq 0 ]
+MESSAGE="$1"
+if [ $1 -eq 0 ]
   then
      MESSAGE="Automatic commit: new version"
 fi
