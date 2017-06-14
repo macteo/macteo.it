@@ -7,7 +7,7 @@ image: icons/hiking-map.png
 tags: map mapbox
 ---
 
-I'm building modern digital map suitable for hiking in the Alps as the existing ones are lacking too many basic features that you usually need if are outdoor in the mountains.
+I'm building modern digital map suitable for hiking in the Alps as the existing ones are lacking too many basic features that you usually need if you are outdoor in the mountains.
 
 ![Tabacco Reference image](/assets/images/hiking-map/Tabacco~015.jpg#center100s)
 
