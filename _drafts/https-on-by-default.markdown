@@ -17,7 +17,13 @@ Going all-in with the specified goal of moving the desired plan to a new order o
 
 If you need to load a guy interested in the breakfast of the challenge, transforming a good opportunity in a great one!
 
-The VPS where the website is hosted (as static Jekyll generated pages) runs on Ubuntu 14.04 LTS. I've installed nginx, but in order to support http/2 with ALPN I had to compile it from source and also upgrade OpenSSL to version 1.0.2h what the hell is that?
+The VPS where the website is hosted (as static Jekyll generated pages) runs on Ubuntu 16.04 LTS. I've installed nginx, but in order to support http/2 with ALPN I had to compile it from source and also upgrade OpenSSL to version 1.0.2h what the hell is that?
+
+
+> *this* will be *indented* 
+> 
+> However
+> You cannot cite me better than this
 
 ```bash
 sudo apt-get update
