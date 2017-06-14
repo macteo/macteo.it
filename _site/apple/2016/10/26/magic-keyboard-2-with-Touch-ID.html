@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--#if expr="$HTTP_COOKIE=/fonts\-loaded=true/" -->
+<html lang="en" class="fonts-loaded">
+<!--#else -->
+<html lang="en">
+<!--#endif -->
+
+<head>
+  <meta charset="utf-8">
+  <title>Magic Keyboard 2</title>
+  <link rel="canonical" href="https://macteo.it/apple/2016/10/26/magic-keyboard-2-with-Touch-ID.html">
+  <link rel="alternate" title="Matteo Gavagnin" type="application/rss+xml" href="https://macteo.it/feed.xml" />
+  <link rel="alternate" title="Matteo Gavagnin" type="application/json" href="https://macteo.it/feed.json" />
+  <meta name="description" content="Matteo Gavagnin's personal website
+">
+  <meta name="author" content="Matteo Gavagnin">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  <link rel="stylesheet" href="/assets/css/all.css">
+  <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="mask-icon" href="/assets/images/favicon/favicon-pin.svg" color="#056BB1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/favicon/dolomate-57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/favicon/dolomate-60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/favicon/dolomate-72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/images/favicon/dolomate-76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/favicon/dolomate-114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/favicon/dolomate-120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/favicon/dolomate-144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/favicon/dolomate-152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/dolomate-180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/images/favicon/dolomate-192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/dolomate-32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicon/dolomate-96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/dolomate-16.png">
+  <link rel="manifest" href="/assets/images/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/images/favicon/dolomate-144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+
+<body>
+  <nav class="navbar">
+  <ul class="navbar-list">
+    <li class="navbar-item"><a class="navbar-link" href="/#interests">Interests</a></li>
+    <li class="navbar-item"><a class="navbar-link" href="/#jobs">Jobs</a></li>
+    <li class="navbar-item"><a class="navbar-link" href="/#products">Products</a></li>
+    <li class="navbar-item"><a class="navbar-link" href="/blog">Blog</a></li>
+  </ul>
+</nav>
+
+  <div class="container blog">
+    <section class="header">
+  <a href="/"><img src="/assets/images/macteo.jpg" class="profile small"/></a>
+</section>
+
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline" align="center">Magic Keyboard 2</h1>
+    <p class="post-meta"><time datetime="2016-10-26T02:57:00-07:00" itemprop="datePublished">Oct 26, 2016</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>Apple all but confirmed that the next MacBook Pro models will be unveiled tomorrow and will include support for Touch ID and a custom bar is going to replace the current top row of keys in the embedded keyboard.</p>
+
+<p><img src="/assets/images/magic-keyboard/ApplePaySplashSA.png#center100s" alt="Pay MacBook Pro" /></p>
+
+<p>The above image is already on your Mac if you installed the latest macOS Sierra 10.12.1 update. Check for yourself looking at</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>/System/Library/PrivateFrameworks/PassKitUI.framework/Versions/A/Resources/ApplePaySplashSA.tiff
+</code></pre>
+</div>
+
+<p>Besides the lack of a visible physical power button and of the <code class="highlighter-rouge">Esc</code> key, <a href="http://twitter.com/stroughtonsmith/status/790977924132433920">Steve Troughton Smith suggested</a> that developers, in order to populate the <em>Magic Bar</em> with custom controls, will need to create extensions much like the ones used in watchOS 1.</p>
+
+<p>This opinion is corroborated by the fact that since august a new target named <code class="highlighter-rouge">os_bridge</code> is available as part of the Xcode toolchain.</p>
+
+<p><img src="/assets/images/magic-keyboard/os_bridge.png#center100s" alt="target_os_bridge" /></p>
+
+<p>In order to support Touch ID - that requires the presence of a Secure Enclave available only as part of the custom <em>A</em> series custom <em>arm</em> SoC used on mobile devices - on Macs that are running on <em>x86-64</em> Intel processors, Apple is going to embed another custom arm SoC inside the Macs. Probably a new letter will be used to describe those chips like the <a href="http://www.apple.com/apple-watch-series-2/"><em>S</em></a> serie created for the ᴡᴀᴛᴄʜ or the <a href="http://www.apple.com/airpods/"><em>W</em></a> serie for headphones. I’m going to bet my $1 to <em>E1</em>  - Embedded 1.</p>
+
+<h5 id="magic-keyboard-2">Magic Keyboard 2</h5>
+
+<p>All those speculations come nicely together also if Apple is going to upgrade the Magic Keyboard replacing the top row with a customizable display like the one rendered below. This device will enable Touch ID support also on iMac, Mac Pro, Mac mini and Apple TV devices..</p>
+
+<p><img src="/assets/images/magic-keyboard/magic-keyboard-2.png#center100s" alt="Pay MacBook Pro" /></p>
+
+<p>All the same principles will apply nicely:</p>
+
+<ul>
+  <li>Custom E1 SoC.</li>
+  <li>Touch ID with secure enclave.</li>
+  <li>Extensions are preloaded as happens on watchOS (without too much RAM and battery constraints).</li>
+  <li>All the logic will run on the extension directly on the keyboard itself and only equivalent <em>keystrokes</em> will be sent back to the Mac to keep low latency.</li>
+  <li>The base interface will be preloaded in RAM on the keyboard to speed up the launch.</li>
+  <li>Authentication and Security will be managed directly on the Magic Keyboard, but passwords will stay encrypted on the paired Mac keychain.</li>
+  <li>It will also work as external keyboard for iPhone, iPad, Apple TV devices.</li>
+  <li>Works with Bluetooth and (already) has a Lightning port to charge and eventually communicate.</li>
+  <li>Requires macOS Sierra 10.12.1, iOS 10.1 or tvOS 10.0.1.</li>
+</ul>
+
+<p>Now the really bold prediction: the price will stay the same as the original Magic Keyboard: $99. Apple has already increased the price by $30 last year.</p>
+
+  </div>
+
+</article>
+
+    <div class="docs-section" id="contacts">
+  <h4 class="docs-header footer">Contacts</h4>
+  <div class="row">
+    <div class="three columns empty">
+      &nbsp;
+    </div>
+    <div class="six columns">
+      <center>
+        <a href="https://twitter.com/macteo"><img src="/assets/images/icons/twitter.svg" class="logo-small" alt="twitter"/></a>
+        <a href="https://telegram.me/macteog"><img src="/assets/images/icons/telegram.svg" class="logo-small" alt="telegram"/></a>
+        <a href="https://github.com/macteo"><img src="/assets/images/icons/github.svg" class="logo-small" alt="github"/></a>
+        <a href="mailto:m@macteo.it"><img src="/assets/images/icons/email.svg" class="logo-small" alt="email"/></a>
+      </center>
+    </div>
+  </div>
+  <div align="center">
+    <sub>Leave this world a little better than you found it<a href="https://en.wikiquote.org/wiki/Robert_Baden-Powell"><sup>1</sup></a></sub>
+  </div>
+</div>
+
+<script type="text/javascript">
+  function downloadJSAtOnload() {
+    var all = document.createElement("script");
+    all.src = "/assets/js/all.js";
+    document.body.appendChild(all);
+  }
+  if (window.addEventListener) {
+    window.addEventListener("load", downloadJSAtOnload, false);
+  } else if (window.attachEvent) {
+    window.attachEvent("onload", downloadJSAtOnload);
+  } else {
+    window.onload = downloadJSAtOnload;
+  }
+</script>
+
+<link rel="stylesheet" href="/assets/css/raleway.css">
+
+  </div>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67703523-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+
+</html>

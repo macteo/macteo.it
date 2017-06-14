@@ -1,0 +1,25 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Matteo Gavagnin
+email: m@macteo.it
+description: > # this means to ignore newlines until "baseurl:"
+  Matteo Gavagnin's personal website
+baseurl: ""
+url: "https://macteo.it"
+twitter_username: macteo
+github_username:  macteo
+author: Matteo Gavagnin
+# Build settings
+markdown: kramdown
+paginate: 6
+gems:
+  - jekyll-paginate
+  # - jekyll-lunr-js-search
+paginate_path: /blog/page:num/
+host: 0.0.0.0

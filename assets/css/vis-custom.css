@@ -1,0 +1,170 @@
+/* Documntation http://visjs.org/docs/timeline/#Overview */
+
+.striped {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-size: 40px 40px;
+}
+
+.vis-item.vis-box {
+  color: white;
+  border-radius: 10px !important;
+  height: 18px !important;
+  font-size: 12px;
+  padding-top: 0px;
+}
+
+.vis-item.vis-range {
+  color: white;
+  border-radius: 10px !important;
+  height: 20px;
+  font-size: 12px;
+  padding-top: 0px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .vis-range .vis-item-content{
+    margin-top: -2px !important;
+  }
+
+  .vis-box .vis-item-content {
+    margin-top: -2px !important;
+  }
+}
+
+.vis-range .vis-item-content,
+.vis-box .vis-item-content {
+  padding-top: 2px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  margin-top: -1px !important;
+}
+
+.vis-box .vis-item-content,
+.vis-range .vis-item-content {
+  margin-top: 0px;
+}
+
+.vis-item.vis-point {
+  background-color: rgba(0,0,0,0) !important;
+}
+
+.vis-item.red {
+  color: #FFFFFF;
+  background-color: #F44336;
+  border-color: #D32F2F;
+}
+
+.vis-item.pink {
+  color: #FFFFFF;
+  background-color: #E91E63;
+  border-color: #C2185B;
+}
+
+.vis-item.purple {
+  color: #FFFFFF;
+  background-color: #9C27B0;
+  border-color: #7B1FA2;
+}
+
+.vis-item.deep-purple {
+  color: #FFFFFF;
+  background-color: #673AB7;
+  border-color: #512DA8;
+}
+
+.vis-item.indigo {
+  color: white;
+  background-color: #3F51B5;
+  border-color: #303F9F;
+}
+
+.vis-item.blue {
+  color: #fff;
+  background-color: #2196F3;
+  border-color: #1976D2;
+}
+
+.vis-item.light-blue {
+  color: #fff;
+  background-color: #03A9F4;
+  border-color: #0288D1;
+}
+
+.vis-item.cyan {
+  color: #fff;
+  background-color: #00BCD4;
+  border-color: #0097A7;
+}
+
+.vis-item.teal {
+  color: #FFFFFF;
+  background-color: #009688;
+  border-color: #00796B;
+}
+
+.vis-item.green {
+  color: white;
+  background-color: #4CAF50;
+  border-color: #388E3C;
+}
+
+.vis-item.light-green {
+  color: #212121;
+  background-color: #8BC34A;
+  border-color: #689F38;
+}
+
+.vis-item.lime {
+  color: #212121;
+  background-color: #CDDC39;
+  border-color: #AFB42B;
+}
+
+.vis-item.yellow {
+  color: #212121;
+  background-color: #FFEB3B;
+  border-color: #FBC02D;
+}
+
+.vis-item.amber {
+  color: #212121;
+  background-color: #FFC107;
+  border-color: #FFA000;
+}
+
+.vis-item.orange {
+  color: white;
+  background-color: #FF9800;
+  border-color: #E64A19;
+}
+
+.vis-item.deep-orange {
+  color: #212121;
+  background-color: #FF5722;
+  border-color: #F57C00;
+}
+
+.vis-item.brown {
+  color: #FFFFFF;
+  background-color: #795548;
+  border-color: #5D4037;
+}
+
+.vis-item.grey {
+  color: #212121;
+  background-color: #9E9E9E;
+  border-color: #616161;
+}
+
+.vis-item.blue-grey {
+  color: #FFFFFF;
+  background-color: #607D8B;
+  border-color: #455A64;
+}
+
+.vis-timeline {
+  border-radius:10px;
+  margin-right: 2.4% !important;
+}

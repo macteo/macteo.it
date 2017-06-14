@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--#if expr="$HTTP_COOKIE=/fonts\-loaded=true/" -->
+<html lang="en" class="fonts-loaded">
+<!--#else -->
+<html lang="en">
+<!--#endif -->
+
+{% include head.html %}
+
+<script src="/assets/js/vis.js"></script>
+<link href="/assets/css/vis.css" rel="stylesheet" type="text/css" />
+<link href="/assets/css/vis-custom.css" rel="stylesheet" type="text/css" />
+
+<body>
+  {% include navigation_blog.html %}
+  <div class="container blog">
+    {% include name_header.html %}
+    {{ content }}
+    {% include footer.html %}
+  </div>
+  {% include analytics.html %}
+</body>
+</html>

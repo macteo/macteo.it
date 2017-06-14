@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/macteo
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://macteo.it
+  * I am macteo (https://keybase.io/macteo) on keybase.
+  * I have a public key ASAkq8lIePpI-kKfcPDyOoGxmWwYD-kePJD2_VdgC8XACgo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "012024abc94878fa48fa429f70f0f23a81b1996c180fe91e3c90f6fd57600bc5c00a0a",
+            "host": "keybase.io",
+            "kid": "012024abc94878fa48fa429f70f0f23a81b1996c180fe91e3c90f6fd57600bc5c00a0a",
+            "uid": "250ef8c1784a1ab1d5e6c59def102b19",
+            "username": "macteo"
+        },
+        "service": {
+            "hostname": "macteo.it",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.16"
+    },
+    "ctime": 1472027948,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1472027932,
+        "hash": "dafcb89cd0997e767612192e616fe61ff71e1607588d11dae3eb69ea5ca7308bf5c9eedcdf97058be80e0448f1e0c6d02b050c954c258b128c7b3be5daa32fee",
+        "seqno": 598455
+    },
+    "prev": "d698722e5a6ab4497adddd284ee3b8eb6fc1ac4319207d1079c245354dc79590",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgJKvJSHj6SPpCn3Dw8jqBsZlsGA/pHjyQ9v1XYAvFwAoKp3BheWxvYWTFAu97ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwMjRhYmM5NDg3OGZhNDhmYTQyOWY3MGYwZjIzYTgxYjE5OTZjMTgwZmU5MWUzYzkwZjZmZDU3NjAwYmM1YzAwYTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMjRhYmM5NDg3OGZhNDhmYTQyOWY3MGYwZjIzYTgxYjE5OTZjMTgwZmU5MWUzYzkwZjZmZDU3NjAwYmM1YzAwYTBhIiwidWlkIjoiMjUwZWY4YzE3ODRhMWFiMWQ1ZTZjNTlkZWYxMDJiMTkiLCJ1c2VybmFtZSI6Im1hY3RlbyJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoibWFjdGVvLml0IiwicHJvdG9jb2wiOiJodHRwczoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMTYifSwiY3RpbWUiOjE0NzIwMjc5NDgsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ3MjAyNzkzMiwiaGFzaCI6ImRhZmNiODljZDA5OTdlNzY3NjEyMTkyZTYxNmZlNjFmZjcxZTE2MDc1ODhkMTFkYWUzZWI2OWVhNWNhNzMwOGJmNWM5ZWVkY2RmOTcwNThiZTgwZTA0NDhmMWUwYzZkMDJiMDUwYzk1NGMyNThiMTI4YzdiM2JlNWRhYTMyZmVlIiwic2Vxbm8iOjU5ODQ1NX0sInByZXYiOiJkNjk4NzIyZTVhNmFiNDQ5N2FkZGRkMjg0ZWUzYjhlYjZmYzFhYzQzMTkyMDdkMTA3OWMyNDUzNTRkYzc5NTkwIiwic2Vxbm8iOjgsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAHrj56p767Loraxi0WjmwopiGw42QvRETLL8Cf7H/u/NuLgIPEqyTyTYB9Fv5awboqI0g8yQTRCMNgN3FiU52C6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEICbHuUG3IbZDg0QXXBO9ZWxs8to/ZuHOjCoBY2WUO1L3o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/macteo
+
+==================================================================
+

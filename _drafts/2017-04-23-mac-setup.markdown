@@ -1,0 +1,28 @@
+---
+layout: post
+title: Mac Setup
+date: 2017-04-23 07:00:00 +0200
+categories: mac
+tags: mac
+---
+
+##### The definitive guide on the perfect macOS setup (IMHO)
+
+Last week I had to reinstall macOS from scratch and those are the settings I ticked and the app installed. Obviously your mileage may vary.
+
+##### System preferences
+
+###### Volume feedback
+
+Tick *Play feedback when volume is changed* to restore the beloved sound played on volume change.
+![Audio Feedback](/assets/images/mac-setup/audio-feedback.png#center100s)
+
+##### Finder preferences
+
+##### Installed apps
+
+##### Command line tools
+
+##### Miscellaneous
+
+

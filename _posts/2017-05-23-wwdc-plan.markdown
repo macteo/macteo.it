@@ -1,0 +1,171 @@
+---
+layout: post
+title: WWDC Plan
+date:   2017-05-23 13:48:00 +0200
+categories: wwdc
+tags: wwdc goals
+image: icons/wwdc@2x.png
+---
+
+This will be my *fifth* WWDC as I had the opportunity to attend it since the 2012 edition (thanks [Giovanni](https://twitter.com/giovatardu) that gave me his ticket as he couldn't attend). Then I won the lottery four times in a row from 2014 to 2017 🤷‍♂️.
+
+To be honest last year I transferred the ticket to my colleague [@matax](https://twitter.com/matax) so he was able to attend his first WWDC, but I went to San Francisco anyway.
+
+![WWDC banner](/assets/images/wwdc.jpg#center100s)
+
+Bragging aside, I have plenty of expectations for this year regarding things to do, people to meet and questions to ask.
+
+Take off is in less than two weeks 🎉
+
+#### Arrival
+
+This year WWDC moved back to **San Jose** after many years being held in San Francisco, it's a new location for me and I've never been there, so I don't know basically anything: that's great!
+
+Apple announced WWDC in mid February (earlier than usual) so I took the opportunity to book flights and hotel immediately, hoping to win the lottery, but also knowing that there would have been other conferences to attend like [AltConf](http://altconf.com), [Layers](https://layers.is) and [CocoaConf Next Door](http://cocoaconf.com/nextdoor/home). I'm usually on budget and this was a pleasant surprise: everything did cost approximately 50% less than usual — 659€ for 6 nights (including taxes) and 596€ for the intercontinental flights. I'm going to flight Lufthansa, United and Canada Airlines, not the best options, but surely the cheapest I could find — hoping to avoid the infamous [cabin drag](http://www.economist.com/news/business-and-finance/21720580-ugly-incident-provokes-social-media-storm-passenger-dragged-united-airlines). I wasn't able to find an itinerary to land directly at [San Jose airport](https://www.google.com/maps/place/Airport+Terminal+A/@37.3684393,-121.929868,17z/data=!3m1!4b1!4m5!3m4!1s0x808fcbc0f91ebc87:0xbcea877b101855c0!8m2!3d37.3684393!4d-121.927674) as it would have been closer.
+
+The first night I'll stay in a cheap hotel nearby the Airport in South San Francisco as I'm going to collapse immediately and sleep at least twelve hours.
+
+For the following nights I've chosen a motel really close to the **McEnery Convention Center** where WWDC and most of the third party events are being held. Reducing commuting time during the week is compulsory to to enjoy it at best.
+
+
+#### Flights
+
+I'll take off from Verona - *VRN* on Saturday 3 at 10 AM to land in San Francisco - *SFO* on the same day at 7:45 PM after a pause in Frankfurt am Main - *FRA* for approximately 6 hours. I hope to visit Frankfurt's city center and grab some Brätwurst with Weißbier.
+
+<div id='map' class='dark'></div><br />
+
+I'm coming from Italy so I have a long flight ahead. Those are the things I'm bringing with me in cabin, if no new bans are enforced:
+
+* [B&O H6 rev 2](https://marco.org/2016/03/02/beoplay-h6-v2-review) - I don't have noise canceling headphones as I don't travel much, but those will do.
+* AirPods, but I'm really scared to lose them if I fell asleep.
+* Bundled Lightning to Headphone Jack adapter.
+* Power Brick.
+* iPhone 7.
+* USB-A to Lightning cable.
+* [Lightning splitter](https://www.amazon.com/Belkin-Lightning-Charge-RockStar-iPhone/dp/B01LXFKSNA) to charge and listen at the same time.
+* MacBook if allowed.
+* USB-C to Lightning cable to connect to the mac.
+* A pen to compile the immigration form.
+* Passport.
+* Apple Watch.
+* [N26 Black Credit Card](https://n26.com/black/).
+* A small Pillow.
+* A hoodie.
+* Comfortable shoes.
+
+
+#### The Masterplan
+
+For me it's **people first**, **tech second**. Every choice I make is based on who I can meet and what I can get from the available events. There's only one week like this each year so you should consider every opportunity and be assured: you can sleep later on your way back home.
+
+This is my personal list of things I'd like to do.
+
+###### Sunday
+
+I plan to move to San Jose early in the morning, check-in at the hotel, eventually go to the [Apple Store](https://www.apple.com/retail/valleyfair/?cid=aos-us-seo-maps) to let them check an iPhone 5s with the battery that's growing large and bending the screen, then pick up the WWDC badge.
+
+At 5 pm I'm going to watch [App: The Human Story](https://www.classy.org/san-jose/events/app-human-story-documentary-screening-presented-by-altconf-layers/e128096), a Documentary Screening Presented by AltConf & Layers. I already got the $25 ticket and you should too as 100% of the proceedings will go to App Camp for Girls. You can even watch the [trailer](http://appdocumentary.com) online.
+
+Sunday night: **go to bed at a decent time** to reduce the jet lag and prepare for the Keynote queue.
+
+###### Monday
+
+Early morning: Spend few hours **queuing around the McEnery Convention Center**, waiting for the **WWDC Keynote** to start, trying to get a decent place in the auditorium. In my useless experience, I  knew that even if you showed up at 6 AM you'll easily enter in Presidio. New location and everything is unexpected. If I cannot sleep I may even show up really early. Breakfast is usually served inside the auditorium.
+
+Morning: enjoy the Keynote at 10 AM!
+
+Lunch time: find the room with ethernet cables and **download** the newly released stuff: Xcode, iOS and macOS betas, documentation, release notes and API differences. Bring your own ethernet dongle as there are chances that you won't find the adapter suiting your computer port attached to the cables. Don't even try to download stuff on WiFi as it's usually unreliable.
+
+Early afternoon: watch the **State of the Union**. If rumors are true and this year we'll get new hardware announced in the keynote during the morning, the State of the Union will be the real keynote for developers to highlight the news. Don't miss it.
+
+Afternoon: listen to [**Accidental Tech Podcast**](https://atp.fm) live at @ [AltConf](http://tickets.altconf.com) at 5 pm.
+
+Evening: show up for the [**Relay FM** WWDC meet-up](http://www.extras.relay.fm/blog/2017/3/save-the-date-relay-wwdc-2017) @ the Museum of Quilts and Textiles at 7 pm.
+
+Night: I'm waiting for the [Beard Bash](http://www.loopinsight.com/beard-bash-2017-at-wwdc/) tickets to go on sale, hopefully I'll be able to get one. I've also requested an invite for the [Firebase + Fabric](https://firebase.googleblog.com/2017/05/announcing-firebase-fabric-party-at.html) party but I'm no one and probably my request won't be even considered. Alternatively I may also collapse on the bed — let's wait and see.
+
+###### Tuesday to Friday
+
+**Sessions** and **labs**. After the keynote the full schedule will go online without placeholders concealing newly announced stuff. Take 10 minutes and plan your conference choosing which sessions to attend, which one to skip and stream later (it's OK!), but most importantly when the labs you need to go will happen. I already have a small list of questions I'd like to ask to Apple engineers, but usually as soon as the new APIs are published that list grows exponentially. I usually choose to skip very crowded and mainstream sessions hold in the biggest rooms like [What's new in Swift](https://developer.apple.com/videos/play/wwdc2016/402/), [What's new in Auto Layout](https://developer.apple.com/videos/play/wwdc2016/236/) and [Getting Started with Swift](https://developer.apple.com/videos/play/wwdc2016/404/) as for example Swift is now open source so we already know what's coming in Swift 4; more advanced sessions or less mainstream ones are more intresting to me as eventually you'll get invaluable feedback directly after the presentation if you place your questions to the hosts.
+
+**Lunch sessions** - I usually keep an eye on those as they are inspiring and motivational: usually you'll be able to be part of something really unique. Those are not streamed nor recorder, so it's a lifetime opportunity. I still remember the ones with J. J. Abrams telling about [Bad Robot](https://twitter.com/bad_robot), one with Star Wars authors and troopers, one where [@plutokiller](http://twitter.com/plutokiller) detailed his reasons to remove Pluto from the list of planets — way before the [New Horizons](https://en.wikipedia.org/wiki/New_Horizons) probe took some [amazing photos](https://en.wikipedia.org/wiki/New_Horizons#/media/File:Pluto_by_LORRI_and_Ralph,_13_July_2015.jpg).
+
+*I hope the catering will be different and lunch boxes will be [edible](http://atp.fm/episodes/219) for the first time*.
+
+**Get Togethers** recently Apple started planning pop-up informal events during the conference to let you meet with like-minded developers and Apple experts for engaging and motivating conversations around specific topics. Keep an eye on them.
+
+![Star Wars](/assets/images/star-wars.jpg#center100s)
+
+###### Tuesday
+
+Evening: [**The Talk Show Live**](https://daringfireball.net/thetalkshow/) at 6 pm — tickets still need to go on sale and I'm hoping to get one (I'm relying on Overcast push notifications for new episodes and following [@gruber](https://twitter.com/gruber) on Twitter). Apple Executives were [John Gruber](https://daringfireball.net)'s special guests during the last two years: [Phil Shiller](https://www.apple.com/pr/bios/philip-w-schiller.html) and [Craig Federighi](https://www.apple.com/pr/bios/craig-federighi.html). Also interesting (and I already have a ticket) is the [Swift Panel](https://www.eventbrite.com/e/wwdc-2017-swift-panel-tickets-34611623297) with [Chris Lattner](https://twitter.com/clattner_llvm), [Jesse Squires](https://twitter.com/jesse_squires), [JP Simard](https://twitter.com/simjp), [Kamilah Taylor](https://twitter.com/kamilah) and [Kevin Ballard](https://twitter.com/eridius) at 6 pm — location still unknown but will be in San Jose. I'm subscribed to the [Swift Unwrapped](https://spec.fm/podcasts/swift-unwrapped) podcast hosted by Squires and Simard to follow along swift evolution.
+
+###### Wednesday
+
+Evening: I got a ticket for the **Better Elevation Extravaganza** with news and music. There's also another [funding event](https://www.classy.org/events/-/e126329) for **App Camp for Girls**. I've attended it last year but I have to admit I'm not able to keep up with the songs played by **James Dempsey and the Breakpoints** (tech and developer friendly). Also the event has different ticket tiers with a VIP reserved area that you can join performing a substantial donation.
+
+###### Thursday
+
+Evening: (usually) the **WWDC beer bash** hosted by Apple, with music, food and beer.
+
+###### Friday
+
+Most people leave early but sessions and labs usually go on until 5 pm. Be sure to don't miss them as most advanced topics will be held during those final hours, like the legendary **Crusty** [2015](https://developer.apple.com/videos/play/wwdc2015/408/) and [2016](https://developer.apple.com/videos/play/wwdc2016/419/) sessions.
+
+##### Bonus
+
+I would love to have a sneak peak at **Apple Park** but it seems difficult right now as most employees are still working at 1 Infinite Loop. Maybe Apple will organise something there, like the beer bash, but I'm not holding my breath.
+
+I've already been inside Apple's current headquarters at [1 Infinite Loop](https://www.google.com/maps/place/Infinite+Loop,+Cupertino,+CA+95014,+USA/@37.3322109,-122.0329718,17z/data=!3m1!4b1!4m5!3m4!1s0x808fb5b6e7b4b9fb:0x697a4332574f50d9!8m2!3d37.3322109!4d-122.0307778) two years ago thanks to [@filippobiga](https://twitter.com/filippobiga). If you are interested and know someone that works there ask him/her if you could visit the mothership. Don't expect much more than a meal at Cafe Mac and some good talks in the central park. Invaluable for a long time Mac lover.
+
+[Company Store](https://www.apple.com/companystore/index.html), in the convention center usually there's a pop up company store where you can buy pricey Apple branded t-shirts, hats, hoodies, pens, bottles and not so much more. The same stuff is usually available at the company store at 1 Infinite Loop. Keep in mind that common sizes will be on fire on Tuesday and Wednesday. Don't expect to find something different from XXXL hoodies later in the week.
+
+San Francisco. If you've never been there you can consider a visit taking the public transport Caltrain: it's just an hour and fifteen minutes from San Jose.
+
+[WWDC.family](https://wwdc.family) app is an easy way to connect with other developers during WWDC.
+
+[Parties](https://itunes.apple.com/us/app/parties-for-wwdc/id879924066?mt=8) is a great app to keep up with the events organised by third parties during WWDC week.
+
+#### People I'd like to meet
+
+* [Federico Viticci](https://twitter.com/viticci) as fellow Italian fan of [MacStories](https://www.macstories.net) and [Connected](https://www.relay.fm/connected) to say *ciao* again after a year.
+* [Stephen Hackett](https://twitter.com/ismh) and [Mike Hurley](https://twitter.com/imyke) of [Relay FM](https://relay.fm) as they fulfill most of my spare time with podcasts. It's a tradition as I first met them when they were part of the [5by5](http://5by5.tv) network.
+
+![Connected Guys](/assets/images/connected.jpg#center100s)
+
+* [Marco](http://marco.org), [John](https://twitter.com/siracusa) and [Casey](https://www.caseyliss.com) - a truly great trio that shares with me at least [two hours](https://atp.fm) every week!
+* [John Gruber](https://daringfireball.net), I'd love to say hi.
+* Apple Execs – specially [Craig Federighi](https://www.apple.com/pr/bios/craig-federighi.html) – Hair Force One. You know... *selfies*.
+* Many developers I met in the last few years.
+* Apple employees as their work is totally fascinating to me.
+* **You** - I'm eager to know new people every year!
+
+#### Staying
+
+Few non obvious things I'm bringing with me: Imodium (after a memorable debacle two years ago), earplugs as you never know where and when you'll end up sleeping, [multiple USB charger](https://www.amazon.com/Anker-Premium-Charger-PowerPort-Delivery/dp/B01D8C6ULO/ref=sr_1_6?ie=UTF8&qid=1495529827&sr=8-6&keywords=anker+usb-c) with USB-A and C, USA to Italy plug converters, MacBook power brick with USB-C cable, Apple Watch cable, spare dollars for hotel tips.
+
+I *won't* bring with me the electric shaver as my model doesn't support 50Hz — 110V power supply and it will be so slow that will grab and pull the hairs instead of trimming them. I usually remember it too late and I'm forced to buy razors at the mall like an animal.
+
+#### Leaving
+
+I'm leaving on Saturday morning from San Francisco – *SFO* to enjoy a final evening with friends on Friday. The trip will be quite long as I'm heading to Toronto – *YYZ*, my first time in Canada, then again Frankfurt – *FRA* and finally back to Verona – *VRN* totalling 20 hours between first take off and final landing. An hour driving will bring be back home in Trento[^1] with my family 👨‍👩‍👦‍👦.
+
+I look forward to have an amazing week and meet you if you are there too.
+
+[^1]: As I'm currently abroad I've realised that I'll travel in 6 different countries in 15 days like a pro: Italy, USA, Germany, Canada, Slovenia and Croatia.
+
+<script src='https://api.mapbox.com/mapbox.js/v3.1.0/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v3.1.0/mapbox.css' rel='stylesheet' />
+<style>
+    .path-start {
+      -webkit-transition:stroke-dashoffset 2.5s ease-in;
+         -moz-transition:stroke-dashoffset 2.5s ease-in;
+           -o-transition:stroke-dashoffset 2.5s ease-in;
+              transition:stroke-dashoffset 2.5s ease-in;
+      }
+    #map { position:relative; height:300px; width: 100%; }
+</style>
+<script src='https://api.mapbox.com/mapbox.js/plugins/arc.js/v0.1.0/arc.js'></script>
+<script src='/assets/data/wwdc-2017-airports.js'></script>
+<script src='/assets/data/wwdc-2017-flights.js'></script>
+<script src='/assets/data/wwdc-2017-map.js'></script>
