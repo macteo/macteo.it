@@ -4,6 +4,7 @@ title: Speck&Tech
 date: 2017-07-22 11:00:00 +0200
 categories: speech
 tags: speech speck&tech
+image: icons/speck&tech.png
 ---
 
 I'll be one of the speakers at the next [Speck&Tech](https://speckand.tech) event in Trento on July 27th, 2017.
