@@ -613,6 +613,7 @@ img.logo {
   width: 20%;
   /*-webkit-filter: none;
   filter: none;*/
+  border-radius: 23%;
   vertical-align: top;
 }
 
