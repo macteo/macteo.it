@@ -6,8 +6,8 @@
 </description>
     <link>https://macteo.it/</link>
     <atom:link href="https://macteo.it/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 24 Jul 2017 17:11:09 +0200</pubDate>
-    <lastBuildDate>Mon, 24 Jul 2017 17:11:09 +0200</lastBuildDate>
+    <pubDate>Thu, 27 Jul 2017 14:38:43 +0000</pubDate>
+    <lastBuildDate>Thu, 27 Jul 2017 14:38:43 +0000</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -27,7 +27,7 @@
 
 &lt;p&gt;&lt;a href=&quot;https://macteo.it&quot;&gt;Matteo Gavagnin&lt;/a&gt; is a husband and father of two sons that lives in Trento. He was born in Venice in 1983, just in time for the launch of the Macintosh 35 days later. He started tinkering with a Mac Plus since he was three and never stopped. He got a master degree in Environmental Engineering, but during the college he also started a career in software development kicked by the release of the iPhone in 2007. After several adventures he’s leading the mobile development team in DIMENSION since 2014. He had the luck to attend WWDC five times.&lt;/p&gt;
 </description>
-        <pubDate>Sat, 22 Jul 2017 11:00:00 +0200</pubDate>
+        <pubDate>Sat, 22 Jul 2017 09:00:00 +0000</pubDate>
         <link>https://macteo.it/speech/2017/07/22/speck-and-tech.html</link>
         <guid isPermaLink="true">https://macteo.it/speech/2017/07/22/speck-and-tech.html</guid>
         
@@ -138,7 +138,7 @@ I’m releasing everything as open source on &lt;a href=&quot;http://github.com/
 
 &lt;p&gt;In the second part of this post (still unpublished) I’m going to enumerate different tools and technologies I’m using to render and serve the map.&lt;/p&gt;
 </description>
-        <pubDate>Sat, 03 Jun 2017 16:12:00 +0200</pubDate>
+        <pubDate>Sat, 03 Jun 2017 14:12:00 +0000</pubDate>
         <link>https://macteo.it/map/2017/06/03/hiking-map.html</link>
         <guid isPermaLink="true">https://macteo.it/map/2017/06/03/hiking-map.html</guid>
         
@@ -180,7 +180,7 @@ You can choose one ore more options and with a single tap cast your vote.&lt;/p&
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Tue, 30 May 2017 21:12:00 +0200</pubDate>
+        <pubDate>Tue, 30 May 2017 19:12:00 +0000</pubDate>
         <link>https://macteo.it/wwdc/2017/05/30/wwdc-hardware-predictions.html</link>
         <guid isPermaLink="true">https://macteo.it/wwdc/2017/05/30/wwdc-hardware-predictions.html</guid>
         
@@ -379,7 +379,7 @@ You can choose one ore more options and with a single tap cast your vote.&lt;/p&
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Tue, 23 May 2017 13:48:00 +0200</pubDate>
+        <pubDate>Tue, 23 May 2017 11:48:00 +0000</pubDate>
         <link>https://macteo.it/wwdc/2017/05/23/wwdc-plan.html</link>
         <guid isPermaLink="true">https://macteo.it/wwdc/2017/05/23/wwdc-plan.html</guid>
         
@@ -448,7 +448,7 @@ You can choose one ore more options and with a single tap cast your vote.&lt;/p&
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Sat, 13 May 2017 07:00:00 +0200</pubDate>
+        <pubDate>Sat, 13 May 2017 05:00:00 +0000</pubDate>
         <link>https://macteo.it/data/2017/05/13/quantified-self.html</link>
         <guid isPermaLink="true">https://macteo.it/data/2017/05/13/quantified-self.html</guid>
         
@@ -497,7 +497,7 @@ You can choose one ore more options and with a single tap cast your vote.&lt;/p&
   &lt;p&gt;Disclaimer: the hidden code is really rough, I plan to refactor it, but time is definitely a limiting factor.&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
-        <pubDate>Sun, 04 Dec 2016 08:27:00 +0100</pubDate>
+        <pubDate>Sun, 04 Dec 2016 07:27:00 +0000</pubDate>
         <link>https://macteo.it/playground/2016/12/04/bezier-curves.html</link>
         <guid isPermaLink="true">https://macteo.it/playground/2016/12/04/bezier-curves.html</guid>
         
@@ -552,7 +552,7 @@ You can choose one ore more options and with a single tap cast your vote.&lt;/p&
 
 &lt;p&gt;Now the really bold prediction: the price will stay the same as the original Magic Keyboard: $99. Apple has already increased the price by $30 last year.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 26 Oct 2016 11:57:00 +0200</pubDate>
+        <pubDate>Wed, 26 Oct 2016 09:57:00 +0000</pubDate>
         <link>https://macteo.it/apple/2016/10/26/magic-keyboard-2-with-Touch-ID.html</link>
         <guid isPermaLink="true">https://macteo.it/apple/2016/10/26/magic-keyboard-2-with-Touch-ID.html</guid>
         
@@ -728,7 +728,7 @@ git push --tags
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/framework/030 - create_new_tag_and_push.jpg#center1000&quot; alt=&quot;Framework&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Tue, 18 Oct 2016 11:04:00 +0200</pubDate>
+        <pubDate>Tue, 18 Oct 2016 09:04:00 +0000</pubDate>
         <link>https://macteo.it/xcode/2016/10/18/dynamic-framework-with-cocoapods-support.html</link>
         <guid isPermaLink="true">https://macteo.it/xcode/2016/10/18/dynamic-framework-with-cocoapods-support.html</guid>
         
@@ -807,7 +807,7 @@ git push --tags
 &lt;p&gt;Once you know how to achieve the desired result, it’s really simple. Enjoy.&lt;/p&gt;
 
 </description>
-        <pubDate>Wed, 10 Aug 2016 22:21:00 +0200</pubDate>
+        <pubDate>Wed, 10 Aug 2016 20:21:00 +0000</pubDate>
         <link>https://macteo.it/ios/2016/08/10/blurred-rounded-uiview.html</link>
         <guid isPermaLink="true">https://macteo.it/ios/2016/08/10/blurred-rounded-uiview.html</guid>
         
@@ -865,7 +865,7 @@ git push --tags
 
 &lt;p&gt;I also sent a test build including bitcode to iTunes Connect, it has been processed successfully and it is now available (privately) on TestFlight.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 09 Aug 2016 21:14:00 +0200</pubDate>
+        <pubDate>Tue, 09 Aug 2016 19:14:00 +0000</pubDate>
         <link>https://macteo.it/build/2016/08/09/libjpeg-turbo-with-bitcode.html</link>
         <guid isPermaLink="true">https://macteo.it/build/2016/08/09/libjpeg-turbo-with-bitcode.html</guid>
         
