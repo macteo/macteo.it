@@ -1,6 +1,15 @@
 [
   
     {
+      "title"    : "SplitKit",
+      "category" : "",
+      "tags"     : "ios",
+      "url"      : "/ios/2017/09/03/splitkit.html",
+      "date"     : "2017-09-03 18:36:00 +0200",
+      "content"  : "Resizable splitted view for iOS.Today I’ve released SplitKit, a sigle file component that does just one thing: let you place two views side by side or bottom to top.Heavily inspired by the Swift Playgrounds app for iPad, SplitKit gives you the ability to easily present two UIViews side by side (or stacked one on top of the other) baked by different UIViewControllers. Everything is implemented in a single .swift file to easily drop it in in existing projects. CocoaPods, Carthage and plain Dynamic Framework are supported as well for your convenience. The end user has the ability to resize the views just dragging the separator like each macOS counterpart, when the drag is performed a convenient handle appears to highlight the resizing operation. If the separator is really close to one of the edges, it will snap to it with an enjoyable animation and the handle won’t disappear to highlight the hidden view position.Features:  Horizontal and vertical layouts: one beside the other and one on top of the other.  Customisable separator and handle: choose the color you prefer to match your app style.  Draggable handle to resize the views on the fly.  Snap to the closest edge.  Automatically keyboard dismiss if the keyboard top margin is crossed while resizing.  Support iOS 9 leveraging topLayoutGuide and bottomLayoutGuide through iOS 11 and the new safeAreaLayoutGuide.It has been written during a single weekend so it can be definitely improved.Let me know if you find any issue or have a suggestion."
+    } ,
+  
+    {
       "title"    : "Speck&amp;Tech",
       "category" : "",
       "tags"     : "speech, speck&tech",

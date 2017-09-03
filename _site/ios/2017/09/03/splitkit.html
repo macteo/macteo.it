@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Matteo Gavagnin</title>
-  <link rel="canonical" href="https://macteo.it/blog/">
+  <title>SplitKit</title>
+  <link rel="canonical" href="https://macteo.it/ios/2017/09/03/splitkit.html">
   <link rel="alternate" title="Matteo Gavagnin" type="application/rss+xml" href="https://macteo.it/feed.xml" />
   <link rel="alternate" title="Matteo Gavagnin" type="application/json" href="https://macteo.it/feed.json" />
   <meta name="description" content="Matteo Gavagnin's personal website
@@ -50,162 +50,43 @@
 
   <div class="container blog">
     <section class="header">
-  <a href="/" alt="Home"><img src="/assets/images/macteo.jpg" class="profile"/></a>
-  <h2 class="title">Matteo Gavagnin</h2>
+  <a href="/"><img src="/assets/images/macteo.jpg" class="profile small"/></a>
 </section>
 
-    <div class="docs-section" id="Blog">
-  <h4 class="docs-header">Blog</h4>
-  <div class="row">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline" align="center">SplitKit</h1>
+    <p class="post-meta"><time datetime="2017-09-03T16:36:00+00:00" itemprop="datePublished">Sep 3, 2017</time></p>
+  </header>
 
-    
-    <div class="four columns">
-      <div class="logo-container">
-        
-          <img src="/assets/images/icons/splitkit.png"  class="logo"/>
-        
-        <div class="webui-popover-content">
-          <h6><a class="post-link" href="/ios/2017/09/03/splitkit.html">SplitKit</a></h6>
-          <span>
-            <p><p>Resizable splitted view for iOS.</p>
+  <div class="post-content" itemprop="articleBody">
+    <p>Resizable splitted view for iOS.</p>
 
-</p>
-          </span>
-        </div>
-      </div>
-    </div>
-    
-    
+<p>Today I’ve released <a href="https://github.com/macteo/splitkit">SplitKit</a>, a sigle file component that does just one thing: let you place two views side by side or bottom to top.</p>
 
-    
-    <div class="four columns">
-      <div class="logo-container">
-        
-          <img src="/assets/images/icons/speck&tech.png"  class="logo"/>
-        
-        <div class="webui-popover-content">
-          <h6><a class="post-link" href="/speech/2017/07/22/speck-and-tech.html">Speck&Tech</a></h6>
-          <span>
-            <p><p>I’ll be one of the speakers at the next <a href="https://speckand.tech">Speck&amp;Tech</a> event in Trento on July 27th, 2017.</p>
+<p><img src="https://raw.githubusercontent.com/macteo/SplitKit/master/Assets/Export/splitkit-title.png#center100s" alt="SplitKit Title" /></p>
 
-</p>
-          </span>
-        </div>
-      </div>
-    </div>
-    
-    
+<p>Heavily inspired by the Swift Playgrounds app for iPad, <em>SplitKit</em> gives you the ability to easily present two <code class="highlighter-rouge">UIView</code>s side by side (or stacked one on top of the other) baked by different <code class="highlighter-rouge">UIViewControllers</code>. Everything is implemented in a single <em>.swift</em> file to easily drop it in in existing projects. CocoaPods, Carthage and plain Dynamic Framework are supported as well for your convenience. The end user has the ability to resize the views just dragging the separator like each macOS counterpart, when the drag is performed a convenient handle appears to highlight the resizing operation. If the separator is really close to one of the edges, it will snap to it with an enjoyable animation and the handle won’t disappear to highlight the hidden view position.</p>
 
-    
-    <div class="four columns">
-      <div class="logo-container">
-        
-          <img src="/assets/images/icons/hiking-map.png"  class="logo"/>
-        
-        <div class="webui-popover-content">
-          <h6><a class="post-link" href="/map/2017/06/03/hiking-map.html">Hiking Map</a></h6>
-          <span>
-            <p><p>I’m building modern digital map suitable for hiking in the Alps as the existing ones are lacking too many basic features that you usually need if you are outdoor in the mountains.</p>
+<p><img src="https://raw.githubusercontent.com/macteo/splitkit/master/Assets/GIFs/splitkit.gif#center100s" alt="SplitKit GIF" /></p>
 
-</p>
-          </span>
-        </div>
-      </div>
-    </div>
-    
-    
-      </div>
-      <div class="row">
-    
+<h2 id="features">Features:</h2>
+<ul>
+  <li>Horizontal and vertical layouts: one beside the other and one on top of the other.</li>
+  <li>Customisable separator and handle: choose the color you prefer to match your app style.</li>
+  <li>Draggable handle to resize the views on the fly.</li>
+  <li>Snap to the closest edge.</li>
+  <li>Automatically keyboard dismiss if the keyboard top margin is crossed while resizing.</li>
+  <li>Support iOS 9 leveraging <code class="highlighter-rouge">topLayoutGuide</code> and <code class="highlighter-rouge">bottomLayoutGuide</code> through iOS 11 and the new <code class="highlighter-rouge">safeAreaLayoutGuide</code>.</li>
+</ul>
 
-    
-    <div class="four columns">
-      <div class="logo-container">
-        
-          <img src="/assets/images/icons/wwdc-hardware@2x.png"  class="logo"/>
-        
-        <div class="webui-popover-content">
-          <h6><a class="post-link" href="/wwdc/2017/05/30/wwdc-hardware-predictions.html">WWDC Hardware Predictions</a></h6>
-          <span>
-            <p><p>In less than a week <a href="https://www.apple.com/apple-events/june-2017/">Apple WWDC’s Keynote</a> will take place and they will unveil some new stuff to 5000 developers (myself included) plus a bunch of journalists.</p>
+<p>It has been written during a single weekend so it can be definitely improved.</p>
 
-</p>
-          </span>
-        </div>
-      </div>
-    </div>
-    
-    
+<p>Let me know if you find any issue or have a suggestion.</p>
 
-    
-    <div class="four columns">
-      <div class="logo-container">
-        
-          <img src="/assets/images/icons/wwdc@2x.png"  class="logo"/>
-        
-        <div class="webui-popover-content">
-          <h6><a class="post-link" href="/wwdc/2017/05/23/wwdc-plan.html">WWDC Plan</a></h6>
-          <span>
-            <p><p>This will be my <em>fifth</em> WWDC as I had the opportunity to attend it since the 2012 edition (thanks <a href="https://twitter.com/giovatardu">Giovanni</a> that gave me his ticket as he couldn’t attend). Then I won the lottery four times in a row from 2014 to 2017 🤷‍♂️.</p>
+  </div>
 
-</p>
-          </span>
-        </div>
-      </div>
-    </div>
-    
-    
-
-    
-    <div class="four columns">
-      <div class="logo-container">
-        
-          <img src="/assets/images/icons/gyroscope-sum@2x.png"  class="logo"/>
-        
-        <div class="webui-popover-content">
-          <h6><a class="post-link" href="/data/2017/05/13/quantified-self.html">Quantified Self</a></h6>
-          <span>
-            <p><p>The <a href="https://en.wikipedia.org/wiki/Quantified_Self">quantified self</a> concept and movement represent an area of great interest to improve the knowledge of yourself and a great stimulus to become a better person.</p>
-
-</p>
-          </span>
-        </div>
-      </div>
-    </div>
-    
-    
-      </div>
-      <div class="row">
-    
-
-    
-</div>
-
-
-  <nav role="navigation">
-    <ul class="cd-pagination no-space">
-    
-
-    
-      
-        <li><a class="current" href="#">1</a></li>
-      
-    
-      
-        <li><a href="/blog/page2/">2</a></li>
-      
-    
-      
-        <li><a href="/blog/page3/">3</a></li>
-      
-    
-
-    
-      <li class="button"><a href="/blog/page2/">Next</a></li>
-    
-    </ul>
-  </nav>
-
+</article>
 
     <div class="docs-section" id="contacts">
   <h4 class="docs-header footer">Contacts</h4>
@@ -256,4 +137,5 @@
 
 </script>
 </body>
+
 </html>

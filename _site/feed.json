@@ -9,6 +9,27 @@
     "items": [
     
         {
+            "id": "https://macteo.it/ios/2017/09/03/splitkit.html",
+            "title": "SplitKit",
+            "summary": "",
+            "content_text": "Resizable splitted view for iOS.Today I’ve released SplitKit, a sigle file component that does just one thing: let you place two views side by side or bottom to top.Heavily inspired by the Swift Playgrounds app for iPad, SplitKit gives you the ability to easily present two UIViews side by side (or stacked one on top of the other) baked by different UIViewControllers. Everything is implemented in a single .swift file to easily drop it in in existing projects. CocoaPods, Carthage and plain Dynamic Framework are supported as well for your convenience. The end user has the ability to resize the views just dragging the separator like each macOS counterpart, when the drag is performed a convenient handle appears to highlight the resizing operation. If the separator is really close to one of the edges, it will snap to it with an enjoyable animation and the handle won’t disappear to highlight the hidden view position.Features:  Horizontal and vertical layouts: one beside the other and one on top of the other.  Customisable separator and handle: choose the color you prefer to match your app style.  Draggable handle to resize the views on the fly.  Snap to the closest edge.  Automatically keyboard dismiss if the keyboard top margin is crossed while resizing.  Support iOS 9 leveraging topLayoutGuide and bottomLayoutGuide through iOS 11 and the new safeAreaLayoutGuide.It has been written during a single weekend so it can be definitely improved.Let me know if you find any issue or have a suggestion.",
+            "content_html": "<p>Resizable splitted view for iOS.</p><p>Today I’ve released <a href=\"https://github.com/macteo/splitkit\">SplitKit</a>, a sigle file component that does just one thing: let you place two views side by side or bottom to top.</p><p><img src=\"https://raw.githubusercontent.com/macteo/SplitKit/master/Assets/Export/splitkit-title.png#center100s\" alt=\"SplitKit Title\" /></p><p>Heavily inspired by the Swift Playgrounds app for iPad, <em>SplitKit</em> gives you the ability to easily present two <code class=\"highlighter-rouge\">UIView</code>s side by side (or stacked one on top of the other) baked by different <code class=\"highlighter-rouge\">UIViewControllers</code>. Everything is implemented in a single <em>.swift</em> file to easily drop it in in existing projects. CocoaPods, Carthage and plain Dynamic Framework are supported as well for your convenience. The end user has the ability to resize the views just dragging the separator like each macOS counterpart, when the drag is performed a convenient handle appears to highlight the resizing operation. If the separator is really close to one of the edges, it will snap to it with an enjoyable animation and the handle won’t disappear to highlight the hidden view position.</p><p><img src=\"https://raw.githubusercontent.com/macteo/splitkit/master/Assets/GIFs/splitkit.gif#center100s\" alt=\"SplitKit GIF\" /></p><h2 id=\"features\">Features:</h2><ul>  <li>Horizontal and vertical layouts: one beside the other and one on top of the other.</li>  <li>Customisable separator and handle: choose the color you prefer to match your app style.</li>  <li>Draggable handle to resize the views on the fly.</li>  <li>Snap to the closest edge.</li>  <li>Automatically keyboard dismiss if the keyboard top margin is crossed while resizing.</li>  <li>Support iOS 9 leveraging <code class=\"highlighter-rouge\">topLayoutGuide</code> and <code class=\"highlighter-rouge\">bottomLayoutGuide</code> through iOS 11 and the new <code class=\"highlighter-rouge\">safeAreaLayoutGuide</code>.</li></ul><p>It has been written during a single weekend so it can be definitely improved.</p><p>Let me know if you find any issue or have a suggestion.</p>",
+            "url": "https://macteo.it/ios/2017/09/03/splitkit.html",
+            
+            "image": "https://macteo.it/assets/imagesicons/splitkit.png",
+            
+            
+            
+            
+            "date_published": "2017-09-03T16:36:00+00:00",
+            "date_modified": "2017-09-03T16:36:00+00:00",
+            "author": {
+                "name": "",
+                "url": "https://twitter.com/macteo"
+            }
+        },
+    
+        {
             "id": "https://macteo.it/speech/2017/07/22/speck-and-tech.html",
             "title": "Speck&Tech",
             "summary": "",

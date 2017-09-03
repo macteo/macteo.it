@@ -6,9 +6,46 @@
 </description>
     <link>https://macteo.it/</link>
     <atom:link href="https://macteo.it/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 27 Jul 2017 14:38:43 +0000</pubDate>
-    <lastBuildDate>Thu, 27 Jul 2017 14:38:43 +0000</lastBuildDate>
+    <pubDate>Sun, 03 Sep 2017 16:57:07 +0000</pubDate>
+    <lastBuildDate>Sun, 03 Sep 2017 16:57:07 +0000</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>SplitKit</title>
+        <description>&lt;p&gt;Resizable splitted view for iOS.&lt;/p&gt;
+
+&lt;p&gt;Today I’ve released &lt;a href=&quot;https://github.com/macteo/splitkit&quot;&gt;SplitKit&lt;/a&gt;, a sigle file component that does just one thing: let you place two views side by side or bottom to top.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/macteo/SplitKit/master/Assets/Export/splitkit-title.png#center100s&quot; alt=&quot;SplitKit Title&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Heavily inspired by the Swift Playgrounds app for iPad, &lt;em&gt;SplitKit&lt;/em&gt; gives you the ability to easily present two &lt;code class=&quot;highlighter-rouge&quot;&gt;UIView&lt;/code&gt;s side by side (or stacked one on top of the other) baked by different &lt;code class=&quot;highlighter-rouge&quot;&gt;UIViewControllers&lt;/code&gt;. Everything is implemented in a single &lt;em&gt;.swift&lt;/em&gt; file to easily drop it in in existing projects. CocoaPods, Carthage and plain Dynamic Framework are supported as well for your convenience. The end user has the ability to resize the views just dragging the separator like each macOS counterpart, when the drag is performed a convenient handle appears to highlight the resizing operation. If the separator is really close to one of the edges, it will snap to it with an enjoyable animation and the handle won’t disappear to highlight the hidden view position.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/macteo/splitkit/master/Assets/GIFs/splitkit.gif#center100s&quot; alt=&quot;SplitKit GIF&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;features&quot;&gt;Features:&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Horizontal and vertical layouts: one beside the other and one on top of the other.&lt;/li&gt;
+  &lt;li&gt;Customisable separator and handle: choose the color you prefer to match your app style.&lt;/li&gt;
+  &lt;li&gt;Draggable handle to resize the views on the fly.&lt;/li&gt;
+  &lt;li&gt;Snap to the closest edge.&lt;/li&gt;
+  &lt;li&gt;Automatically keyboard dismiss if the keyboard top margin is crossed while resizing.&lt;/li&gt;
+  &lt;li&gt;Support iOS 9 leveraging &lt;code class=&quot;highlighter-rouge&quot;&gt;topLayoutGuide&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;bottomLayoutGuide&lt;/code&gt; through iOS 11 and the new &lt;code class=&quot;highlighter-rouge&quot;&gt;safeAreaLayoutGuide&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It has been written during a single weekend so it can be definitely improved.&lt;/p&gt;
+
+&lt;p&gt;Let me know if you find any issue or have a suggestion.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 03 Sep 2017 16:36:00 +0000</pubDate>
+        <link>https://macteo.it/ios/2017/09/03/splitkit.html</link>
+        <guid isPermaLink="true">https://macteo.it/ios/2017/09/03/splitkit.html</guid>
+        
+        <category>ios</category>
+        
+        
+        <category>ios</category>
+        
+      </item>
     
       <item>
         <title>Speck&amp;Tech</title>
@@ -817,66 +854,6 @@ git push --tags
         
         
         <category>ios</category>
-        
-      </item>
-    
-      <item>
-        <title>libjpeg-turbo with bitcode</title>
-        <description>&lt;p&gt;For a little side project I’m developing for iOS, I needed to build &lt;a href=&quot;http://libjpeg-turbo.virtualgl.org&quot;&gt;libjpeg-turbo&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Unfortunately the binary provided by the project maintainers doesn’t include &lt;a href=&quot;https://developer.apple.com/library/tvos/documentation/IDEs/Conceptual/AppDistributionGuide/AppThinning/AppThinning.html&quot;&gt;bitcode&lt;/a&gt; and even if at the moment it’s not compulsory (unless you are targeting &lt;em&gt;WatchOS&lt;/em&gt;), I like to be future proof, as Apple will eventually require it to be included in every app binary.&lt;/p&gt;
-
-&lt;p&gt;I’ve found a &lt;a href=&quot;https://github.com/dhoerl/libjpeg-turbo-builder&quot;&gt;dedicated repository&lt;/a&gt; by &lt;a href=&quot;https://github.com/dhoerl&quot;&gt;David Hoerl&lt;/a&gt; with instructions to build &lt;code class=&quot;highlighter-rouge&quot;&gt;libjpeg-turbo&lt;/code&gt; for iOS, but unfortunately it doesn’t include bitcode too.&lt;/p&gt;
-
-&lt;p&gt;In the issues on GitHub there’s a &lt;a href=&quot;https://github.com/libjpeg-turbo/libjpeg-turbo/issues/5&quot;&gt;build script&lt;/a&gt; to build with bitcode enabled, but with the current SDK versions it fails.&lt;/p&gt;
-
-&lt;p&gt;This is an updated version with some optimizations:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Developer tools and SDK paths are automatically detected, so it should be compatible even with future Xcode versions (tested with Xcode 7.2.1, 7.3.1 and 8.0 β4).&lt;/li&gt;
-  &lt;li&gt;Install required packages: &lt;code class=&quot;highlighter-rouge&quot;&gt;libtool&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;automake&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;autoconf&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;nasm&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Creates a Universal Binary library with simulator and device architectures.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;instructions&quot;&gt;Instructions:&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Install Xcode and command line tools.&lt;/li&gt;
-  &lt;li&gt;Install &lt;a href=&quot;http://brew.sh&quot;&gt;Homebrew&lt;/a&gt; on your Mac.&lt;/li&gt;
-  &lt;li&gt;Open terminal and &lt;code class=&quot;highlighter-rouge&quot;&gt;cd&lt;/code&gt; into a temporary directory.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Download and run the script that your can find &lt;a href=&quot;/g/libturbo-jpeg.sh&quot;&gt;here&lt;/a&gt; with just a single line of code.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl -s https://macteo.it/g/libturbo-jpeg.sh | bash
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;I’m not responsible if something goes wrong.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;You’ll find the fat library with bitcode inside the &lt;code class=&quot;highlighter-rouge&quot;&gt;../libs/universal&lt;/code&gt; folder.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Architectures in the fat file: libturbojpeg.a are: armv7 armv7s i386 x86_64 arm64&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;🎉&lt;/p&gt;
-
-&lt;p&gt;The process &lt;a href=&quot;https://github.com/libjpeg-turbo/libjpeg-turbo/issues/5#issuecomment-238588594&quot;&gt;seems to be confirmed&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I also sent a test build including bitcode to iTunes Connect, it has been processed successfully and it is now available (privately) on TestFlight.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 09 Aug 2016 19:14:00 +0000</pubDate>
-        <link>https://macteo.it/build/2016/08/09/libjpeg-turbo-with-bitcode.html</link>
-        <guid isPermaLink="true">https://macteo.it/build/2016/08/09/libjpeg-turbo-with-bitcode.html</guid>
-        
-        <category>build</category>
-        
-        <category>ios</category>
-        
-        <category>xcode</category>
-        
-        
-        <category>build</category>
         
       </item>
     
