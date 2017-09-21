@@ -9,6 +9,37 @@
     "items": [
     
         {
+            "id": "https://macteo.it/macos/2017/09/21/6-colors-wallpapers.html",
+            "title": "6 colors Wallpapers",
+            "summary": "",
+            "content_text": "I’m in love with the new six colors iOS 11 wallpapers so I’ve created the larger macOS versions.They’re available with different background colors (black, white, green, yellow, orange, red, purple and blue) and optimized for 2K, 4K, 5K and 8K resolutions.You can download them from the link below the two examples.Download the wallpapers.",
+            "content_html": "<p>I’m in love with the new six colors <em>iOS 11</em> wallpapers so I’ve created the larger <em>macOS</em> versions.</p><p>They’re available with different background colors (black, white, green, yellow, orange, red, purple and blue) and optimized for 2K, 4K, 5K and 8K resolutions.</p><p>You can download them from the link below the two examples.</p><p><img src=\"https://macteo.it/assets/images/6colors/6colors-blue.png#center100s\" alt=\"6colors orange\" /></p><p><img src=\"https://macteo.it/assets/images/6colors/6colors-red.png#center100s\" alt=\"6colors orange\" /></p><p><a href=\"http://macteo.it/assets/data/6colors.zip\">Download the wallpapers</a>.</p>",
+            "url": "https://macteo.it/macos/2017/09/21/6-colors-wallpapers.html",
+            
+            "image": "https://macteo.it/assets/imagesicons/6colors.png",
+            
+            
+            
+            
+            "tags": [
+                
+                  "macOS",
+                
+                  "wallpapers",
+                
+                  "apple"
+                
+            ],
+            
+            "date_published": "2017-09-21T02:15:00+00:00",
+            "date_modified": "2017-09-21T02:15:00+00:00",
+            "author": {
+                "name": "",
+                "url": "https://twitter.com/macteo"
+            }
+        },
+    
+        {
             "id": "https://macteo.it/ios/2017/09/03/splitkit.html",
             "title": "SplitKit",
             "summary": "",
