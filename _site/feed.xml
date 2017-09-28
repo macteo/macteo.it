@@ -6,9 +6,43 @@
 </description>
     <link>https://macteo.it/</link>
     <atom:link href="https://macteo.it/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 21 Sep 2017 02:22:53 +0000</pubDate>
-    <lastBuildDate>Thu, 21 Sep 2017 02:22:53 +0000</lastBuildDate>
+    <pubDate>Thu, 28 Sep 2017 19:00:47 +0000</pubDate>
+    <lastBuildDate>Thu, 28 Sep 2017 19:00:47 +0000</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>Face ID</title>
+        <description>&lt;p&gt;Apple in their &lt;a href=&quot;https://developer.apple.com/ios/human-interface-guidelines/user-interaction/authentication/&quot;&gt;Human Interface Guidelines&lt;/a&gt; asks developers to avoid using custom Face ID and Touch ID icons:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Don’t use custom icons to identify system authentication features.&lt;/strong&gt; When people see icons that look like the system’s Touch ID (thumbprint) and Face ID icons, they think they’re supposed to authenticate. Custom variants of these icons create inconsistency and cause confusion, especially when colorized, displayed at a large size, and presented out of context—like as a button label or on an app’s Settings screen.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;However they don’t provide such standard assets.&lt;/p&gt;
+
+&lt;p&gt;I’m not a designer but it took me few minutes to recreate the Face ID logo.&lt;/p&gt;
+
+&lt;p&gt;You can download the Sketch file and png, svg and pdf versions from the link below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/faceid.png#center320s&quot; alt=&quot;Face ID&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://macteo.it/assets/data/faceid.zip&quot;&gt;Download the Face ID package&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 28 Sep 2017 18:55:00 +0000</pubDate>
+        <link>https://macteo.it/ios/2017/09/28/face-id.html</link>
+        <guid isPermaLink="true">https://macteo.it/ios/2017/09/28/face-id.html</guid>
+        
+        <category>iOS</category>
+        
+        <category>FaceID</category>
+        
+        <category>iPhoneX</category>
+        
+        
+        <category>iOS</category>
+        
+      </item>
     
       <item>
         <title>6 colors Wallpapers</title>
@@ -633,174 +667,6 @@ You can choose one ore more options and with a single tap cast your vote.&lt;/p&
         
         
         <category>apple</category>
-        
-      </item>
-    
-      <item>
-        <title>Dynamic Framework with CocoaPods support</title>
-        <description>&lt;p&gt;A short and compact guide to create a basic redistributable framework with CocoaPods support. This example is intended to work on iOS, but the same principles can be applied to watchOS, tvOS and macOS.&lt;/p&gt;
-
-&lt;p&gt;Create a new Xcode project and select &lt;strong&gt;Cocoa Touch Framework&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/framework/001 - create_xcode_framework_project_0.jpg#center1000&quot; alt=&quot;Framework&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;For redistributable libraries Objective-C is still the language-to-go. But you can also choose to write them in Swift if the host apps are willing to include the swift runtime.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/framework/002 - create_xcode_framework_project_1.jpg#center1000&quot; alt=&quot;Framework&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/framework/003 - create_xcode_framework_project_2.jpg#center1000&quot; alt=&quot;Framework&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Set the right version, 0.1.0 is a good start point.
-Check the &lt;strong&gt;Allow app extension API only&lt;/strong&gt; if you plan to use your framework from inside app extensions.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/framework/004 - xcode_version_and_extension.jpg#center1000&quot; alt=&quot;Framework&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Create at least a new class.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/framework/005 - create_classes.jpg#center1000&quot; alt=&quot;Framework&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Populate the header file.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/framework/006 - write_headers.jpg#center1000&quot; alt=&quot;Framework&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Implement the methods.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/framework/007 - implement_classes.jpg#center1000&quot; alt=&quot;Framework&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Import your header files in the &lt;em&gt;Umbrella&lt;/em&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Awesome.h&lt;/code&gt; header file so they will be accessible.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/framework/008 - populate_umbrella_header.jpg#center1000&quot; alt=&quot;Framework&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Open &lt;strong&gt;Terminal&lt;/strong&gt; and move into the project folder, for example&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/Documents/Projects/Awesome
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/framework/009 - terminal_move_to_folder.jpg#center1000&quot; alt=&quot;Framework&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Install &lt;a href=&quot;http://cocoapods.org&quot;&gt;CocoaPods&lt;/a&gt; gem if you don’t have it already.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;sudo] gem install cocoapods
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/framework/010 - install_cocoapods.jpg#center1000&quot; alt=&quot;Framework&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pod spec create Awesome
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/framework/011 - create_podspec.jpg#center1000&quot; alt=&quot;Framework&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/framework/012 - finder_structure.jpg#center1000&quot; alt=&quot;Framework&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Edit &lt;code class=&quot;highlighter-rouge&quot;&gt;Awesome.podspec&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/framework/013 - edit_podspec.jpg#center1000&quot; alt=&quot;Framework&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/framework/014 - final_podspec.jpg#center1000&quot; alt=&quot;Framework&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Add a license file&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/framework/015 - add_license_file.jpg#center1000&quot; alt=&quot;Framework&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Create a remote repository and add it the local copy&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git remote add origin git@github.com/macteo/Awesome.git
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Commit and push&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin master
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/framework/016 - commit_and_push.jpg#center1000&quot; alt=&quot;Framework&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git tag v0.1.0
-git push --tags
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/framework/017 - add_tag.jpg#center1000&quot; alt=&quot;Framework&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pod spec lint Awesome.podspec
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/framework/018 - lint.jpg#center1000&quot; alt=&quot;Framework&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Create a sample project inside the main folder.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/framework/019 - create_sample_project_0.jpg#center1000&quot; alt=&quot;Framework&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/framework/020 - create_sample_project_1.jpg#center1000&quot; alt=&quot;Framework&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/framework/021 - create_sample_project_2.jpg#center1000&quot; alt=&quot;Framework&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;AwesomeExample
-pod init
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/framework/022 - move_to_sample_project_and_init_pods.jpg#center1000&quot; alt=&quot;Framework&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Edit podfile to include the previously defined podspec. We use relative path for the example project.&lt;/p&gt;
-
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;pod&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Awesome'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:path&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'../'&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/framework/023 - edit_podfile.jpg#center1000&quot; alt=&quot;Framework&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pod install
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/framework/024 - pod_install.jpg#center1000&quot; alt=&quot;Framework&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/framework/025 - final_project_structure.jpg#center1000&quot; alt=&quot;Framework&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/framework/026 - open_sample_project.jpg#center1000&quot; alt=&quot;Framework&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Build so the dependencies are prepared&lt;/p&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Awesome&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;AwesomeLogger&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/framework/027 - final_result.jpg#center1000&quot; alt=&quot;Framework&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Edit &lt;strong&gt;Awesome.podspec&lt;/strong&gt; and bump version number.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/framework/028 - bump_version.jpg#center1000&quot; alt=&quot;Framework&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Add sample project files, commit, push and tag.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add .
-git commit -m &lt;span class=&quot;s2&quot;&gt;&quot;Added sample project&quot;&lt;/span&gt;
-git push origin master
-git tag v0.1.1
-git push --tags
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/framework/029 - add_sample_project.jpg#center1000&quot; alt=&quot;Framework&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/framework/030 - create_new_tag_and_push.jpg#center1000&quot; alt=&quot;Framework&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Tue, 18 Oct 2016 09:04:00 +0000</pubDate>
-        <link>https://macteo.it/xcode/2016/10/18/dynamic-framework-with-cocoapods-support.html</link>
-        <guid isPermaLink="true">https://macteo.it/xcode/2016/10/18/dynamic-framework-with-cocoapods-support.html</guid>
-        
-        
-        <category>xcode</category>
         
       </item>
     

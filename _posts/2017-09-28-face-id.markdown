@@ -1,0 +1,23 @@
+---
+layout: post
+title: Face ID
+date: 2017-09-28 20:55:00 +0200
+categories: iOS
+tags: iOS FaceID iPhoneX
+image: icons/faceid.png
+---
+
+Apple in their [Human Interface Guidelines](https://developer.apple.com/ios/human-interface-guidelines/user-interaction/authentication/) asks developers to avoid using custom Face ID and Touch ID icons:
+
+> **Don't use custom icons to identify system authentication features.** When people see icons that look like the system's Touch ID (thumbprint) and Face ID icons, they think they're supposed to authenticate. Custom variants of these icons create inconsistency and cause confusion, especially when colorized, displayed at a large size, and presented out of context—like as a button label or on an app's Settings screen.
+
+However they don't provide such standard assets.
+
+I'm not a designer but it took me few minutes to recreate the Face ID logo.
+
+You can download the Sketch file and png, svg and pdf versions from the link below.
+
+![Face ID](/assets/images/faceid.png#center320s)
+
+[Download the Face ID package](http://macteo.it/assets/data/faceid.zip).
+
