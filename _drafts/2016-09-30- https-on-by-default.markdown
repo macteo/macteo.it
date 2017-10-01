@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  https On by default
-date:   2016-07-16 21:00:00 +0200
+title:  HTTPS On by default
+date:   2016-09-30 21:00:00 +0200
 categories: security
 ---
 

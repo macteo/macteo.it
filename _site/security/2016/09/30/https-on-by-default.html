@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Matteo Gavagnin</title>
-  <link rel="canonical" href="https://macteo.it/blog/">
+  <title>HTTPS On by default</title>
+  <link rel="canonical" href="https://macteo.it/security/2016/09/30/https-on-by-default.html">
   <link rel="alternate" title="Matteo Gavagnin" type="application/rss+xml" href="https://macteo.it/feed.xml" />
   <link rel="alternate" title="Matteo Gavagnin" type="application/json" href="https://macteo.it/feed.json" />
   <meta name="description" content="Matteo Gavagnin's personal website
@@ -50,162 +50,59 @@
 
   <div class="container blog">
     <section class="header">
-  <a href="/" alt="Home"><img src="/assets/images/macteo.jpg" class="profile"/></a>
-  <h2 class="title">Matteo Gavagnin</h2>
+  <a href="/"><img src="/assets/images/macteo.jpg" class="profile small"/></a>
 </section>
 
-    <div class="docs-section" id="Blog">
-  <h4 class="docs-header">Blog</h4>
-  <div class="row">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline" align="center">HTTPS On by default</h1>
+    <p class="post-meta"><time datetime="2016-09-30T19:00:00+00:00" itemprop="datePublished">Sep 30, 2016</time></p>
+  </header>
 
-    
-    <div class="four columns">
-      <div class="logo-container">
-        
-          <img src="/assets/images/icons/faceid-c.png"  class="logo"/>
-        
-        <div class="webui-popover-content">
-          <h6><a class="post-link" href="/ios/2017/09/28/face-id.html">Face ID</a></h6>
-          <span>
-            <p><p>Apple in their <a href="https://developer.apple.com/ios/human-interface-guidelines/user-interaction/authentication/">Human Interface Guidelines</a> asks developers to avoid using custom Face ID and Touch ID icons:</p>
+  <div class="post-content" itemprop="articleBody">
+    <p>Setting up this personal website I decided to try to follow the latest and most secure policies in order to be future proof.</p>
 
-</p>
-          </span>
-        </div>
-      </div>
-    </div>
-    
-    
+<p>This decision involved:</p>
 
-    
-    <div class="four columns">
-      <div class="logo-container">
-        
-          <img src="/assets/images/icons/6colors.png"  class="logo"/>
-        
-        <div class="webui-popover-content">
-          <h6><a class="post-link" href="/macos/2017/09/21/6-colors-wallpapers.html">6 colors Wallpapers</a></h6>
-          <span>
-            <p><p>I’m in love with the new six colors <em>iOS 11</em> wallpapers so I’ve created the larger <em>macOS</em> versions.</p>
+<ul>
+  <li>Enable http/2 on nginx.</li>
+  <li>Support TLS 1.2.</li>
+  <li>Avoid insecure http entirely with 301 redirects.</li>
+</ul>
 
-</p>
-          </span>
-        </div>
-      </div>
-    </div>
-    
-    
+<p>Going all-in with the specified goal of moving the desired plan to a new order of the internal issue occurring inside the best option of the whole life. I don’t have the time to manage and micromanage all the needs of my office mates.</p>
 
-    
-    <div class="four columns">
-      <div class="logo-container">
-        
-          <img src="/assets/images/icons/splitkit.png"  class="logo"/>
-        
-        <div class="webui-popover-content">
-          <h6><a class="post-link" href="/ios/2017/09/03/splitkit.html">SplitKit</a></h6>
-          <span>
-            <p><p>Resizable splitted view for iOS.</p>
+<p>If you need to load a guy interested in the breakfast of the challenge, transforming a good opportunity in a great one!</p>
 
-</p>
-          </span>
-        </div>
-      </div>
-    </div>
-    
-    
-      </div>
-      <div class="row">
-    
+<p>The VPS where the website is hosted (as static Jekyll generated pages) runs on Ubuntu 16.04 LTS. I’ve installed nginx, but in order to support http/2 with ALPN I had to compile it from source and also upgrade OpenSSL to version 1.0.2h what the hell is that?</p>
 
-    
-    <div class="four columns">
-      <div class="logo-container">
-        
-          <img src="/assets/images/icons/speck&tech.png"  class="logo"/>
-        
-        <div class="webui-popover-content">
-          <h6><a class="post-link" href="/speech/2017/07/22/speck-and-tech.html">Speck&Tech</a></h6>
-          <span>
-            <p><p>I’ll be one of the speakers at the next <a href="https://speckand.tech">Speck&amp;Tech</a> event in Trento on July 27th, 2017.</p>
+<blockquote>
+  <p><em>this</em> will be <em>indented</em></p>
 
-</p>
-          </span>
-        </div>
-      </div>
-    </div>
-    
-    
+  <p>However
+You cannot cite me better than this</p>
+</blockquote>
 
-    
-    <div class="four columns">
-      <div class="logo-container">
-        
-          <img src="/assets/images/icons/hiking-map.png"  class="logo"/>
-        
-        <div class="webui-popover-content">
-          <h6><a class="post-link" href="/map/2017/06/03/hiking-map.html">Hiking Map</a></h6>
-          <span>
-            <p><p>I’m building modern digital map suitable for hiking in the Alps as the existing ones are lacking too many basic features that you usually need if you are outdoor in the mountains.</p>
+<p>```bash
+sudo apt-get update
+mkdir ~/nginx
+cd ~/nginx</p>
 
-</p>
-          </span>
-        </div>
-      </div>
-    </div>
-    
-    
+<p>wget https://www.openssl.org/source/openssl-1.0.2h.tar.gz
+wget http://nginx.org/download/nginx-1.11.2.tar.gz</p>
 
-    
-    <div class="four columns">
-      <div class="logo-container">
-        
-          <img src="/assets/images/icons/wwdc-hardware@2x.png"  class="logo"/>
-        
-        <div class="webui-popover-content">
-          <h6><a class="post-link" href="/wwdc/2017/05/30/wwdc-hardware-predictions.html">WWDC Hardware Predictions</a></h6>
-          <span>
-            <p><p>In less than a week <a href="https://www.apple.com/apple-events/june-2017/">Apple WWDC’s Keynote</a> will take place and they will unveil some new stuff to 5000 developers (myself included) plus a bunch of journalists.</p>
+<p>tar xzvf openssl-1.0.2h.tar.gz
+tar xzvf nginx-1.11.2.tar.gz</p>
 
-</p>
-          </span>
-        </div>
-      </div>
-    </div>
-    
-    
-      </div>
-      <div class="row">
-    
+<p>sudo apt-get -y install build-essential libpcre3 libpcre3-dev zlib1g-dev checkinstall
+sudo apt-get build-dep nginx
+```</p>
 
-    
-</div>
+<p>https://www.ssllabs.com/ssltest/analyze.html?d=macteo.it</p>
 
+  </div>
 
-  <nav role="navigation">
-    <ul class="cd-pagination no-space">
-    
-
-    
-      
-        <li><a class="current" href="#">1</a></li>
-      
-    
-      
-        <li><a href="/blog/page2/">2</a></li>
-      
-    
-      
-        <li><a href="/blog/page3/">3</a></li>
-      
-    
-
-    
-      <li class="button"><a href="/blog/page2/">Next</a></li>
-    
-    </ul>
-  </nav>
-
+</article>
 
     <div class="docs-section" id="contacts">
   <h4 class="docs-header footer">Contacts</h4>
@@ -256,4 +153,5 @@
 
 </script>
 </body>
+
 </html>

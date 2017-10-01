@@ -6,6 +6,7 @@ categories: files
 ---
 
 **Since the iPhone's advent in 2007 files started to die.**
+**With iOS 11 and the iPad Pro they started to be alive again.**
 
 File as representation of bits on a disk are obviously doing good and are stronger than ever, however the perception of what is a file or what it contains to the final and generic user is fading away. It's still important to digital content creators, but most people don't have to directly manipulate a single file on most days.
 
