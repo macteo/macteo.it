@@ -63,13 +63,13 @@
     <p>I use this little script to keep my mac tools updated and clean.
 It works if you have <a href="https://brew.sh">Homebrew</a> and ruby installed as standard user (I use <a href="http://rvm.io">rvm</a>).</p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code>brew update
+<p><code class="highlighter-rouge">sh
+brew update
 brew upgrade
 brew cleanup
 gem update
 gem cleanup
-</code></pre>
-</div>
+</code></p>
 
 <p>I know they’re just 5 commands, but I love to be up to date my two computers (an <a href="http://www.everymac.com/systems/apple/imac/specs/imac-core-i7-3.4-27-inch-aluminum-mid-2011-thunderbolt-specs.html">iMac</a> and a <a href="http://www.everymac.com/systems/apple/macbook/specs/macbook-core-m7-1.3-12-early-2016-specs.html">MacBook</a>), so it’s a convenient way to just merge them. I also decided to avoid using cron to run the script every day because I need to do it deliberately as the upgrade process can even break my workflow. It also includes the <code class="highlighter-rouge">cleanup</code> phase to free disk space removing outdated stuff.</p>
 
@@ -79,9 +79,9 @@ gem cleanup
 
 <p>If you feel really adventurous (the remote file can be changed at any time - use at your own risk) you can even execute it remotely.</p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -s https://macteo.it/g/update.sh | bash
-</code></pre>
-</div>
+<p><code class="highlighter-rouge">sh
+curl -s https://macteo.it/g/update.sh | bash
+</code></p>
 
   </div>
 

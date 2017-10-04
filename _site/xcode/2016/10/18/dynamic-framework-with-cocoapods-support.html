@@ -95,23 +95,23 @@ Check the <strong>Allow app extension API only</strong> if you plan to use your 
 
 <p>Open <strong>Terminal</strong> and move into the project folder, for example</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="nb">cd</span> ~/Documents/Projects/Awesome
-</code></pre>
-</div>
+<p><code class="highlighter-rouge">bash
+cd ~/Documents/Projects/Awesome
+</code></p>
 
 <p><img src="/assets/images/framework/009 - terminal_move_to_folder.jpg#center1000" alt="Framework" /></p>
 
 <p>Install <a href="http://cocoapods.org">CocoaPods</a> gem if you don’t have it already.</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="o">[</span>sudo] gem install cocoapods
-</code></pre>
-</div>
+<p><code class="highlighter-rouge">bash
+[sudo] gem install cocoapods
+</code></p>
 
 <p><img src="/assets/images/framework/010 - install_cocoapods.jpg#center1000" alt="Framework" /></p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>pod spec create Awesome
-</code></pre>
-</div>
+<p><code class="highlighter-rouge">bash
+pod spec create Awesome
+</code></p>
 
 <p><img src="/assets/images/framework/011 - create_podspec.jpg#center1000" alt="Framework" /></p>
 
@@ -129,28 +129,28 @@ Check the <strong>Allow app extension API only</strong> if you plan to use your 
 
 <p>Create a remote repository and add it the local copy</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git remote add origin git@github.com/macteo/Awesome.git
-</code></pre>
-</div>
+<p><code class="highlighter-rouge">bash
+git remote add origin git@github.com/macteo/Awesome.git
+</code></p>
 
 <p>Commit and push</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git push origin master
-</code></pre>
-</div>
+<p><code class="highlighter-rouge">bash
+git push origin master
+</code></p>
 
 <p><img src="/assets/images/framework/016 - commit_and_push.jpg#center1000" alt="Framework" /></p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git tag v0.1.0
+<p><code class="highlighter-rouge">bash
+git tag v0.1.0
 git push --tags
-</code></pre>
-</div>
+</code></p>
 
 <p><img src="/assets/images/framework/017 - add_tag.jpg#center1000" alt="Framework" /></p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>pod spec lint Awesome.podspec
-</code></pre>
-</div>
+<p><code class="highlighter-rouge">bash
+pod spec lint Awesome.podspec
+</code></p>
 
 <p><img src="/assets/images/framework/018 - lint.jpg#center1000" alt="Framework" /></p>
 
@@ -162,24 +162,24 @@ git push --tags
 
 <p><img src="/assets/images/framework/021 - create_sample_project_2.jpg#center1000" alt="Framework" /></p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="nb">cd </span>AwesomeExample
+<p><code class="highlighter-rouge">bash
+cd AwesomeExample
 pod init
-</code></pre>
-</div>
+</code></p>
 
 <p><img src="/assets/images/framework/022 - move_to_sample_project_and_init_pods.jpg#center1000" alt="Framework" /></p>
 
 <p>Edit podfile to include the previously defined podspec. We use relative path for the example project.</p>
 
-<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="n">pod</span> <span class="s1">'Awesome'</span><span class="p">,</span> <span class="ss">:path</span> <span class="o">=&gt;</span> <span class="s1">'../'</span>
-</code></pre>
-</div>
+<p><code class="highlighter-rouge">ruby
+pod 'Awesome', :path =&gt; '../'
+</code></p>
 
 <p><img src="/assets/images/framework/023 - edit_podfile.jpg#center1000" alt="Framework" /></p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>pod install
-</code></pre>
-</div>
+<p><code class="highlighter-rouge">bash
+pod install
+</code></p>
 
 <p><img src="/assets/images/framework/024 - pod_install.jpg#center1000" alt="Framework" /></p>
 
@@ -189,13 +189,13 @@ pod init
 
 <p>Build so the dependencies are prepared</p>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="kd">import</span> <span class="kt">Awesome</span>
-</code></pre>
-</div>
+<p><code class="highlighter-rouge">swift
+import Awesome
+</code></p>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="kt">AwesomeLogger</span><span class="p">()</span><span class="o">.</span><span class="nf">log</span><span class="p">(</span><span class="s">"Hello World"</span><span class="p">)</span>
-</code></pre>
-</div>
+<p><code class="highlighter-rouge">swift
+AwesomeLogger().log("Hello World")
+</code></p>
 
 <p><img src="/assets/images/framework/027 - final_result.jpg#center1000" alt="Framework" /></p>
 
@@ -205,13 +205,13 @@ pod init
 
 <p>Add sample project files, commit, push and tag.</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git add .
-git commit -m <span class="s2">"Added sample project"</span>
+<p><code class="highlighter-rouge">bash
+git add .
+git commit -m "Added sample project"
 git push origin master
 git tag v0.1.1
 git push --tags
-</code></pre>
-</div>
+</code></p>
 
 <p><img src="/assets/images/framework/029 - add_sample_project.jpg#center1000" alt="Framework" /></p>
 

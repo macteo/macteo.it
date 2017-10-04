@@ -1,3 +1,4 @@
+# systemctl stop jekyll-drafts.service
 bundle exec jekyll build
 git add .
 MESSAGE="$1"
@@ -8,3 +9,4 @@ fi
 git commit -m "$MESSAGE"
 git push origin master
 cp -R _site ../macteo.it
+# systemctl start jekyll-drafts.service

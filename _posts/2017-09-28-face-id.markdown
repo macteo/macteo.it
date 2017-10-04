@@ -21,3 +21,10 @@ You can download the Sketch file and png, svg and pdf versions from the link bel
 
 [Download the Face ID package](http://macteo.it/assets/data/faceid.zip).
 
+**Update**: Apple published a [new page](https://developer.apple.com/ios/update-apps-for-iphone-x/) dedicated to iPhone X support that clarify their position.
+
+> Verify your Touch ID code works for Face ID. If your app currently uses Touch ID, update text strings to refer to Face ID when running on iPhone X – for example, “Sign in with Face ID.”
+>
+> **Avoid using icons to represent Face ID and Touch ID**.
+
+So you should not use an icon to le users login with Touch ID or Face ID, but prefer a text button.
