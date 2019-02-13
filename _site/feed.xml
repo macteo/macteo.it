@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Matteo Gavagnin</title>
-    <description>Matteo Gavagnin&#39;s personal website
+    <description>Matteo Gavagnin's personal website
 </description>
-    <link>https://macteo.it/</link>
-    <atom:link href="https://macteo.it/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 04 Oct 2017 03:44:09 +0000</pubDate>
-    <lastBuildDate>Wed, 04 Oct 2017 03:44:09 +0000</lastBuildDate>
-    <generator>Jekyll v3.0.1</generator>
+    <link>http://0.0.0.0:4000/</link>
+    <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 13 Feb 2019 17:38:51 +0100</pubDate>
+    <lastBuildDate>Wed, 13 Feb 2019 17:38:51 +0100</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
     
       <item>
         <title>Face ID</title>
@@ -38,9 +38,9 @@
 
 &lt;p&gt;So you should not use an icon to le users login with Touch ID or Face ID, but prefer a text button.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 28 Sep 2017 18:55:00 +0000</pubDate>
-        <link>https://macteo.it/ios/2017/09/28/face-id.html</link>
-        <guid isPermaLink="true">https://macteo.it/ios/2017/09/28/face-id.html</guid>
+        <pubDate>Thu, 28 Sep 2017 20:55:00 +0200</pubDate>
+        <link>http://0.0.0.0:4000/ios/2017/09/28/face-id.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/ios/2017/09/28/face-id.html</guid>
         
         <category>iOS</category>
         
@@ -68,9 +68,9 @@
 &lt;p&gt;&lt;a href=&quot;http://macteo.it/assets/data/6colors.zip&quot;&gt;Download the wallpapers&lt;/a&gt;.&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 21 Sep 2017 02:15:00 +0000</pubDate>
-        <link>https://macteo.it/macos/2017/09/21/6-colors-wallpapers.html</link>
-        <guid isPermaLink="true">https://macteo.it/macos/2017/09/21/6-colors-wallpapers.html</guid>
+        <pubDate>Thu, 21 Sep 2017 04:15:00 +0200</pubDate>
+        <link>http://0.0.0.0:4000/macos/2017/09/21/6-colors-wallpapers.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/macos/2017/09/21/6-colors-wallpapers.html</guid>
         
         <category>macOS</category>
         
@@ -109,9 +109,9 @@
 
 &lt;p&gt;Let me know if you find any issue or have a suggestion.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 03 Sep 2017 16:36:00 +0000</pubDate>
-        <link>https://macteo.it/ios/2017/09/03/splitkit.html</link>
-        <guid isPermaLink="true">https://macteo.it/ios/2017/09/03/splitkit.html</guid>
+        <pubDate>Sun, 03 Sep 2017 18:36:00 +0200</pubDate>
+        <link>http://0.0.0.0:4000/ios/2017/09/03/splitkit.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/ios/2017/09/03/splitkit.html</guid>
         
         <category>ios</category>
         
@@ -137,9 +137,9 @@
 
 &lt;p&gt;&lt;a href=&quot;https://macteo.it&quot;&gt;Matteo Gavagnin&lt;/a&gt; is a husband and father of two sons that lives in Trento. He was born in Venice in 1983, just in time for the launch of the Macintosh 35 days later. He started tinkering with a Mac Plus since he was three and never stopped. He got a master degree in Environmental Engineering, but during the college he also started a career in software development kicked by the release of the iPhone in 2007. After several adventures he’s leading the mobile development team in DIMENSION since 2014. He had the luck to attend WWDC five times.&lt;/p&gt;
 </description>
-        <pubDate>Sat, 22 Jul 2017 09:00:00 +0000</pubDate>
-        <link>https://macteo.it/speech/2017/07/22/speck-and-tech.html</link>
-        <guid isPermaLink="true">https://macteo.it/speech/2017/07/22/speck-and-tech.html</guid>
+        <pubDate>Sat, 22 Jul 2017 11:00:00 +0200</pubDate>
+        <link>http://0.0.0.0:4000/speech/2017/07/22/speck-and-tech.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/speech/2017/07/22/speck-and-tech.html</guid>
         
         <category>speech</category>
         
@@ -248,9 +248,9 @@ I’m releasing everything as open source on &lt;a href=&quot;http://github.com/
 
 &lt;p&gt;In the second part of this post (still unpublished) I’m going to enumerate different tools and technologies I’m using to render and serve the map.&lt;/p&gt;
 </description>
-        <pubDate>Sat, 03 Jun 2017 14:12:00 +0000</pubDate>
-        <link>https://macteo.it/map/2017/06/03/hiking-map.html</link>
-        <guid isPermaLink="true">https://macteo.it/map/2017/06/03/hiking-map.html</guid>
+        <pubDate>Sat, 03 Jun 2017 16:12:00 +0200</pubDate>
+        <link>http://0.0.0.0:4000/map/2017/06/03/hiking-map.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/map/2017/06/03/hiking-map.html</guid>
         
         <category>map</category>
         
@@ -258,123 +258,6 @@ I’m releasing everything as open source on &lt;a href=&quot;http://github.com/
         
         
         <category>map</category>
-        
-      </item>
-    
-      <item>
-        <title>Hiking Maps</title>
-        <description>&lt;p&gt;I live in Trento, a beautiful city in northern Italy surrounded by the Alps and I really like hiking, skiing, climbing, camping and broadly being into the wild. What I also like are maps, new and old, digital and made of paper. My two thesis written while obtaining my degrees in Environmental Engineering were both centered on maps and especially GIS applications.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://openstreetmap.org&quot;&gt;Open Street Map&lt;/a&gt; represents the state of the art of collaboration designing great maps and &lt;a href=&quot;https://www.mapbox.com&quot;&gt;Mapbox&lt;/a&gt; is the leading company contributing to the project development with a thriving set of modern tools, openly released to the community with the permissive MIT licenses.&lt;/p&gt;
-
-&lt;h5 id=&quot;just-to-enumerate-some-open-source-contributions&quot;&gt;Just to enumerate some open source contributions:&lt;/h5&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.mapbox.com/blog/id-editor-sneak-peek/&quot;&gt;iD Editor&lt;/a&gt; founded by &lt;a href=&quot;http://mapbox.com/blog/knight-invests-openstreetmap/&quot;&gt;The Knight Foundation&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/mapbox/mapbox-gl-js&quot;&gt;Mapbox GL js&lt;/a&gt; Interactive, thoroughly customisable maps in the browser, powered by vector tiles and WebGL.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/mapbox/mapbox-gl-native&quot;&gt;Mapbox GL native&lt;/a&gt; Interactive, thoroughly customisable maps in native Android, iOS, macOS, Node.js, and Qt applications, powered by vector tiles and OpenGL.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/mapbox/mapbox-navigation-ios&quot;&gt;Mapbox Navigation iOS&lt;/a&gt; Turn-by-turn navigation logic and UI in Swift or Objective-C on iOS.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&quot;mapboxs-commercial-products-are-also-thriving&quot;&gt;Mapbox’s commercial products are also thriving:&lt;/h5&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.mapbox.com/maps/&quot;&gt;Maps&lt;/a&gt; Mapbox is built on vector maps, an advanced approach to mapping where data is delivered to the device and precisely rendered in real-time. The result is smooth, fast maps.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.mapbox.com/directions/&quot;&gt;Directions&lt;/a&gt; Smart turn-by-turn routing based on crowdsourced real-time traffic.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.mapbox.com/mapbox-studio/&quot;&gt;Mapbox Studio&lt;/a&gt; Design custom maps that fit seamlessly in your application.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.mapbox.com/geocoding/&quot;&gt;Geocoding&lt;/a&gt; Turn your coordinates into addresses or your addresses into coordinates.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.mapbox.com/maps/satellite/&quot;&gt;Satellite&lt;/a&gt; Full global base map that is perfect as a blank canvas or an overlay for your own data.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.mapbox.com/developers/&quot;&gt;Developer Tools&lt;/a&gt; native SDKs and remote APIs like Directions, Map Matching, Distance and many more.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;digi&quot;&gt;Digi&lt;/h4&gt;
-&lt;p&gt;During the last few months I’ve analysed the panorama of digital hiking maps available for my region (Trentino - Alto Adige) in order to replace printed paper ones, carefully designed to help hikers.&lt;/p&gt;
-
-&lt;h5 id=&quot;those-were-my-base-requirements&quot;&gt;Those were my base requirements:&lt;/h5&gt;
-&lt;ul&gt;
-  &lt;li&gt;Mobile first: available at least on iOS (as it’s the platform I use, your mileage may vary), better if also on Android.&lt;/li&gt;
-  &lt;li&gt;Offline: I should be able to go for an hike with my phone with the map cached for offline use to use if for the whole trip even without internet connection.&lt;/li&gt;
-  &lt;li&gt;Retina images&lt;/li&gt;
-  &lt;li&gt;Position: should be able to overlay my current GPS position.&lt;/li&gt;
-  &lt;li&gt;Minimal memory footprint.&lt;/li&gt;
-  &lt;li&gt;Beautiful: I want it to look great!&lt;/li&gt;
-  &lt;li&gt;POI: alpine huts, bivouacs, shelters, inns, hotels, belied paths, peak names and altitude, city names, river names, hospitals, paths numbers, terrain coverage, paths scale, camping sites, information signs, parkings, scale, no vehicle admitted signs, rivers, lakes, waterfalls, springs, fountains, drinking trough, wood, altitude, houses, huts, ruins, bus stops, funiculars, cabin lifts, chair-lifts, ski lifts, passes and saddles, hospitals.&lt;/li&gt;
-  &lt;li&gt;Contours: view elevation lines.&lt;/li&gt;
-  &lt;li&gt;Hill shades: view mountain profiles to better perceive your surroundings.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&quot;and-few-bonus-points&quot;&gt;And few bonus points:&lt;/h5&gt;
-&lt;ul&gt;
-  &lt;li&gt;Record my route and save it for later.&lt;/li&gt;
-  &lt;li&gt;Load previously recorder routes on top of base map.&lt;/li&gt;
-  &lt;li&gt;Select a path and see the altimetry chart before going along it.&lt;/li&gt;
-  &lt;li&gt;Search for POIs.&lt;/li&gt;
-  &lt;li&gt;Use vector tiles to limit data transfer and improve readability.&lt;/li&gt;
-  &lt;li&gt;Based on Open Street Map data.&lt;/li&gt;
-  &lt;li&gt;Continuously updated.&lt;/li&gt;
-  &lt;li&gt;Optional 3D view with mountains elevation.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;For reference this is an extract of a plain old paper map designed and sold by Tabacco - Sheet 015 &lt;em&gt;Marmolada - Pelmo - Civetta - Moiazza&lt;/em&gt; scale 1:25.000 when printed (used without permission from unknown source - few files stitched together), that I intend to use as reference.&lt;/p&gt;
-
-&lt;p&gt;– Image&lt;/p&gt;
-
-&lt;p&gt;Obviously this paper map lacks many of the basic features I’m looking for in a digital map, however it serves hikers really well.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/hiking-map/Tabacco~015.jpg#center100s&quot; alt=&quot;Tabacco Reference image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The very same area, with updated informations, is available also through the &lt;a href=&quot;http://www.tabaccomapp.it&quot;&gt;TABACCOmapp&lt;/a&gt; with a 1,99€ in-app purchase.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/assets/images/hiking-map/TABACCOmapp_s.gif#center100s&quot;&gt;TABACCOmapp&lt;/a&gt;&lt;/p&gt;
-
-&lt;h5 id=&quot;mapbox-outdoor&quot;&gt;Mapbox Outdoor&lt;/h5&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/hiking-map/mapbox-outdoor.png#center100s&quot; alt=&quot;Mapbox outdoor&quot; /&gt;
-&lt;img src=&quot;/assets/images/hiking-map/mapbox-outdoor-zoom.png#center100s&quot; alt=&quot;Mapbox outdoor zoom&quot; /&gt;&lt;/p&gt;
-
-&lt;h5 id=&quot;open-map-tiles&quot;&gt;Open Map Tiles&lt;/h5&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/hiking-map/openmaptiles.png#center100s&quot; alt=&quot;OpenMapTiles outdoor&quot; /&gt;
-&lt;img src=&quot;/assets/images/hiking-map/openmaptiles-zoom.png#center100s&quot; alt=&quot;OpenMapTiles outdoor zoom&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;what-makes-an-outdoor-map-great&quot;&gt;What makes an outdoor map great?&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;POIs:&lt;/li&gt;
-  &lt;li&gt;Contour lines.&lt;/li&gt;
-  &lt;li&gt;Paths with classification and numbers.&lt;/li&gt;
-  &lt;li&gt;Roads.&lt;/li&gt;
-  &lt;li&gt;Rivers, lakes, sea with names.&lt;/li&gt;
-  &lt;li&gt;Buildings.&lt;/li&gt;
-  &lt;li&gt;Mountains with cliffs.&lt;/li&gt;
-  &lt;li&gt;Aerialways.&lt;/li&gt;
-  &lt;li&gt;Ice.&lt;/li&gt;
-  &lt;li&gt;Via ferrata.&lt;/li&gt;
-  &lt;li&gt;Saddles and passi.&lt;/li&gt;
-  &lt;li&gt;Peaks with altitude.&lt;/li&gt;
-  &lt;li&gt;Punti panoramici.&lt;/li&gt;
-  &lt;li&gt;Car Parks.&lt;/li&gt;
-  &lt;li&gt;Divieti di accesso per le auto.&lt;/li&gt;
-  &lt;li&gt;Alping Hut, ricoveri.&lt;/li&gt;
-  &lt;li&gt;Springs, fountains.&lt;/li&gt;
-  &lt;li&gt;Hillshades.&lt;/li&gt;
-  &lt;li&gt;Land cover (grass, forests, rocks, gravel, barren land…)&lt;/li&gt;
-  &lt;li&gt;Piste, ski trail&lt;/li&gt;
-  &lt;li&gt;Toponyms&lt;/li&gt;
-  &lt;li&gt;Boundaries.&lt;/li&gt;
-  &lt;li&gt;Open trasport stops (bus)&lt;/li&gt;
-  &lt;li&gt;Campings&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Fri, 02 Jun 2017 05:00:00 +0000</pubDate>
-        <link>https://macteo.it/map/mapbox/hike/2017/06/02/hiking-maps.html</link>
-        <guid isPermaLink="true">https://macteo.it/map/mapbox/hike/2017/06/02/hiking-maps.html</guid>
-        
-        <category>map</category>
-        
-        
-        <category>map</category>
-        
-        <category>mapbox</category>
-        
-        <category>hike</category>
         
       </item>
     
@@ -402,14 +285,14 @@ You can choose one ore more options and with a single tap cast your vote.&lt;/p&
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;Pollover is a side project, not much more than an experiment at the moment to quickly create Polls and collect opinions. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Pollover is a side project, not much more than an experiment at the moment to quickly create Polls and collect opinions. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Tue, 30 May 2017 19:12:00 +0000</pubDate>
-        <link>https://macteo.it/wwdc/2017/05/30/wwdc-hardware-predictions.html</link>
-        <guid isPermaLink="true">https://macteo.it/wwdc/2017/05/30/wwdc-hardware-predictions.html</guid>
+        <pubDate>Tue, 30 May 2017 21:12:00 +0200</pubDate>
+        <link>http://0.0.0.0:4000/wwdc/2017/05/30/wwdc-hardware-predictions.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/wwdc/2017/05/30/wwdc-hardware-predictions.html</guid>
         
         <category>wwdc</category>
         
@@ -601,14 +484,14 @@ You can choose one ore more options and with a single tap cast your vote.&lt;/p&
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;As I’m currently abroad I’ve realised that I’ll travel in 6 different countries in 15 days like a pro: Italy, USA, Germany, Canada, Slovenia and Croatia. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;As I’m currently abroad I’ve realised that I’ll travel in 6 different countries in 15 days like a pro: Italy, USA, Germany, Canada, Slovenia and Croatia. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Tue, 23 May 2017 11:48:00 +0000</pubDate>
-        <link>https://macteo.it/wwdc/2017/05/23/wwdc-plan.html</link>
-        <guid isPermaLink="true">https://macteo.it/wwdc/2017/05/23/wwdc-plan.html</guid>
+        <pubDate>Tue, 23 May 2017 13:48:00 +0200</pubDate>
+        <link>http://0.0.0.0:4000/wwdc/2017/05/23/wwdc-plan.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/wwdc/2017/05/23/wwdc-plan.html</guid>
         
         <category>wwdc</category>
         
@@ -656,10 +539,12 @@ You can choose one ore more options and with a single tap cast your vote.&lt;/p&
 
 &lt;p&gt;Unfortunately I wasn’t able to render the picture I desired: a single indicator (sum of many smaller ones) to tell me how much productive I’ve been in a particular day, that can be plotted in a single comprehensive chart.&lt;/p&gt;
 
-&lt;p&gt;Those are some of issues I faced:
-* Kibana is a great tool specifically designed for time series. When the information is not clearly representative of just a single moment in time, it becomes useless. It has some charts to choose from, but are not very broad nor easily customizable.
-* Automatic tracking for some stuff is impossible due to the absence of open APIs.
-* Manual tracking is tedious, prone to errors and suffers deeply of rapid fatigue.&lt;/p&gt;
+&lt;p&gt;Those are some of issues I faced:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Kibana is a great tool specifically designed for time series. When the information is not clearly representative of just a single moment in time, it becomes useless. It has some charts to choose from, but are not very broad nor easily customizable.&lt;/li&gt;
+  &lt;li&gt;Automatic tracking for some stuff is impossible due to the absence of open APIs.&lt;/li&gt;
+  &lt;li&gt;Manual tracking is tedious, prone to errors and suffers deeply of rapid fatigue.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;At the moment I’m stuck, I don’t have this proxy and I’m really bored to track things manually so I stopped doing it.&lt;/p&gt;
 
@@ -668,14 +553,14 @@ You can choose one ore more options and with a single tap cast your vote.&lt;/p&
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;I own an &lt;a href=&quot;https://www.apple.com/apple-watch-series-2/&quot;&gt;Apple Watch&lt;/a&gt; series 2 that includes a hearth rate sensor, accelerometer, gyroscope and the GPS. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt; &lt;a href=&quot;#fnref:1:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; &lt;a href=&quot;#fnref:1:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt; &lt;a href=&quot;#fnref:1:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt; &lt;a href=&quot;#fnref:1:4&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;I own an &lt;a href=&quot;https://www.apple.com/apple-watch-series-2/&quot;&gt;Apple Watch&lt;/a&gt; series 2 that includes a hearth rate sensor, accelerometer, gyroscope and the GPS. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt; &lt;a href=&quot;#fnref:1:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; &lt;a href=&quot;#fnref:1:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt; &lt;a href=&quot;#fnref:1:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt; &lt;a href=&quot;#fnref:1:4&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Sat, 13 May 2017 05:00:00 +0000</pubDate>
-        <link>https://macteo.it/data/2017/05/13/quantified-self.html</link>
-        <guid isPermaLink="true">https://macteo.it/data/2017/05/13/quantified-self.html</guid>
+        <pubDate>Sat, 13 May 2017 07:00:00 +0200</pubDate>
+        <link>http://0.0.0.0:4000/data/2017/05/13/quantified-self.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/data/2017/05/13/quantified-self.html</guid>
         
         <category>quantified</category>
         
@@ -687,35 +572,109 @@ You can choose one ore more options and with a single tap cast your vote.&lt;/p&
       </item>
     
       <item>
-        <title>Mac Setup</title>
-        <description>&lt;h5 id=&quot;the-definitive-guide-on-the-perfect-macos-setup-imho&quot;&gt;The definitive guide on the perfect macOS setup (IMHO)&lt;/h5&gt;
+        <title>Bézier Curves</title>
+        <description>&lt;p&gt;Few weeks ago I had the pleasure to prepare and host a lesson on Bézier Curves during the &lt;em&gt;Analisi matematica con elementi di algebra&lt;/em&gt; course, part of the bachelor degree &lt;a href=&quot;http://offertaformativa.unitn.it/it/l/interfacce-e-tecnologie-della-comunicazione&quot;&gt;Interfacce e Tecnologie della Comunicazione&lt;/a&gt; taking place in &lt;a href=&quot;https://it.wikipedia.org/wiki/Rovereto&quot;&gt;Rovereto&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Last week I had to reinstall macOS from scratch and those are the settings I ticked and the app installed. Obviously your mileage may vary.&lt;/p&gt;
+&lt;p&gt;I’m listing here some existing material that inspired me, and a Swift Playground I’ve prepared for the lesson.&lt;/p&gt;
 
-&lt;h5 id=&quot;system-preferences&quot;&gt;System preferences&lt;/h5&gt;
+&lt;h5 id=&quot;inspiring-sources&quot;&gt;Inspiring sources&lt;/h5&gt;
 
-&lt;h6 id=&quot;volume-feedback&quot;&gt;Volume feedback&lt;/h6&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://vimeo.com/106757336&quot;&gt;Bézier Curves - Under the Hood&lt;/a&gt; video and related &lt;a href=&quot;https://medium.com/sketch-app/mastering-the-bezier-curve-in-sketch-4da8fdf0dbbb#.rhuvgwcq0&quot;&gt;article&lt;/a&gt; by &lt;a href=&quot;https://twitter.com/pnowelldesign&quot;&gt;Peter Nowell&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Zkx1aKv2z8o&quot;&gt;Making things with maths&lt;/a&gt; by &lt;a href=&quot;https://acko.net/about/&quot;&gt;Steven Wittens&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Tick &lt;em&gt;Play feedback when volume is changed&lt;/em&gt; to restore the beloved sound played on volume change.
-&lt;img src=&quot;/assets/images/mac-setup/audio-feedback.png#center100s&quot; alt=&quot;Audio Feedback&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Thanks!&lt;/p&gt;
 
-&lt;h5 id=&quot;finder-preferences&quot;&gt;Finder preferences&lt;/h5&gt;
+&lt;h5 id=&quot;swift-playground&quot;&gt;Swift Playground&lt;/h5&gt;
 
-&lt;h5 id=&quot;installed-apps&quot;&gt;Installed apps&lt;/h5&gt;
+&lt;p&gt;Two different versions of the same playground are available, one compatible with the &lt;a href=&quot;http://www.apple.com/swift/playgrounds/&quot;&gt;Swift Playground&lt;/a&gt; app for iPad, the other with &lt;a href=&quot;https://developer.apple.com/xcode/&quot;&gt;Xcode&lt;/a&gt; on macOS.&lt;/p&gt;
 
-&lt;h5 id=&quot;command-line-tools&quot;&gt;Command line tools&lt;/h5&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/macteo/bezier/raw/develop/Bézier.playground.zip&quot;&gt;Download the macOSversion&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/macteo/bezier/raw/develop/Bézier.playgroundbook.zip&quot;&gt;Download the iPad version&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h5 id=&quot;miscellaneous&quot;&gt;Miscellaneous&lt;/h5&gt;
-
+&lt;blockquote&gt;
+  &lt;p&gt;Disclaimer: the hidden code is really rough, I plan to refactor it, but time is definitely a limiting factor.&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
-        <pubDate>Sun, 23 Apr 2017 05:00:00 +0000</pubDate>
-        <link>https://macteo.it/mac/2017/04/23/mac-setup.html</link>
-        <guid isPermaLink="true">https://macteo.it/mac/2017/04/23/mac-setup.html</guid>
+        <pubDate>Sun, 04 Dec 2016 08:27:00 +0100</pubDate>
+        <link>http://0.0.0.0:4000/playground/2016/12/04/bezier-curves.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/playground/2016/12/04/bezier-curves.html</guid>
         
-        <category>mac</category>
+        <category>bezier</category>
+        
+        <category>curves</category>
         
         
-        <category>mac</category>
+        <category>playground</category>
+        
+      </item>
+    
+      <item>
+        <title>Magic Keyboard 2</title>
+        <description>&lt;p&gt;Apple all but confirmed that the next MacBook Pro models will be unveiled tomorrow and will include support for Touch ID and a custom bar is going to replace the current top row of keys in the embedded keyboard.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/magic-keyboard/ApplePaySplashSA.png#center100s&quot; alt=&quot;Pay MacBook Pro&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The above image is already on your Mac if you installed the latest macOS Sierra 10.12.1 update. Check for yourself looking at&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/System/Library/PrivateFrameworks/PassKitUI.framework/Versions/A/Resources/ApplePaySplashSA.tiff
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Besides the lack of a visible physical power button and of the &lt;code class=&quot;highlighter-rouge&quot;&gt;Esc&lt;/code&gt; key, &lt;a href=&quot;http://twitter.com/stroughtonsmith/status/790977924132433920&quot;&gt;Steve Troughton Smith suggested&lt;/a&gt; that developers, in order to populate the &lt;em&gt;Magic Bar&lt;/em&gt; with custom controls, will need to create extensions much like the ones used in watchOS 1.&lt;/p&gt;
+
+&lt;p&gt;This opinion is corroborated by the fact that since august a new target named &lt;code class=&quot;highlighter-rouge&quot;&gt;os_bridge&lt;/code&gt; is available as part of the Xcode toolchain.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/magic-keyboard/os_bridge.png#center100s&quot; alt=&quot;target_os_bridge&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In order to support Touch ID - that requires the presence of a Secure Enclave available only as part of the custom &lt;em&gt;A&lt;/em&gt; series custom &lt;em&gt;arm&lt;/em&gt; SoC used on mobile devices - on Macs that are running on &lt;em&gt;x86-64&lt;/em&gt; Intel processors, Apple is going to embed another custom arm SoC inside the Macs. Probably a new letter will be used to describe those chips like the &lt;a href=&quot;http://www.apple.com/apple-watch-series-2/&quot;&gt;&lt;em&gt;S&lt;/em&gt;&lt;/a&gt; serie created for the ᴡᴀᴛᴄʜ or the &lt;a href=&quot;http://www.apple.com/airpods/&quot;&gt;&lt;em&gt;W&lt;/em&gt;&lt;/a&gt; serie for headphones. I’m going to bet my $1 to &lt;em&gt;E1&lt;/em&gt;  - Embedded 1.&lt;/p&gt;
+
+&lt;h5 id=&quot;magic-keyboard-2&quot;&gt;Magic Keyboard 2&lt;/h5&gt;
+
+&lt;p&gt;All those speculations come nicely together also if Apple is going to upgrade the Magic Keyboard replacing the top row with a customizable display like the one rendered below. This device will enable Touch ID support also on iMac, Mac Pro, Mac mini and Apple TV devices..&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/magic-keyboard/magic-keyboard-2.png#center100s&quot; alt=&quot;Pay MacBook Pro&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;All the same principles will apply nicely:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Custom E1 SoC.&lt;/li&gt;
+  &lt;li&gt;Touch ID with secure enclave.&lt;/li&gt;
+  &lt;li&gt;Extensions are preloaded as happens on watchOS (without too much RAM and battery constraints).&lt;/li&gt;
+  &lt;li&gt;All the logic will run on the extension directly on the keyboard itself and only equivalent &lt;em&gt;keystrokes&lt;/em&gt; will be sent back to the Mac to keep low latency.&lt;/li&gt;
+  &lt;li&gt;The base interface will be preloaded in RAM on the keyboard to speed up the launch.&lt;/li&gt;
+  &lt;li&gt;Authentication and Security will be managed directly on the Magic Keyboard, but passwords will stay encrypted on the paired Mac keychain.&lt;/li&gt;
+  &lt;li&gt;It will also work as external keyboard for iPhone, iPad, Apple TV devices.&lt;/li&gt;
+  &lt;li&gt;Works with Bluetooth and (already) has a Lightning port to charge and eventually communicate.&lt;/li&gt;
+  &lt;li&gt;Requires macOS Sierra 10.12.1, iOS 10.1 or tvOS 10.0.1.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now the really bold prediction: the price will stay the same as the original Magic Keyboard: $99. Apple has already increased the price by $30 last year.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 26 Oct 2016 11:57:00 +0200</pubDate>
+        <link>http://0.0.0.0:4000/apple/2016/10/26/magic-keyboard-2-with-Touch-ID.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/apple/2016/10/26/magic-keyboard-2-with-Touch-ID.html</guid>
+        
+        <category>apple</category>
+        
+        <category>magic</category>
+        
+        <category>keyboard</category>
+        
+        <category>TouchID</category>
+        
+        
+        <category>apple</category>
         
       </item>
     

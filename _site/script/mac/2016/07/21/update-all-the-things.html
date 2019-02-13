@@ -8,9 +8,9 @@
 <head>
   <meta charset="utf-8">
   <title>Update all the things</title>
-  <link rel="canonical" href="https://macteo.it/script/mac/2016/07/21/update-all-the-things.html">
-  <link rel="alternate" title="Matteo Gavagnin" type="application/rss+xml" href="https://macteo.it/feed.xml" />
-  <link rel="alternate" title="Matteo Gavagnin" type="application/json" href="https://macteo.it/feed.json" />
+  <link rel="canonical" href="http://0.0.0.0:4000/script/mac/2016/07/21/update-all-the-things.html">
+  <link rel="alternate" title="Matteo Gavagnin" type="application/rss+xml" href="http://0.0.0.0:4000/feed.xml" />
+  <link rel="alternate" title="Matteo Gavagnin" type="application/json" href="http://0.0.0.0:4000/feed.json" />
   <meta name="description" content="Matteo Gavagnin's personal website
 ">
   <meta name="author" content="Matteo Gavagnin">
@@ -56,20 +56,19 @@
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline" align="center">Update all the things</h1>
-    <p class="post-meta"><time datetime="2016-07-21T10:04:00+00:00" itemprop="datePublished">Jul 21, 2016</time></p>
+    <p class="post-meta"><time datetime="2016-07-21T12:04:00+02:00" itemprop="datePublished">Jul 21, 2016</time></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
     <p>I use this little script to keep my mac tools updated and clean.
 It works if you have <a href="https://brew.sh">Homebrew</a> and ruby installed as standard user (I use <a href="http://rvm.io">rvm</a>).</p>
 
-<p><code class="highlighter-rouge">sh
-brew update
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew update
 brew upgrade
 brew cleanup
 gem update
 gem cleanup
-</code></p>
+</code></pre></div></div>
 
 <p>I know they’re just 5 commands, but I love to be up to date my two computers (an <a href="http://www.everymac.com/systems/apple/imac/specs/imac-core-i7-3.4-27-inch-aluminum-mid-2011-thunderbolt-specs.html">iMac</a> and a <a href="http://www.everymac.com/systems/apple/macbook/specs/macbook-core-m7-1.3-12-early-2016-specs.html">MacBook</a>), so it’s a convenient way to just merge them. I also decided to avoid using cron to run the script every day because I need to do it deliberately as the upgrade process can even break my workflow. It also includes the <code class="highlighter-rouge">cleanup</code> phase to free disk space removing outdated stuff.</p>
 
@@ -79,9 +78,8 @@ gem cleanup
 
 <p>If you feel really adventurous (the remote file can be changed at any time - use at your own risk) you can even execute it remotely.</p>
 
-<p><code class="highlighter-rouge">sh
-curl -s https://macteo.it/g/update.sh | bash
-</code></p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-s</span> https://macteo.it/g/update.sh | bash
+</code></pre></div></div>
 
   </div>
 
