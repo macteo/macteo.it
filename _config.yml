@@ -18,7 +18,7 @@ author: Matteo Gavagnin
 # Build settings
 markdown: kramdown
 paginate: 6
-gems:
+plugins:
   - jekyll-paginate
   # - jekyll-lunr-js-search
 paginate_path: /blog/page:num/

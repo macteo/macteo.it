@@ -2,7 +2,7 @@
 layout: post
 title:  "Education"
 date:  2019-02-19T13:56:05+01:00
-categories:italy education
+categories: italy education
 image:
 tags: italy education
 ---
