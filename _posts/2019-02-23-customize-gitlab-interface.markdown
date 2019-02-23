@@ -2,7 +2,7 @@
 layout: post
 title:  "Customize GitLab interface"
 date:  2019-02-23T09:14:20+01:00
-categories: gitlab js css
+categories: 
 image: gitlab.png
 tags: gitlab js css
 ---
