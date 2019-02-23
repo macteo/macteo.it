@@ -7,11 +7,17 @@ image: gitlab.png
 tags: gitlab js css
 ---
 
+![gitlab](/assets/images/gitlab.png#center-max-120)
+
 I love [GitLab](https://gitlab.org), I use it daily [@Dimension](https://dimension.it) and I even have an omnibus instance on a NUC @home for my personal projects and scripts.
 
 However the lack of interface personalization is driving me crazy.
 
-For instance our teams are adopting Kanban to optimize the process and we heavily rely on Boards for issue management. One of the key principles of Kanban is called **visualize** and we would strongly like to customize cards background to immediately recognize different kind of issues between *features*, *bugs* and generic *tasks*. Unfortunately and understandably GitLab doesn't provide a way to customize that as it would be difficult to generalize, so we came up with a workaround involving custom made browser plugins (Safari, Chrome and Firefox) that injects javascript and CSS in the board pages. Turns out this approach has many issues:
+For instance our teams are adopting Kanban to optimize the process and we heavily rely on [boards](https://about.gitlab.com/product/issueboard/) for issue management. One of the key principles of Kanban is called **visualize** and we would strongly like to customize cards background to immediately recognize different kind of issues between *features*, *bugs* and generic *tasks*.
+
+![gitlab-board-white](/assets/images/gitlab/board-white.png#center100r)
+
+Unfortunately and understandably GitLab doesn't provide a way to customize that as it would be difficult to generalize, so we came up with a workaround involving custom made browser plugins (Safari, Chrome and Firefox) that injects javascript and CSS in the board pages. Turns out this approach has many issues:
 
 - Hard to maintain: each time a new feature is introduced, every plugin should be updated and everybody needs to download it.
 - Mobile browsers don't support plugins, so the visualization is inconsistent between platforms.
@@ -32,7 +38,7 @@ There are several options, we choose one but you are free to follow other paths.
 2. Disable the features you don't need and ensure that everyone has access in file visualization.
 3. Leave the the `master` branch protected, so only members with at least the *maintainer* privileges can push on that branch. This is paramount to avoid malware javascript injection by unauthorized users.
 
-![gitlab-project-permissions](https://macteo.it/assets/images/gitlab-project-permissions.jpeg#center400)
+![gitlab-project-permissions](/assets/images/gitlab-project-permissions.jpeg#center400)
 
 4. Create a *custom.css* file and *custom.js* file inside that repository. Those files will be injected on every GitLab page. The external paths will be something like `/public-group/gitlab-custom-ui/raw/master/custom.js`. Replace `public-group` with the name of your group and `gitlab-custom-ui` with the slug of the project, or just copy the proper raw path.
 
@@ -47,7 +53,7 @@ So we installed another nginx instance, adjusted the [`gitlab.rb`](https://docs.
 Open the [`gitlab.rb`](https://docs.gitlab.com/omnibus/settings/configuration.html) file and be sure that the listening port is set to something different than `80` if you plan to install the other nginx instance on the same machine. In this case we set to it `8088` and disable https listening as the certificate management is demanded to the other nginx instance.
 
 ```ruby
-nginx['listen_port'] = 8088                                                                                                                                   
+nginx['listen_port'] = 8088
 nginx['listen_https'] = false
 nginx['redirect_http_to_https'] = false
 ```
@@ -173,6 +179,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
 ```
 
 This is just a suggestion, the javascript can be surely optimized and with this approach you can add more features.
+
+### Final board appearance
+
+![gitlab-board-colored](/assets/images/gitlab/board-colored.png#center100r)
 
 If the solution in generalized enough you can even try propose merge it in the GitLab source code so everyone can benefit.
 
