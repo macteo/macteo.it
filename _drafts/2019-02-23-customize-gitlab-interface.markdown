@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "customize-gitlab-interface"
+title:  "Customize GitLab interface"
 date:  2019-02-23T09:14:20+01:00
-categories:gitlab js css
+categories: gitlab js css
 image: gitlab.png
 tags: gitlab js css
 ---
@@ -23,7 +23,7 @@ This is what we ended up implementing, but beware that there are security consid
 
 With this approach we are indeed able to solve every issue we accused using client side browser plugins.
 
-### Custom javascript and CSS
+### Custom Javascript and CSS
 
 All we need is some place to host a CSS file an one or more javascript documents.
 There are several options, we choose one but you are free to follow other paths.
@@ -32,7 +32,7 @@ There are several options, we choose one but you are free to follow other paths.
 2. Disable the features you don't need and ensure that everyone has access in file visualization.
 3. Leave the the `master` branch protected, so only members with at least the *maintainer* privileges can push on that branch. This is paramount to avoid malware javascript injection by unauthorized users.
 
-![gitlab-project-permissions](https://macteo.it/assets/images/gitlab-project-permissions.jpeg)
+![gitlab-project-permissions](https://macteo.it/assets/images/gitlab-project-permissions.jpeg#center400)
 
 4. Create a *custom.css* file and *custom.js* file inside that repository. Those files will be injected on every GitLab page. The external paths will be something like `/public-group/gitlab-custom-ui/raw/master/custom.js`. Replace `public-group` with the name of your group and `gitlab-custom-ui` with the slug of the project, or just copy the proper raw path.
 
@@ -99,7 +99,7 @@ server {
     proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
     proxy_set_header   X-Forwarded-Host $server_name;
     proxy_set_header   X-Forwarded-Proto   https;
-    
+
     # Overriding the mime type of the raw javascript so it can be executed.
     # This is necessary 
     if ($request_uri ~* /public-group/gitlab-custom-ui/raw/master/custom.js$) {
