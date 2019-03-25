@@ -3,7 +3,7 @@ layout: post
 title: FaceTime here we go again
 date:  2019-03-25T21:57:36+01:00
 categories: 
-image: https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/FaceTime_App.svg/1200px-FaceTime_App.svg.png
+image: /assets/images/facetime.png
 tags: FaceTime bug Apple iOS
 excerpt_separator: <!--more-->
 link: https://support.apple.com/en-us/HT209599
