@@ -55,8 +55,16 @@
 
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline" align="center">Magic Keyboard 2</h1>
-    <p class="post-meta"><time datetime="2016-10-26T11:57:00+02:00" itemprop="datePublished">Oct 26, 2016</time></p>
+    
+    <h1 class="post-title" itemprop="name headline">Magic Keyboard 2</h1>
+    
+    <p class="post-meta">
+      <time
+        datetime="2016-10-26T11:57:00+02:00"
+        itemprop="datePublished"
+        >Oct 26, 2016</time
+      >
+    </p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
@@ -66,16 +74,18 @@
 
 <p>The above image is already on your Mac if you installed the latest macOS Sierra 10.12.1 update. Check for yourself looking at</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/System/Library/PrivateFrameworks/PassKitUI.framework/Versions/A/Resources/ApplePaySplashSA.tiff
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/System/Library/PrivateFrameworks/PassKitUI.framework/Versions/A/Resources/ApplePaySplashSA.tiff
 </code></pre></div></div>
 
 <p>Besides the lack of a visible physical power button and of the <code class="highlighter-rouge">Esc</code> key, <a href="http://twitter.com/stroughtonsmith/status/790977924132433920">Steve Troughton Smith suggested</a> that developers, in order to populate the <em>Magic Bar</em> with custom controls, will need to create extensions much like the ones used in watchOS 1.</p>
+
+<!--more-->
 
 <p>This opinion is corroborated by the fact that since august a new target named <code class="highlighter-rouge">os_bridge</code> is available as part of the Xcode toolchain.</p>
 
 <p><img src="/assets/images/magic-keyboard/os_bridge.png#center100s" alt="target_os_bridge" /></p>
 
-<p>In order to support Touch ID - that requires the presence of a Secure Enclave available only as part of the custom <em>A</em> series custom <em>arm</em> SoC used on mobile devices - on Macs that are running on <em>x86-64</em> Intel processors, Apple is going to embed another custom arm SoC inside the Macs. Probably a new letter will be used to describe those chips like the <a href="http://www.apple.com/apple-watch-series-2/"><em>S</em></a> serie created for the ᴡᴀᴛᴄʜ or the <a href="http://www.apple.com/airpods/"><em>W</em></a> serie for headphones. I’m going to bet my $1 to <em>E1</em>  - Embedded 1.</p>
+<p>In order to support Touch ID - that requires the presence of a Secure Enclave available only as part of the custom <em>A</em> series custom <em>arm</em> SoC used on mobile devices - on Macs that are running on <em>x86-64</em> Intel processors, Apple is going to embed another custom arm SoC inside the Macs. Probably a new letter will be used to describe those chips like the <a href="http://www.apple.com/apple-watch-series-2/"><em>S</em></a> serie created for the ᴡᴀᴛᴄʜ or the <a href="http://www.apple.com/airpods/"><em>W</em></a> serie for headphones. I’m going to bet my $1 to <em>E1</em> - Embedded 1.</p>
 
 <h5 id="magic-keyboard-2">Magic Keyboard 2</h5>
 
@@ -100,7 +110,6 @@
 <p>Now the really bold prediction: the price will stay the same as the original Magic Keyboard: $99. Apple has already increased the price by $30 last year.</p>
 
   </div>
-
 </article>
 
     <div class="docs-section" id="contacts">

@@ -55,8 +55,16 @@
 
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline" align="center">Blurred Rounded UIView</h1>
-    <p class="post-meta"><time datetime="2016-08-10T22:21:00+02:00" itemprop="datePublished">Aug 10, 2016</time></p>
+    
+    <h1 class="post-title" itemprop="name headline">Blurred Rounded UIView</h1>
+    
+    <p class="post-meta">
+      <time
+        datetime="2016-08-10T22:21:00+02:00"
+        itemprop="datePublished"
+        >Aug 10, 2016</time
+      >
+    </p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
@@ -74,30 +82,32 @@
 
 <p>I’ve also found that if you try to add an external shadow to the container view’s layer, you’ll end up without blur. The trick is to set the shadow inside <code class="highlighter-rouge">func layoutSubiviews()</code> override method.</p>
 
+<!--more-->
+
 <div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="kt">BlurredRoundedView</span><span class="p">:</span> <span class="kt">UIView</span> <span class="p">{</span>
     <span class="k">let</span> <span class="nv">effectBackground</span> <span class="o">=</span> <span class="kt">UIVisualEffectView</span><span class="p">(</span><span class="nv">effect</span><span class="p">:</span> <span class="n">extraLightBlur</span><span class="p">)</span>
-    
+
     <span class="kd">required</span> <span class="nf">init</span><span class="p">?(</span><span class="n">coder</span> <span class="nv">aDecoder</span><span class="p">:</span> <span class="kt">NSCoder</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">super</span><span class="o">.</span><span class="nf">init</span><span class="p">(</span><span class="nv">coder</span><span class="p">:</span> <span class="n">aDecoder</span><span class="p">)</span>
         <span class="nf">commonInit</span><span class="p">()</span>
     <span class="p">}</span>
-    
+
     <span class="k">override</span> <span class="nf">init</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">super</span><span class="o">.</span><span class="nf">init</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="n">frame</span><span class="p">)</span>
         <span class="nf">commonInit</span><span class="p">()</span>
     <span class="p">}</span>
-    
+
     <span class="kd">func</span> <span class="nf">commonInit</span><span class="p">()</span>  <span class="p">{</span>
         <span class="nf">initLayer</span><span class="p">()</span>
         <span class="nf">initEffectView</span><span class="p">()</span>
     <span class="p">}</span>
-    
+
     <span class="kd">func</span> <span class="nf">initLayer</span><span class="p">()</span> <span class="p">{</span>
         <span class="n">backgroundColor</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="o">.</span><span class="nf">clearColor</span><span class="p">()</span>
         <span class="n">layer</span><span class="o">.</span><span class="n">cornerRadius</span> <span class="o">=</span> <span class="n">cornerRadius</span>
         <span class="n">layer</span><span class="o">.</span><span class="n">masksToBounds</span> <span class="o">=</span> <span class="kc">false</span>
     <span class="p">}</span>
-    
+
     <span class="kd">func</span> <span class="nf">initEffectView</span><span class="p">()</span> <span class="p">{</span>
         <span class="n">effectBackground</span><span class="o">.</span><span class="n">frame</span> <span class="o">=</span> <span class="n">bounds</span>
         <span class="n">effectBackground</span><span class="o">.</span><span class="n">layer</span><span class="o">.</span><span class="n">cornerRadius</span> <span class="o">=</span> <span class="n">cornerRadius</span>
@@ -106,7 +116,7 @@
         <span class="nf">addSubview</span><span class="p">(</span><span class="n">effectBackground</span><span class="p">)</span>
         <span class="nf">sendSubviewToBack</span><span class="p">(</span><span class="n">effectBackground</span><span class="p">)</span>
     <span class="p">}</span>
-    
+
     <span class="k">override</span> <span class="kd">func</span> <span class="nf">layoutSubviews</span><span class="p">()</span> <span class="p">{</span>
         <span class="k">super</span><span class="o">.</span><span class="nf">layoutSubviews</span><span class="p">()</span>
         <span class="k">let</span> <span class="nv">shadowPath</span> <span class="o">=</span> <span class="kt">UIBezierPath</span><span class="p">(</span><span class="nv">roundedRect</span><span class="p">:</span> <span class="n">bounds</span><span class="p">,</span> <span class="nv">cornerRadius</span><span class="p">:</span> <span class="n">cornerRadius</span><span class="p">)</span>
@@ -126,9 +136,7 @@
 
 <p>Once you know how to achieve the desired result, it’s really simple. Enjoy.</p>
 
-
   </div>
-
 </article>
 
     <div class="docs-section" id="contacts">

@@ -15,21 +15,33 @@
 img.profile {
   width: 120px;
   height: 120px;
-  border: 2px solid #E1E1E1;
+  border: 2px solid #e1e1e1;
   border-radius: 50%;
 }
 
 img.profile.small {
   width: 60px;
   height: 60px;
-  border: 2px solid #E1E1E1;
+  border: 2px solid #e1e1e1;
   border-radius: 50%;
+}
+
+img.logo-post {
+  text-align: left;
+  max-width: 100%;
+  max-height: 80px;
+  width: auto;
+  height: auto;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  vertical-align: middle;
+  object-fit: contain;
 }
 
 img.logo {
   text-align: center;
-  max-width:100%;
-  max-height:80px;
+  max-width: 100%;
+  max-height: 80px;
   width: auto;
   height: auto;
   -webkit-filter: grayscale(100%);
@@ -45,8 +57,8 @@ h6.family {
 
 img.logo-small {
   text-align: center;
-  max-width:100%;
-  max-height:50px;
+  max-width: 100%;
+  max-height: 50px;
   width: auto;
   height: auto;
   -webkit-filter: grayscale(100%);
@@ -73,7 +85,7 @@ img.logo-small:hover {
 
 h4.docs-header {
   margin-bottom: 1.8em;
-  color: #3EC4EE;
+  color: #3ec4ee;
 }
 
 .vertical-align-helper {
@@ -167,7 +179,7 @@ ul.thumbs li {
   margin-bottom: 0px;
 }
 
-ul.thumbs li img{
+ul.thumbs li img {
   display: inline;
   width: 20%;
   margin: 0px;
@@ -179,12 +191,12 @@ ul.thumbs li img.left {
 ul.thumbs li img.right {
   border-bottom-right-radius: 5px;
 }
-.value-prop a{
+.value-prop a {
   text-decoration: none;
 }
 
 @media (max-width: 550px) {
-  .value-prop a{
+  .value-prop a {
     text-decoration: none;
     color: #000;
   }
@@ -199,7 +211,7 @@ ul.thumbs li img.right {
 
   .webui-popover-content {
     padding: 0px 4px !important;
-    display:inline-block !important;
+    display: inline-block !important;
     vertical-align: middle;
     visibility: visible;
     width: 75%;
@@ -221,7 +233,7 @@ ul.thumbs li img.right {
   img.logo {
     width: 20%;
     -webkit-filter: none;
-    filter: none;
+    /* filter: none; */
     vertical-align: top;
   }
 
@@ -232,7 +244,20 @@ ul.thumbs li img.right {
   }
 
   .logo-container {
-    heigh:auto;
+    height: auto;
+    margin-bottom: 2em;
+    text-align: left;
+  }
+
+  img.logo-post {
+    width: 20%;
+    -webkit-filter: none;
+    /* filter: none; */
+    vertical-align: top;
+  }
+
+  .logo-container {
+    height: auto;
     margin-bottom: 2em;
     text-align: left;
   }

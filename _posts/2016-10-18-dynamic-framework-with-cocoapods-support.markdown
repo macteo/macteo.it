@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  Dynamic Framework with CocoaPods support
-date:   2016-10-18 11:04:00 +0200
+title: Dynamic Framework with CocoaPods support
+date: 2016-10-18 11:04:00 +0200
 categories: xcode
 image: /framework.png
+excerpt_separator: <!--more-->
 ---
 
 A short and compact guide to create a basic redistributable framework with CocoaPods support. This example is intended to work on iOS, but the same principles can be applied to watchOS, tvOS and macOS.
@@ -17,6 +18,8 @@ For redistributable libraries Objective-C is still the language-to-go. But you c
 ![Framework](/assets/images/framework/002 - create_xcode_framework_project_1.jpg#center1000)
 
 ![Framework](/assets/images/framework/003 - create_xcode_framework_project_2.jpg#center1000)
+
+<!--more-->
 
 Set the right version, 0.1.0 is a good start point.
 Check the **Allow app extension API only** if you plan to use your framework from inside app extensions.
@@ -35,7 +38,7 @@ Implement the methods.
 
 ![Framework](/assets/images/framework/007 - implement_classes.jpg#center1000)
 
-Import your header files in the *Umbrella* `Awesome.h` header file so they will be accessible.
+Import your header files in the _Umbrella_ `Awesome.h` header file so they will be accessible.
 
 ![Framework](/assets/images/framework/008 - populate_umbrella_header.jpg#center1000)
 

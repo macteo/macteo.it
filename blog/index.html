@@ -3,52 +3,77 @@ layout: blog
 ---
 
 <div class="docs-section" id="Blog">
-  <h4 class="docs-header">Blog</h4>
-  <div class="row">
+  <div class="content-inset">
+    <h4 class="docs-header">Blog</h4>
+    <div class="row">
+      {% for post in paginator.posts %}
 
-    {% for post in paginator.posts %}
-    <div class="four columns">
-      <div class="logo-container">
+      <h1 class="post-title" itemprop="name headline">
         {% if post.image %}
-          <img src="/assets/images/{{ post.image }}"  class="logo"/>
+        <img
+          src="/assets/images/{{ post.image }}"
+          class="logo-post {% if post.rounded_image%}rounded{% endif %}"
+        />
+        {% endif %} {% if post.link %}
+        <a href="{{ post.link }}"
+          >{{ post.title }} <span class="link-arrow">&rarr;</span></a
+        >
+        {% else %}
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          {{ post.title }}
+        </a>
         {% endif %}
-        <div class="webui-popover-content">
-          <h6><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h6>
-          <span>
-            <p>{{ post.excerpt }}</p>
-          </span>
-        </div>
+      </h1>
+      <span>
+        <p>{{ post.excerpt }}</p>
+      </span>
+      <div class="pull-right">
+        <a href="{{ site.baseurl }}{{ post.url }}">Read more&hellip;</a>
       </div>
     </div>
-    {% assign exact = forloop.index | modulo: 3 %}
-    {% if exact == 0 %}
-      </div>
-      <div class="row">
-    {% endif %}
+    <div class="row">
+      {% endfor %}
+    </div>
+  </div>
 
-    {% endfor %}
-</div>
-
-{% if paginator.total_pages > 1 %}
+  {% if paginator.total_pages > 1 %}
   <nav role="navigation">
     <ul class="cd-pagination no-space">
-    {% if paginator.previous_page %}
-      <li class="button"><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Prev</a></li>
-    {% endif %}
-
-    {% for page in (1..paginator.total_pages) %}
-      {% if page == paginator.page %}
-        <li><a class="current" href="#">{{ page }}</a></li>
+      {% if paginator.previous_page %}
+      <li class="button">
+        <a
+          href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"
+          >Prev</a
+        >
+      </li>
+      {% endif %} {% for page in (1..paginator.total_pages) %} {% if page ==
+      paginator.page %}
+      <li>
+        <a class="current" href="#">{{ page }}</a>
+      </li>
       {% elsif page == 1 %}
-        <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">1</a></li>
+      <li>
+        <a
+          href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"
+          >1</a
+        >
+      </li>
       {% else %}
-        <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+      <li>
+        <a
+          href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}"
+          >{{ page }}</a
+        >
+      </li>
+      {% endif %} {% endfor %} {% if paginator.next_page %}
+      <li class="button">
+        <a
+          href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"
+          >Next</a
+        >
+      </li>
       {% endif %}
-    {% endfor %}
-
-    {% if paginator.next_page %}
-      <li class="button"><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next</a></li>
-    {% endif %}
     </ul>
   </nav>
-{% endif %}
+  {% endif %}
+</div>

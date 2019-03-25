@@ -1,19 +1,20 @@
 ---
 layout: post
-title:  "Customize GitLab interface"
-date:  2019-02-23T09:14:20+01:00
-categories: 
+title: "Customize GitLab interface"
+date: 2019-02-23T09:14:20+01:00
+categories:
 image: gitlab.png
 tags: gitlab js css
+excerpt_separator: <!--more-->
 ---
 
 I love [GitLab](https://gitlab.org), I use it daily [@Dimension](https://dimension.it) and I even have an omnibus instance on a [NUC](https://www.intel.com/content/www/us/en/products/boards-kits/nuc.html) @home for my personal projects and scripts.
 
 However the lack of interface personalization is driving me crazy.
 
-![gitlab](/assets/images/gitlab.png#center-max-120)
+For instance our teams are adopting Kanban to optimize the process and we heavily rely on [boards](https://about.gitlab.com/product/issueboard/) for issue management. One of the key principles of Kanban is called **visualize** and we would strongly like to customize cards background to immediately recognize different kind of issues between _features_, _bugs_ and generic _tasks_.
 
-For instance our teams are adopting Kanban to optimize the process and we heavily rely on [boards](https://about.gitlab.com/product/issueboard/) for issue management. One of the key principles of Kanban is called **visualize** and we would strongly like to customize cards background to immediately recognize different kind of issues between *features*, *bugs* and generic *tasks*.
+<!--more-->
 
 ![gitlab-board-white](/assets/images/gitlab/board-white.png#center100r)
 
@@ -34,13 +35,13 @@ With this approach we are indeed able to solve every issue we accused using clie
 All we need is some place to host a CSS file an one or more javascript documents.
 There are several options, we choose one but you are free to follow other paths.
 
-1. Create a new GitLab group (in our case we named it *public-group*) and project (gitlab-custom-ui), setting the privileges to *Internal*.
+1. Create a new GitLab group (in our case we named it _public-group_) and project (gitlab-custom-ui), setting the privileges to _Internal_.
 2. Disable the features you don't need and ensure that everyone has access in file visualization.
-3. Leave the the `master` branch protected, so only members with at least the *maintainer* privileges can push on that branch. This is paramount to avoid malware javascript injection by unauthorized users.
+3. Leave the the `master` branch protected, so only members with at least the _maintainer_ privileges can push on that branch. This is paramount to avoid malware javascript injection by unauthorized users.
 
 ![gitlab-project-permissions](/assets/images/gitlab-project-permissions.jpeg#center400)
 
-4. Create a *custom.css* file and *custom.js* file inside that repository. Those files will be injected on every GitLab page. The external paths will be something like `/public-group/gitlab-custom-ui/raw/master/custom.js`. Replace `public-group` with the name of your group and `gitlab-custom-ui` with the slug of the project, or just copy the proper raw path.
+4. Create a _custom.css_ file and _custom.js_ file inside that repository. Those files will be injected on every GitLab page. The external paths will be something like `/public-group/gitlab-custom-ui/raw/master/custom.js`. Replace `public-group` with the name of your group and `gitlab-custom-ui` with the slug of the project, or just copy the proper raw path.
 
 ### A second nginx
 
@@ -107,7 +108,7 @@ server {
     proxy_set_header   X-Forwarded-Proto   https;
 
     # Overriding the mime type of the raw javascript so it can be executed.
-    # This is necessary 
+    # This is necessary
     if ($request_uri ~* /public-group/gitlab-custom-ui/raw/master/custom.js$) {
       add_header Content-Type "text/javascript";
     }

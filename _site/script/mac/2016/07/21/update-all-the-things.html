@@ -55,8 +55,16 @@
 
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline" align="center">Update all the things</h1>
-    <p class="post-meta"><time datetime="2016-07-21T12:04:00+02:00" itemprop="datePublished">Jul 21, 2016</time></p>
+    
+    <h1 class="post-title" itemprop="name headline">Update all the things</h1>
+    
+    <p class="post-meta">
+      <time
+        datetime="2016-07-21T12:04:00+02:00"
+        itemprop="datePublished"
+        >Jul 21, 2016</time
+      >
+    </p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
@@ -70,6 +78,8 @@ gem update
 gem cleanup
 </code></pre></div></div>
 
+<!--more-->
+
 <p>I know they’re just 5 commands, but I love to be up to date my two computers (an <a href="http://www.everymac.com/systems/apple/imac/specs/imac-core-i7-3.4-27-inch-aluminum-mid-2011-thunderbolt-specs.html">iMac</a> and a <a href="http://www.everymac.com/systems/apple/macbook/specs/macbook-core-m7-1.3-12-early-2016-specs.html">MacBook</a>), so it’s a convenient way to just merge them. I also decided to avoid using cron to run the script every day because I need to do it deliberately as the upgrade process can even break my workflow. It also includes the <code class="highlighter-rouge">cleanup</code> phase to free disk space removing outdated stuff.</p>
 
 <p>You can find the raw version <a href="/g/update.sh">here</a>.</p>
@@ -82,7 +92,6 @@ gem cleanup
 </code></pre></div></div>
 
   </div>
-
 </article>
 
     <div class="docs-section" id="contacts">

@@ -1,13 +1,14 @@
 ---
 layout: post
 title: WWDC Plan
-date:   2017-05-23 13:48:00 +0200
+date: 2017-05-23 13:48:00 +0200
 categories: wwdc
 tags: wwdc goals
 image: icons/wwdc@2x.png
+excerpt_separator: <!--more-->
 ---
 
-This will be my *fifth* WWDC as I had the opportunity to attend it since the 2012 edition (thanks [Giovanni](https://twitter.com/giovatardu) that gave me his ticket as he couldn't attend). Then I won the lottery four times in a row from 2014 to 2017 🤷‍♂️.
+This will be my _fifth_ WWDC as I had the opportunity to attend it since the 2012 edition (thanks [Giovanni](https://twitter.com/giovatardu) that gave me his ticket as he couldn't attend). Then I won the lottery four times in a row from 2014 to 2017 🤷‍♂️.
 
 To be honest last year I transferred the ticket to my colleague [@matax](https://twitter.com/matax) so he was able to attend his first WWDC, but I went to San Francisco anyway.
 
@@ -16,6 +17,8 @@ To be honest last year I transferred the ticket to my colleague [@matax](https:/
 Bragging aside, I have plenty of expectations for this year regarding things to do, people to meet and questions to ask.
 
 Take off is in less than two weeks 🎉
+
+<!--more-->
 
 #### Arrival
 
@@ -27,32 +30,30 @@ The first night I'll stay in a cheap hotel nearby the Airport in South San Franc
 
 For the following nights I've chosen a motel really close to the **McEnery Convention Center** where WWDC and most of the third party events are being held. Reducing commuting time during the week is compulsory to to enjoy it at best.
 
-
 #### Flights
 
-I'll take off from Verona - *VRN* on Saturday 3 at 10 AM to land in San Francisco - *SFO* on the same day at 7:45 PM after a pause in Frankfurt am Main - *FRA* for approximately 6 hours. I hope to visit Frankfurt's city center and grab some Brätwurst with Weißbier.
+I'll take off from Verona - _VRN_ on Saturday 3 at 10 AM to land in San Francisco - _SFO_ on the same day at 7:45 PM after a pause in Frankfurt am Main - _FRA_ for approximately 6 hours. I hope to visit Frankfurt's city center and grab some Brätwurst with Weißbier.
 
 <div id='map' class='dark'></div><br />
 
 I'm coming from Italy so I have a long flight ahead. Those are the things I'm bringing with me in cabin, if no new bans are enforced:
 
-* [B&O H6 rev 2](https://marco.org/2016/03/02/beoplay-h6-v2-review) - I don't have noise canceling headphones as I don't travel much, but those will do.
-* AirPods, but I'm really scared to lose them if I fell asleep.
-* Bundled Lightning to Headphone Jack adapter.
-* Power Brick.
-* iPhone 7.
-* USB-A to Lightning cable.
-* [Lightning splitter](https://www.amazon.com/Belkin-Lightning-Charge-RockStar-iPhone/dp/B01LXFKSNA) to charge and listen at the same time.
-* MacBook if allowed.
-* USB-C to Lightning cable to connect to the mac.
-* A pen to compile the immigration form.
-* Passport.
-* Apple Watch.
-* [N26 Black Credit Card](https://n26.com/black/).
-* A small Pillow.
-* A hoodie.
-* Comfortable shoes.
-
+- [B&O H6 rev 2](https://marco.org/2016/03/02/beoplay-h6-v2-review) - I don't have noise canceling headphones as I don't travel much, but those will do.
+- AirPods, but I'm really scared to lose them if I fell asleep.
+- Bundled Lightning to Headphone Jack adapter.
+- Power Brick.
+- iPhone 7.
+- USB-A to Lightning cable.
+- [Lightning splitter](https://www.amazon.com/Belkin-Lightning-Charge-RockStar-iPhone/dp/B01LXFKSNA) to charge and listen at the same time.
+- MacBook if allowed.
+- USB-C to Lightning cable to connect to the mac.
+- A pen to compile the immigration form.
+- Passport.
+- Apple Watch.
+- [N26 Black Credit Card](https://n26.com/black/).
+- A small Pillow.
+- A hoodie.
+- Comfortable shoes.
 
 #### The Masterplan
 
@@ -64,13 +65,13 @@ This is my personal list of things I'd like to do.
 
 I plan to move to San Jose early in the morning, check-in at the hotel, eventually go to the [Apple Store](https://www.apple.com/retail/valleyfair/?cid=aos-us-seo-maps) to let them check an iPhone 5s with the battery that's growing large and bending the screen, then pick up the WWDC badge.
 
-At 5 pm I'm going to watch [App: The Human Story](https://www.classy.org/san-jose/events/app-human-story-documentary-screening-presented-by-altconf-layers/e128096), a Documentary Screening Presented by AltConf & Layers. I already got the $25 ticket and you should too as 100% of the proceedings will go to App Camp for Girls. You can even watch the [trailer](http://appdocumentary.com) online.
+At 5 pm I'm going to watch [App: The Human Story](https://www.classy.org/san-jose/events/app-human-story-documentary-screening-presented-by-altconf-layers/e128096), a Documentary Screening Presented by AltConf & Layers. I already got the \$25 ticket and you should too as 100% of the proceedings will go to App Camp for Girls. You can even watch the [trailer](http://appdocumentary.com) online.
 
 Sunday night: **go to bed at a decent time** to reduce the jet lag and prepare for the Keynote queue.
 
 ###### Monday
 
-Early morning: Spend few hours **queuing around the McEnery Convention Center**, waiting for the **WWDC Keynote** to start, trying to get a decent place in the auditorium. In my useless experience, I  knew that even if you showed up at 6 AM you'll easily enter in Presidio. New location and everything is unexpected. If I cannot sleep I may even show up really early. Breakfast is usually served inside the auditorium.
+Early morning: Spend few hours **queuing around the McEnery Convention Center**, waiting for the **WWDC Keynote** to start, trying to get a decent place in the auditorium. In my useless experience, I knew that even if you showed up at 6 AM you'll easily enter in Presidio. New location and everything is unexpected. If I cannot sleep I may even show up really early. Breakfast is usually served inside the auditorium.
 
 Morning: enjoy the Keynote at 10 AM!
 
@@ -90,7 +91,7 @@ Night: I'm waiting for the [Beard Bash](http://www.loopinsight.com/beard-bash-20
 
 **Lunch sessions** - I usually keep an eye on those as they are inspiring and motivational: usually you'll be able to be part of something really unique. Those are not streamed nor recorder, so it's a lifetime opportunity. I still remember the ones with J. J. Abrams telling about [Bad Robot](https://twitter.com/bad_robot), one with Star Wars authors and troopers, one where [@plutokiller](http://twitter.com/plutokiller) detailed his reasons to remove Pluto from the list of planets — way before the [New Horizons](https://en.wikipedia.org/wiki/New_Horizons) probe took some [amazing photos](https://en.wikipedia.org/wiki/New_Horizons#/media/File:Pluto_by_LORRI_and_Ralph,_13_July_2015.jpg).
 
-*I hope the catering will be different and lunch boxes will be [edible](http://atp.fm/episodes/219) for the first time*.
+_I hope the catering will be different and lunch boxes will be [edible](http://atp.fm/episodes/219) for the first time_.
 
 **Get Togethers** recently Apple started planning pop-up informal events during the conference to let you meet with like-minded developers and Apple experts for engaging and motivating conversations around specific topics. Keep an eye on them.
 
@@ -128,27 +129,27 @@ San Francisco. If you've never been there you can consider a visit taking the pu
 
 #### People I'd like to meet
 
-* [Federico Viticci](https://twitter.com/viticci) as fellow Italian fan of [MacStories](https://www.macstories.net) and [Connected](https://www.relay.fm/connected) to say *ciao* again after a year.
-* [Stephen Hackett](https://twitter.com/ismh) and [Mike Hurley](https://twitter.com/imyke) of [Relay FM](https://relay.fm) as they fulfill most of my spare time with podcasts. It's a tradition as I first met them when they were part of the [5by5](http://5by5.tv) network.
+- [Federico Viticci](https://twitter.com/viticci) as fellow Italian fan of [MacStories](https://www.macstories.net) and [Connected](https://www.relay.fm/connected) to say _ciao_ again after a year.
+- [Stephen Hackett](https://twitter.com/ismh) and [Mike Hurley](https://twitter.com/imyke) of [Relay FM](https://relay.fm) as they fulfill most of my spare time with podcasts. It's a tradition as I first met them when they were part of the [5by5](http://5by5.tv) network.
 
 ![Connected Guys](/assets/images/connected.jpg#center100s)
 
-* [Marco](http://marco.org), [John](https://twitter.com/siracusa) and [Casey](https://www.caseyliss.com) - a truly great trio that shares with me at least [two hours](https://atp.fm) every week!
-* [John Gruber](https://daringfireball.net), I'd love to say hi.
-* Apple Execs – specially [Craig Federighi](https://www.apple.com/pr/bios/craig-federighi.html) – Hair Force One. You know... *selfies*.
-* Many developers I met in the last few years.
-* Apple employees as their work is totally fascinating to me.
-* **You** - I'm eager to know new people every year!
+- [Marco](http://marco.org), [John](https://twitter.com/siracusa) and [Casey](https://www.caseyliss.com) - a truly great trio that shares with me at least [two hours](https://atp.fm) every week!
+- [John Gruber](https://daringfireball.net), I'd love to say hi.
+- Apple Execs – specially [Craig Federighi](https://www.apple.com/pr/bios/craig-federighi.html) – Hair Force One. You know... _selfies_.
+- Many developers I met in the last few years.
+- Apple employees as their work is totally fascinating to me.
+- **You** - I'm eager to know new people every year!
 
 #### Staying
 
 Few non obvious things I'm bringing with me: Imodium (after a memorable debacle two years ago), earplugs as you never know where and when you'll end up sleeping, [multiple USB charger](https://www.amazon.com/Anker-Premium-Charger-PowerPort-Delivery/dp/B01D8C6ULO/ref=sr_1_6?ie=UTF8&qid=1495529827&sr=8-6&keywords=anker+usb-c) with USB-A and C, USA to Italy plug converters, MacBook power brick with USB-C cable, Apple Watch cable, spare dollars for hotel tips.
 
-I *won't* bring with me the electric shaver as my model doesn't support 50Hz — 110V power supply and it will be so slow that will grab and pull the hairs instead of trimming them. I usually remember it too late and I'm forced to buy razors at the mall like an animal.
+I _won't_ bring with me the electric shaver as my model doesn't support 50Hz — 110V power supply and it will be so slow that will grab and pull the hairs instead of trimming them. I usually remember it too late and I'm forced to buy razors at the mall like an animal.
 
 #### Leaving
 
-I'm leaving on Saturday morning from San Francisco – *SFO* to enjoy a final evening with friends on Friday. The trip will be quite long as I'm heading to Toronto – *YYZ*, my first time in Canada, then again Frankfurt – *FRA* and finally back to Verona – *VRN* totalling 20 hours between first take off and final landing. An hour driving will bring be back home in Trento[^1] with my family 👨‍👩‍👦‍👦.
+I'm leaving on Saturday morning from San Francisco – _SFO_ to enjoy a final evening with friends on Friday. The trip will be quite long as I'm heading to Toronto – _YYZ_, my first time in Canada, then again Frankfurt – _FRA_ and finally back to Verona – _VRN_ totalling 20 hours between first take off and final landing. An hour driving will bring be back home in Trento[^1] with my family 👨‍👩‍👦‍👦.
 
 I look forward to have an amazing week and meet you if you are there too.
 

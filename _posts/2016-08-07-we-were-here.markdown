@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  We were here
-date:   2016-08-07 20:04:00 +0200
+title: We were here
+date: 2016-08-07 20:04:00 +0200
 categories: california
 image: logos/cali.svg
 ---

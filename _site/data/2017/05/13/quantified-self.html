@@ -55,8 +55,16 @@
 
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline" align="center">Quantified Self</h1>
-    <p class="post-meta"><time datetime="2017-05-13T07:00:00+02:00" itemprop="datePublished">May 13, 2017</time></p>
+    
+    <h1 class="post-title" itemprop="name headline">Quantified Self</h1>
+    
+    <p class="post-meta">
+      <time
+        datetime="2017-05-13T07:00:00+02:00"
+        itemprop="datePublished"
+        >May 13, 2017</time
+      >
+    </p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
@@ -76,6 +84,9 @@
   <li>Diet (occasionally) with <a href="https://www.myfitnesspal.com">MyFitnessPal</a>.</li>
   <li>Routes with <a href="https://www.moves-app.com">Moves</a>.</li>
   <li>Time spent on projects with <a href="https://toggl.com">Toggl</a>.</li>
+  <li>
+    <!--more-->
+  </li>
 </ul>
 
 <p>In order to see in a single place the collected data I’m leveraging <a href="https://gyrosco.pe/">Gyroscope</a>. It looks great and gives some insights, what it lacks though is a way to compare different periods.</p>
@@ -96,6 +107,7 @@
 <p>Unfortunately I wasn’t able to render the picture I desired: a single indicator (sum of many smaller ones) to tell me how much productive I’ve been in a particular day, that can be plotted in a single comprehensive chart.</p>
 
 <p>Those are some of issues I faced:</p>
+
 <ul>
   <li>Kibana is a great tool specifically designed for time series. When the information is not clearly representative of just a single moment in time, it becomes useless. It has some charts to choose from, but are not very broad nor easily customizable.</li>
   <li>Automatic tracking for some stuff is impossible due to the absence of open APIs.</li>
@@ -115,7 +127,6 @@
 </div>
 
   </div>
-
 </article>
 
     <div class="docs-section" id="contacts">

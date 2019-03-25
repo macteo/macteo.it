@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <!--#if expr="$HTTP_COOKIE=/fonts\-loaded=true/" -->
 <html lang="en" class="fonts-loaded">
-<!--#else -->
-<html lang="en">
-<!--#endif -->
+  <!--#else -->
+  <html lang="en">
+    <!--#endif -->
 
-{% include head.html %}
+    {% include head.html %}
 
-<body>
-  {% include navigation_blog.html %}
-  <div class="container blog">
-    {% include name_header.html %}
-    {{ content }}
-    {% include footer.html %}
-  </div>
-  {% include analytics.html %}
-</body>
+    <body>
+      {% include navigation_blog.html %}
+      <div class="container blog">
+        {% include name_header.html %}
+        {{ content }}
+        {% include footer.html %}
+      </div>
+      {% include analytics.html %}
+    </body>
+  </html>
 </html>

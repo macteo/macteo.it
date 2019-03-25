@@ -5,6 +5,7 @@ date: 2017-07-22 11:00:00 +0200
 categories: speech
 tags: speech speck&tech
 image: icons/speck&tech.png
+excerpt_separator: <!--more-->
 ---
 
 I'll be one of the speakers at the next [Speck&Tech](https://speckand.tech) event in Trento on July 27th, 2017.
@@ -16,7 +17,9 @@ This is the abstract of the talk.
 Each year a city in California becomes the Mecca for developers, journalists and engineers working or passionate about Apple's products. If you are interested in technology that's where new features and improvements for Apple's platforms are presented, discussed and dissected. In this speech you'll understand how the conference and related events are structured, why you should consider to apply for a ticket or a free scholarship and mostly learn of interesting gems announced during WWDC17, that will be leveraged by developers to create amazing new apps and features used by hundreds of millions of people.
 
 ![Matteo Gavagnin during WWDC 2014](/assets/images/star-wars.jpg#center100s)
-*Matteo Gavagnin during WWDC 2014*
+_Matteo Gavagnin during WWDC 2014_
+
+<!--more-->
 
 ##### The BIO drafted for the event
 
