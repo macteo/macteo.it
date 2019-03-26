@@ -3,7 +3,7 @@ layout: post
 title: Hiking Map
 date: 2017-06-03 16:12:00 +0200
 categories: map
-image: icons/hiking-map.png
+image: /assets/images/icons/hiking-map.png
 tags: map mapbox
 excerpt_separator: <!--more-->
 ---

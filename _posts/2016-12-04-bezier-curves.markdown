@@ -4,7 +4,7 @@ title: Bézier Curves
 date: 2016-12-04 09:27:00 +0200
 categories: playground
 tags: bezier curves
-image: /bezier.png
+image: /assets/images/bezier.png
 excerpt_separator: <!--more-->
 ---
 

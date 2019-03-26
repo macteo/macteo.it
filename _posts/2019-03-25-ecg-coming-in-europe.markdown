@@ -1,9 +1,11 @@
 ---
 layout: post
 title: ECG coming in Europe?
-date:  2019-03-25T22:25:20+01:00
-categories: 
+date: 2019-03-25T22:25:20+01:00
+categories:
 tags: ecg Apple watch
+rounded_image: true
+image: /assets/images/9to5mac.png
 excerpt_separator: <!--more-->
 link: https://9to5mac.com/2019/03/25/apple-watch-ecg-europe/
 ---
@@ -14,4 +16,3 @@ I’ll be surprised if we get it so soon.
 
 A life saving feature coming with a software update.
 This is the future.
-

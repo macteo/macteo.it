@@ -11,7 +11,7 @@ layout: blog
       <h1 class="post-title" itemprop="name headline">
         {% if post.image %}
         <img
-          src="/assets/images/{{ post.image }}"
+          src="{{ post.image }}"
           class="logo-post {% if post.rounded_image%}rounded{% endif %}"
         />
         {% endif %} {% if post.link %}

@@ -4,7 +4,7 @@ title: Blurred Rounded UIView
 date: 2016-08-10 22:21:00 +0200
 categories: ios
 tags: ios playground
-image: icons/blurred-view@2x.png
+image: /assets/images/icons/blurred-view@2x.png
 excerpt_separator: <!--more-->
 ---
 

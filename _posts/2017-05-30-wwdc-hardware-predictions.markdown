@@ -3,7 +3,7 @@ layout: post
 title: WWDC Hardware Predictions
 date: 2017-05-30 21:12:00 +0200
 categories: wwdc
-image: icons/wwdc-hardware@2x.png
+image: /assets/images/icons/wwdc-hardware@2x.png
 tags: wwdc hardware mac ipad
 excerpt_separator: <!--more-->
 ---

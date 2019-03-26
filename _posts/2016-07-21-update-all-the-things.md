@@ -3,7 +3,7 @@ layout: post
 title: "Update all the things"
 date: 2016-07-21 12:04:00 +0200
 categories: script mac
-image: icons/update@2x.png
+image: /assets/images/icons/update@2x.png
 tags: script mac
 excerpt_separator: <!--more-->
 ---

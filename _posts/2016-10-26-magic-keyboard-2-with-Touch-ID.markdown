@@ -4,7 +4,7 @@ title: Magic Keyboard 2
 date: 2016-10-26 11:57:00 +0200
 categories: apple
 tags: apple magic keyboard TouchID
-image: /magic-keyboard/magic-keyboard-2-small.png
+image: /assets/images/magic-keyboard/magic-keyboard-2-small.png
 excerpt_separator: <!--more-->
 ---
 

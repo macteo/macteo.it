@@ -3,7 +3,7 @@ layout: post
 title: Quantified Self
 date: 2017-05-13 07:00:00 +0200
 categories: data
-image: icons/gyroscope-sum@2x.png
+image: /assets/images/icons/gyroscope-sum@2x.png
 tags: quantified self
 excerpt_separator: <!--more-->
 ---

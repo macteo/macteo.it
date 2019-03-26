@@ -3,7 +3,7 @@ layout: post
 title: Dynamic Framework with CocoaPods support
 date: 2016-10-18 11:04:00 +0200
 categories: xcode
-image: /framework.png
+image: /assets/images/framework.png
 excerpt_separator: <!--more-->
 ---
 

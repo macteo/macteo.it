@@ -4,7 +4,7 @@ title: Speck&Tech
 date: 2017-07-22 11:00:00 +0200
 categories: speech
 tags: speech speck&tech
-image: icons/speck&tech.png
+image: /assets/images/icons/speck&tech.png
 excerpt_separator: <!--more-->
 ---
 

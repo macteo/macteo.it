@@ -4,7 +4,7 @@ title: SplitKit
 date: 2017-09-03 18:36:00 +0200
 categories: ios
 tags: ios
-image: icons/splitkit.png
+image: /assets/images/icons/splitkit.png
 excerpt_separator: <!--more-->
 ---
 

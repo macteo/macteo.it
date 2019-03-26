@@ -4,7 +4,7 @@ title: 6 colors Wallpapers
 date: 2017-09-21 04:15:00 +0200
 categories: macOS
 tags: macOS wallpapers apple
-image: icons/6colors.png
+image: /assets/images/icons/6colors.png
 rounded_image: true
 excerpt_separator: <!--more-->
 ---

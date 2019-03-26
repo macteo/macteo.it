@@ -4,7 +4,7 @@ title: Face ID
 date: 2017-09-28 20:55:00 +0200
 categories: iOS
 tags: iOS FaceID iPhoneX
-image: icons/faceid-c.png
+image: /assets/images/icons/faceid-c.png
 excerpt_separator: <!--more-->
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: MacDown fork
 date: 2016-07-23 12:41:00 +0200
 categories: blog mac dev
-image: icons/macdown@2x.png
+image: /assets/images/icons/macdown@2x.png
 tags: mac dev macdown markdown editor
 excerpt_separator: <!--more-->
 ---

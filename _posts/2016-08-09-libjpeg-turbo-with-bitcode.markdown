@@ -4,7 +4,7 @@ title: libjpeg-turbo with bitcode
 date: 2016-08-09 21:14:00 +0200
 categories: build
 tags: build ios xcode
-image: icons/bitcode@2x.png
+image: /assets/images/icons/bitcode@2x.png
 excerpt_separator: <!--more-->
 ---
 
