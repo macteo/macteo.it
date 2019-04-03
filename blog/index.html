@@ -8,7 +8,7 @@ layout: blog
     <div class="row">
       {% for post in paginator.posts %}
 
-      <h1 class="post-title" itemprop="name headline">
+      <h5 class="post-title" itemprop="name headline">
         {% if post.image %}
         <img
           src="{{ post.image }}"
@@ -23,7 +23,7 @@ layout: blog
           {{ post.title }}
         </a>
         {% endif %}
-      </h1>
+      </h5>
       <span>
         <p>{{ post.excerpt }}</p>
       </span>

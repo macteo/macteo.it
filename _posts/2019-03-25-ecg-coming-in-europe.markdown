@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ECG coming in Europe?
+title: ECG coming to Europe?
 date: 2019-03-25T22:25:20+01:00
 categories:
 tags: ecg Apple watch
@@ -16,3 +16,7 @@ I’ll be surprised if we get it so soon.
 
 A life saving feature coming with a software update.
 This is the future.
+
+###### Update
+
+Apple released watchOS 5.2 enabling ECG in many european countries 🎉

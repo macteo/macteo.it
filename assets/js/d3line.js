@@ -1,5 +1,33 @@
+function responsivefy(svg) {
+  // get container + svg aspect ratio
+  var container = d3.select(svg.node().parentNode),
+    width = parseInt(svg.style("width")),
+    height = parseInt(svg.style("height")),
+    aspect = width / height;
+
+  // add viewBox and preserveAspectRatio properties,
+  // and call resize so that svg resizes on inital page load
+  svg
+    .attr("viewBox", "0 0 " + width + " " + height)
+    .attr("perserveAspectRatio", "xMinYMid")
+    .call(resize);
+
+  // to register multiple listeners for same event type,
+  // you need to add namespace, i.e., 'click.foo'
+  // necessary if you call invoke this function for multiple svgs
+  // api docs: https://github.com/mbostock/d3/wiki/Selections#on
+  d3.select(window).on("resize." + container.attr("id"), resize);
+
+  // get width of container and resize svg to fit it
+  function resize() {
+    var targetWidth = parseInt(container.style("width"));
+    svg.attr("width", targetWidth);
+    svg.attr("height", Math.round(targetWidth / aspect));
+  }
+}
+
 // set the dimensions and margins of the graph
-var margin = { top: 10, right: 30, bottom: 30, left: 60 },
+var margin = { top: 10, right: 10, bottom: 20, left: 10 },
   width = 1068, // 1068
   height = 128; // 128
 
@@ -9,6 +37,7 @@ var svg = d3
   .append("svg")
   .attr("width", width + margin.left + margin.right)
   .attr("height", height + margin.top + margin.bottom)
+  .call(responsivefy)
   .append("g")
   .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
@@ -31,7 +60,8 @@ d3.csv(
     xAxis = svg
       .append("g")
       .attr("transform", "translate(0," + height + ")")
-      .call(d3.axisBottom(x));
+      .attr("class", "grid")
+      .call(d3.axisBottom(x).tickFormat(d => d + "s"));
 
     // Add Y axis
     var y = d3
@@ -47,7 +77,10 @@ d3.csv(
         -1000
       ])
       .range([0, height]);
-    yAxis = svg.append("g").call(d3.axisLeft(y));
+    yAxis = svg
+      .append("g")
+      .attr("class", "grid")
+      .call(d3.axisLeft(y).tickFormat(""));
 
     // Add a clipPath: everything out of this area won't be drawn.
     var clip = svg
