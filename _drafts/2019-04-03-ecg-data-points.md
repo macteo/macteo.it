@@ -7,10 +7,18 @@ tags: egc
 excerpt_separator: <!--more-->
 ---
 
-<!-- Load d3.js -->
-<script src="http://d3js.org/d3.v4.js"></script>
+After my beloved Apple Watch gained the ECG feature I've taken few
+electrocardiograms.
+One of the thing I noticed is that I need to securely strap the watch to my
+wrist in order to take effective measurements.
 
-<!-- Create a div where the graph will take place -->
-<div id="my_dataviz"></div>
+After having done that I observed the measured data in the PDF document inside
+the Health app.
+Out of curiosity I've also performed a complete data export from HealthKit and
+there they are, few [CSV](https://it.wikipedia.org/wiki/Comma-separated_values)
+files, one per each test.
 
+Open one and you'll find 15.314 rows of measures.
+
+<script src="http://d3js.org/d3.v4.js"></script><div id="my_dataviz"></div>
 <script src="/assets/js/d3line.js"></script>
