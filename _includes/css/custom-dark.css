@@ -160,4 +160,13 @@
   .docs-section {
     border-top: 1px solid #555 !important;
   }
+
+  a h6 {
+    text-decoration: none !important;
+    color: #fff !important;
+  }
+
+  img.logo.invertible {
+    filter: invert(1);
+  }
 }
