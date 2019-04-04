@@ -138,4 +138,26 @@
     opacity: 0.7;
     stroke-width: 0.5;
   }
+
+  .logo-small {
+    filter: invert(1);
+  }
+
+  h5 {
+    border-bottom: 1px solid #555;
+  }
+
+  h6 {
+    border-bottom: 1px solid #555;
+  }
+
+  .navbar,
+  .navbar-spacer {
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+  }
+
+  .docs-section {
+    border-top: 1px solid #555 !important;
+  }
 }

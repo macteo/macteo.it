@@ -10,6 +10,10 @@ html {
   stroke: #BB2A2B; 
 }
 
+svg path.logo-path {
+  fill: #BB2A2B; 
+}
+
 .pull-right {
   float: right;
 }
@@ -66,6 +70,10 @@ h5 {
   font-size: 2.5rem;
   margin-bottom: 2px;
   border-bottom: 1px solid #eee;
+}
+
+h6 {
+  border-bottom: 0px solid #fff !important;
 }
 
 div.footnotes {
