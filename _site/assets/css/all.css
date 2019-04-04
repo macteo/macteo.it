@@ -45,6 +45,14 @@ svg path.logo-path {
     stroke-width: 0.5;
   }
 
+  .grid text {
+    fill: #555;
+  }
+
+  .border {
+    stroke: #ccc;
+  }
+
 .timeline .column,
 .timeline .columns {
   background: #eee;
@@ -745,6 +753,14 @@ h4.docs-header.footer {
 
   img.logo.invertible {
     filter: invert(1);
+  }
+
+  .grid text {
+    fill: #aaa;
+  }
+
+  .border {
+    stroke: #aaa;
   }
 }
 nav.navbar {

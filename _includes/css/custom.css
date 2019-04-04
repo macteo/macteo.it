@@ -41,6 +41,14 @@ svg path.logo-path {
     stroke-width: 0.5;
   }
 
+  .grid text {
+    fill: #555;
+  }
+
+  .border {
+    stroke: #ccc;
+  }
+
 .timeline .column,
 .timeline .columns {
   background: #eee;

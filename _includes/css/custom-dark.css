@@ -169,4 +169,12 @@
   img.logo.invertible {
     filter: invert(1);
   }
+
+  .grid text {
+    fill: #aaa;
+  }
+
+  .border {
+    stroke: #aaa;
+  }
 }
