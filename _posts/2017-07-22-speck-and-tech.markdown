@@ -3,6 +3,7 @@ layout: post
 title: Speck&Tech
 date: 2017-07-22 11:00:00 +0200
 categories: speech
+rounded_image: true
 tags: speech speck&tech
 image: /assets/images/icons/speck&tech.png
 excerpt_separator: <!--more-->
