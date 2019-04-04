@@ -144,11 +144,11 @@
   }
 
   h5 {
-    border-bottom: 1px solid #555;
+    border-bottom: 0px solid #555 !important;
   }
 
   h6 {
-    border-bottom: 1px solid #555;
+    border-bottom: 0px solid #555 !important;
   }
 
   .navbar,
