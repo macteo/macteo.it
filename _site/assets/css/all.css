@@ -24,11 +24,6 @@ html {
   stroke-width: 0.5;
 }
 
-.grid-minor .tick line {
-  stroke: #e9e9e9;
-  opacity: 0.7;
-  stroke-width: 0.5;
-}
 
 .grid path {
   stroke-width: 0;
@@ -930,8 +925,8 @@ ul.thumbs li img.right {
 
 @media (max-width: 550px) {
   img.logo-post {
-    max-height: 44px;
-    width: 44px;
+    max-height: 36px;
+    width: 36px;
   }
 
   .webui-popover-content {

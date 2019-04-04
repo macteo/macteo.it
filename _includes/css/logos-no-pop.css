@@ -231,8 +231,8 @@ ul.thumbs li img.right {
 
 @media (max-width: 550px) {
   img.logo-post {
-    max-height: 44px;
-    width: 44px;
+    max-height: 36px;
+    width: 36px;
   }
 
   .webui-popover-content {
