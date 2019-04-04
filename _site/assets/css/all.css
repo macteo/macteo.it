@@ -10,6 +10,10 @@ html {
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.hearth-line {
+  stroke: #BB2A2B; 
+}
+
 .pull-right {
   float: right;
 }
@@ -19,14 +23,15 @@ html {
   opacity: 0.7;
   stroke-width: 0.5;
 }
-.grid path {
-  stroke-width: 0;
-}
 
 .grid-minor .tick line {
   stroke: #e9e9e9;
   opacity: 0.7;
   stroke-width: 0.5;
+}
+
+.grid path {
+  stroke-width: 0;
 }
 
 .timeline .column,
@@ -674,6 +679,22 @@ h4.docs-header.footer {
 
   td {
       border-bottom: 1px solid #eeeeec;
+  }
+
+  .hearth-line {
+    stroke: #fff;
+  }
+
+  .grid .tick line {
+    stroke: #444;
+    opacity: 0.7;
+    stroke-width: 0.5;
+  }
+
+  .grid-minor .tick line {
+    stroke: #494949;
+    opacity: 0.7;
+    stroke-width: 0.5;
   }
 }
 nav.navbar {

@@ -122,4 +122,20 @@
   td {
       border-bottom: 1px solid #eeeeec;
   }
+
+  .hearth-line {
+    stroke: #fff;
+  }
+
+  .grid .tick line {
+    stroke: #444;
+    opacity: 0.7;
+    stroke-width: 0.5;
+  }
+
+  .grid-minor .tick line {
+    stroke: #494949;
+    opacity: 0.7;
+    stroke-width: 0.5;
+  }
 }

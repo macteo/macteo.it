@@ -164,9 +164,8 @@ d3.csv(
     line
       .append("path")
       .datum(data)
-      .attr("class", "line") // I add the class line to be able to modify this line later on.
+      .attr("class", "line hearth-line") // I add the class line to be able to modify this line later on.
       .attr("fill", "none")
-      .attr("stroke", "#BB2A2B")
       .attr("stroke-width", 1.5)
       .attr(
         "d",
