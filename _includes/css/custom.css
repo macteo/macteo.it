@@ -517,15 +517,19 @@ article.post {
   }
 }
 
-@media (max-width: 520px, min-width: 360px) {
-  .navbar-link {
-    font-size: 10px;
+@media (max-width: 520px) {
+  @media (min-width: 360px) {
+    .navbar-link {
+      font-size: 10px;
+    }
   }
 }
 
-@media (max-width: 750px, min-width: 520px) {
-  .navbar-link {
-    font-size: 11px;
+@media (max-width: 750px) {
+  @media (min-width: 520px) {
+    .navbar-link {
+      font-size: 11px;
+    }
   }
 }
 

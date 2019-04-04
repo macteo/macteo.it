@@ -4,6 +4,7 @@ title: ECG data points
 date: 2019-04-02T08:52:00+01:00
 categories:
 tags: egc
+rounded_image: true
 excerpt_separator: <!--more-->
 ---
 
