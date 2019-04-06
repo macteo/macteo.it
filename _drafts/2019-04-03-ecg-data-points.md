@@ -24,5 +24,6 @@ Open one and you'll find 15.314 rows of measures.
 
 What?
 
-<script src="http://d3js.org/d3.v4.js"></script><div id="my_dataviz"></div>
+<div id="my_dataviz"></div>
+
 <script src="/assets/js/d3line.js"></script>
