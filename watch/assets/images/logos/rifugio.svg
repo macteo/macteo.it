@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="435px" height="263px" viewBox="0 0 435 263" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>rifugio</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="rifugio">
+            <g id="Rifugio" transform="translate(-13.000000, 4.000000)">
+                <path d="M62,86.5 L62,109.819368 M62,164.982074 C61.8668711,211.990799 62,259 62,259 L102,259 L102,222 C102,203.222319 117.222319,188 136,188 C154.777681,188 170,203.222319 170,222 L170,259 L199,259 L199,222 C199,203.222319 214.222319,188 233,188 C251.777681,188 267,203.222319 267,222 L267,259 L296,259 L296,222 C296,203.222319 311.222319,188 330,188 C348.777681,188 364,203.222319 364,222 L364,259 L402.5,259 L402.5,165.196745 L402.5,86.5481412 L233.259125,0.58066103 L62.4898886,86.0169818 M402.5,109.957135 L402.5,86.5" id="Path-4" fill="#FF0000"></path>
+                <polyline id="Path-1" stroke="#FF0000" stroke-width="8" stroke-linecap="round" points="31 102 233 0.5 433.5 102"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>
