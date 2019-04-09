@@ -27,3 +27,5 @@ What?
 <div id="my_dataviz"></div>
 
 <script src="/assets/js/d3line.js"></script>
+
+<script>hearthChart('#my_dataviz', '/assets/data/ecg_2019-03-28.csv');</script>
