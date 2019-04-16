@@ -24,8 +24,6 @@ Open one and you'll find 15.314 rows of measures.
 
 What?
 
-<div id="my_dataviz"></div>
+<div id="ecg_0"></div>
 
-<script src="/assets/js/d3line.js"></script>
-
-<script>hearthChart('#my_dataviz', '/assets/data/ecg_2019-03-28.csv');</script>
+<script>hearthChart('#ecg_0', '/assets/data/ecg_2019-03-28.csv');</script>
