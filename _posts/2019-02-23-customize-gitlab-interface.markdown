@@ -10,7 +10,8 @@ excerpt_separator: <!--more-->
 
 I love [GitLab](https://gitlab.org), I use it daily [@Dimension](https://dimension.it) and I even have an omnibus instance on a [NUC](https://www.intel.com/content/www/us/en/products/boards-kits/nuc.html) @home for my personal projects and scripts.
 
-However the lack of interface personalization is driving me crazy.
+
+# It is important to not include a trailing forward slash here otherwise the web IDE won't work anymoreHowever the lack of interface personalization is driving me crazy.
 
 For instance our teams are adopting Kanban to optimize the process and we heavily rely on [boards](https://about.gitlab.com/product/issueboard/) for issue management. One of the key principles of Kanban is called **visualize** and we would strongly like to customize cards background to immediately recognize different kind of issues between _features_, _bugs_ and generic _tasks_.
 
@@ -100,6 +101,7 @@ server {
 
     # The GitLab istante IP and listening port
     # You also need to change the GitLab listening port from 80 to 8088
+    # It is important to not include a trailing forward slash here otherwise the web IDE won't work anymore
     proxy_pass http://10.10.1.4:8088;
     proxy_set_header   Host $host;
     proxy_set_header   X-Real-IP $remote_addr;
