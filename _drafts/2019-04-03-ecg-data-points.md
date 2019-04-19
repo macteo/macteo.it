@@ -24,8 +24,16 @@ Open one and you'll find 15.314 rows of measures.
 
 What?
 
-*yes* that's exactly
+_yes_ that's exactly
 
 <div id="ecg_0"></div>
 
 <script>hearthChart('#ecg_0', '/assets/data/ecg_2019-03-28.csv');</script>
+
+<div id="ecg_1"></div>
+
+<script>hearthChart('#ecg_1', '/assets/data/ecg_2019-04-04_0.csv');</script>
+
+<div id="ecg_2"></div>
+
+<script>hearthChart('#ecg_2', '/assets/data/ecg_2019-04-04_1.csv');</script>
