@@ -1,32 +1,138 @@
 <head>
-  <meta charset="utf-8">
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" title="{{ site.title }}" type="application/rss+xml" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-  <link rel="alternate" title="{{ site.title }}" type="application/json" href="{{ "/feed.json" | prepend: site.baseurl | prepend: site.url }}" />
-  <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines }}{% else %}{{ site.description }}{% endif %}">
-  <meta name="author" content="{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}">
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-  <link rel="shortcut icon" href="{{ site.baseurl }}/assets/images/favicon/favicon.ico" type="image/x-icon" />
-  <link rel="mask-icon" href="{{ site.baseurl }}/assets/images/favicon/favicon-pin.svg" color="#056BB1">
-  <link rel="apple-touch-icon" sizes="57x57" href="{{ site.baseurl }}/assets/images/favicon/dolomate-57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="{{ site.baseurl }}/assets/images/favicon/dolomate-60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="{{ site.baseurl }}/assets/images/favicon/dolomate-72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="{{ site.baseurl }}/assets/images/favicon/dolomate-76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="{{ site.baseurl }}/assets/images/favicon/dolomate-114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="{{ site.baseurl }}/assets/images/favicon/dolomate-120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="{{ site.baseurl }}/assets/images/favicon/dolomate-144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="{{ site.baseurl }}/assets/images/favicon/dolomate-152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/images/favicon/dolomate-180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="{{ site.baseurl }}/assets/images/favicon/dolomate-192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/assets/images/favicon/dolomate-32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="{{ site.baseurl }}/assets/images/favicon/dolomate-96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/assets/images/favicon/dolomate-16.png">
-  <link rel="manifest" href="{{ site.baseurl }}/assets/images/favicon/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="{{ site.baseurl }}/assets/images/favicon/dolomate-144.png">
-  <meta name="theme-color" content="#ffffff">
+  <meta charset="utf-8" />
+  <title>
+    {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
+  </title>
+  <link
+    rel="canonical"
+    href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
+  />
+  <link rel="alternate" title="{{
+    site.title
+  }}" type="application/rss+xml" href="{{
+    "/feed.xml" | prepend: site.baseurl | prepend: site.url
+  }}" /> <link rel="alternate" title="{{
+    site.title
+  }}" type="application/json" href="{{
+    "/feed.json" | prepend: site.baseurl | prepend: site.url
+  }}" />
+  <meta
+    name="description"
+    content="{% if page.description %}{{
+      page.description | strip_html | strip_newlines
+    }}{% else %}{{ site.description }}{% endif %}"
+  />
+  <meta
+    name="author"
+    content="{% if page.author %}{{ page.author }}{% else %}{{
+      site.author
+    }}{% endif %}"
+  />
+  <meta
+    name="viewport"
+    content="width=device-width,initial-scale=1,maximum-scale=1"
+  />
+  <link
+    rel="shortcut icon"
+    href="{{ site.baseurl }}/assets/images/favicon/favicon.ico"
+    type="image/x-icon"
+  />
+  <link
+    rel="mask-icon"
+    href="{{ site.baseurl }}/assets/images/favicon/favicon-pin.svg"
+    color="#056BB1"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="57x57"
+    href="{{ site.baseurl }}/assets/images/favicon/dolomate-57.png"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="60x60"
+    href="{{ site.baseurl }}/assets/images/favicon/dolomate-60.png"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="72x72"
+    href="{{ site.baseurl }}/assets/images/favicon/dolomate-72.png"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="76x76"
+    href="{{ site.baseurl }}/assets/images/favicon/dolomate-76.png"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="114x114"
+    href="{{ site.baseurl }}/assets/images/favicon/dolomate-114.png"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="120x120"
+    href="{{ site.baseurl }}/assets/images/favicon/dolomate-120.png"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="144x144"
+    href="{{ site.baseurl }}/assets/images/favicon/dolomate-144.png"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="152x152"
+    href="{{ site.baseurl }}/assets/images/favicon/dolomate-152.png"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="{{ site.baseurl }}/assets/images/favicon/dolomate-180.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="192x192"
+    href="{{ site.baseurl }}/assets/images/favicon/dolomate-192.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="{{ site.baseurl }}/assets/images/favicon/dolomate-32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="96x96"
+    href="{{ site.baseurl }}/assets/images/favicon/dolomate-96.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="{{ site.baseurl }}/assets/images/favicon/dolomate-16.png"
+  />
+  <link
+    rel="manifest"
+    href="{{ site.baseurl }}/assets/images/favicon/manifest.json"
+  />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta
+    name="msapplication-TileImage"
+    content="{{ site.baseurl }}/assets/images/favicon/dolomate-144.png"
+  />
+  <meta name="theme-color" content="#ffffff" />
   <script src="{{ site.baseurl }}/assets/js/all.js"></script>
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/all.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/raleway.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/all.css" />
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/raleway.css" />
+  {% if jekyll.environment == "development" %}
+  <script>
+    console.log("Loading livereload");
+    document.write(
+      '<script src="http://' +
+        (location.host || "localhost").split(":")[0] +
+        ':35729/livereload.js?snipver=1"></' +
+        "script>"
+    );
+  </script>
+  {% endif %}
 </head>
