@@ -22,9 +22,8 @@ files, one per each test.
 
 Open one and you'll find 15.314 rows of measures.
 
-What?
-
 _yes_ that's exactly
+
 
 <div id="ecg_0"></div>
 
