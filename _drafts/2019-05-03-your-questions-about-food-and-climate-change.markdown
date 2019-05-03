@@ -9,8 +9,9 @@ excerpt_separator: <!--more-->
 link: https://www.nytimes.com/interactive/2019/04/30/dining/climate-change-food-eating-habits.html
 ---
 
-Great and comprehensive New York Times article about the food you choose to eat
-and its relation with climate change.
+I'm convinced we need to do our part in fighting climate change and restore a more healthy environment.
+It's definitely too late but everybody should contribute.
+The New York Times has a great overview on food impact on CO₂ emissions.
 
 **Does what I eat have an effect on climate change?**
 
@@ -20,7 +21,7 @@ and its relation with climate change.
 
 > Consuming less red meat and dairy will typically have the biggest impact for most people in wealthy countries. That doesn’t necessarily mean going vegan. You might just eat less of the foods with the biggest climate footprints, like beef, lamb and cheese.
 
-It also contains some counterintuitive wisdom:
+It also contains some counterintuitive wisdom
 
 > But many other types of cheese, such as Cheddar or mozzarella, can have a significantly bigger footprint than chicken or pork, since it typically takes about 10 pounds of milk to make one pound of cheese.
 
