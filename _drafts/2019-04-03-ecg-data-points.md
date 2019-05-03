@@ -24,7 +24,6 @@ Open one and you'll find 15.314 rows of measures.
 
 _yes_ that's exactly
 
-
 <div id="ecg_0"></div>
 
 <script>hearthChart('#ecg_0', '/assets/data/ecg_2019-03-28.csv');</script>
