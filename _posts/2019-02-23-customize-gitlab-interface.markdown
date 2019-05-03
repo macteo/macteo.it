@@ -10,9 +10,6 @@ excerpt_separator: <!--more-->
 
 I love [GitLab](https://gitlab.org), I use it daily [@Dimension](https://dimension.it) and I even have an omnibus instance on a [NUC](https://www.intel.com/content/www/us/en/products/boards-kits/nuc.html) @home for my personal projects and scripts.
 
-
-# It is important to not include a trailing forward slash here otherwise the web IDE won't work anymoreHowever the lack of interface personalization is driving me crazy.
-
 For instance our teams are adopting Kanban to optimize the process and we heavily rely on [boards](https://about.gitlab.com/product/issueboard/) for issue management. One of the key principles of Kanban is called **visualize** and we would strongly like to customize cards background to immediately recognize different kind of issues between _features_, _bugs_ and generic _tasks_.
 
 <!--more-->
