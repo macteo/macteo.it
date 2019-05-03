@@ -7,11 +7,11 @@ html {
 }
 
 .hearth-line {
-  stroke: #BB2A2B; 
+  stroke: #e85249;
 }
 
 svg path.logo-path {
-  fill: #BB2A2B; 
+  fill: #e85249;
 }
 
 .pull-right {
@@ -24,7 +24,6 @@ svg path.logo-path {
   stroke-width: 0.5;
 }
 
-
 .grid path {
   stroke-width: 0;
 }
@@ -36,18 +35,18 @@ svg path.logo-path {
 }
 
 .grid-minor .tick line {
-    stroke: #e9e9e9;
-    opacity: 0.7;
-    stroke-width: 0.5;
-  }
+  stroke: #e9e9e9;
+  opacity: 0.7;
+  stroke-width: 0.5;
+}
 
-  .grid text {
-    fill: #555;
-  }
+.grid text {
+  fill: #555;
+}
 
-  .border {
-    stroke: #ccc;
-  }
+.border {
+  stroke: #ccc;
+}
 
 .timeline .column,
 .timeline .columns {

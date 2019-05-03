@@ -1,13 +1,12 @@
 @media (prefers-color-scheme: dark) {
- 
   /* Overriding default colors in Skeleton CSS framework */
   /* Colors from https://en.wikipedia.org/wiki/Tango_Desktop_Project#Palette */
 
   /* Body */
 
   body {
-      color: #d3d7cf;
-      background: #2e3436;
+    color: #d3d7cf;
+    background: #2e3436;
   }
 
   nav.navbar {
@@ -26,10 +25,10 @@
   /* Links */
 
   a {
-      color: #729fcf;
+    color: #729fcf;
   }
   a:hover {
-      color: #eeeeec;
+    color: #eeeeec;
   }
 
   /* Buttons */
@@ -39,8 +38,8 @@
   input[type="submit"],
   input[type="reset"],
   input[type="button"] {
-      color: #d3d7cf;
-      border: 1px solid #babdb6;
+    color: #d3d7cf;
+    border: 1px solid #babdb6;
   }
 
   .button:hover,
@@ -53,8 +52,8 @@
   input[type="submit"]:focus,
   input[type="reset"]:focus,
   input[type="button"]:focus {
-      color: #eeeeec;
-      border: 1px solid #eeeeec;
+    color: #eeeeec;
+    border: 1px solid #eeeeec;
   }
 
   .button.button-primary,
@@ -62,9 +61,9 @@
   input[type="submit"].button-primary,
   input[type="reset"].button-primary,
   input[type="button"].button-primary {
-      color: #2e3436;
-      background-color: #fcaf3e;
-      border-color: #fcaf3e;
+    color: #2e3436;
+    background-color: #fcaf3e;
+    border-color: #fcaf3e;
   }
 
   .button.button-primary:hover,
@@ -77,9 +76,9 @@
   input[type="submit"].button-primary:focus,
   input[type="reset"].button-primary:focus,
   input[type="button"].button-primary:focus {
-      color: #2e3436;
-      background-color: #f57900;
-      border-color: #f57900;
+    color: #2e3436;
+    background-color: #f57900;
+    border-color: #f57900;
   }
 
   /* Forms */
@@ -93,8 +92,8 @@
   input[type="password"],
   textarea,
   select {
-      background-color: #2e3436;
-      border: 1px solid #babdb6;
+    background-color: #2e3436;
+    border: 1px solid #babdb6;
   }
 
   input[type="email"]:focus,
@@ -106,21 +105,21 @@
   input[type="password"]:focus,
   textarea:focus,
   select:focus {
-      border: 1px solid #fcaf3e;
+    border: 1px solid #fcaf3e;
   }
 
   /* Code */
 
   code {
-      color: #fff;
-      background: #555753;
-      border: #555753;
+    color: #fff;
+    background: #555753;
+    border: #555753;
   }
 
   /* Tables */
 
   td {
-      border-bottom: 1px solid #eeeeec;
+    border-bottom: 1px solid #eeeeec;
   }
 
   .hearth-line {
