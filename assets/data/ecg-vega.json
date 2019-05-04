@@ -1,0 +1,158 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "autosize": {
+    "type": "pad",
+    "contains": "padding",
+    "resize": true
+  },
+  "padding": 5,
+  "width": 320,
+  "height": 200,
+  "style": "cell",
+  "data": [
+    {
+      "name": "source_0",
+      "url": "https://macteo.it/assets/data/ecg_2019-03-28.csv",
+      "format": {
+        "type": "csv",
+        "delimiter": ","
+      },
+      "transform": [
+        {
+          "type": "formula",
+          "expr": "datum.point / 510.0",
+          "as": "seconds"
+        }
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "name": "marks",
+      "type": "line",
+      "style": [
+        "line"
+      ],
+      "sort": {
+        "field": "datum[\"seconds\"]",
+        "order": "descending"
+      },
+      "from": {
+        "data": "source_0"
+      },
+      "encode": {
+        "update": {
+          "interpolate": {
+            "value": "linear"
+          },
+          "stroke": {
+            "value": "#f00"
+          },
+          "tooltip": {
+            "signal": "{\"seconds\": format(datum[\"seconds\"], \"\"), \"value\": format(datum[\"value\"], \"\")}"
+          },
+          "x": {
+            "scale": "x",
+            "field": "seconds"
+          },
+          "y": {
+            "scale": "y",
+            "field": "value"
+          },
+          "defined": {
+            "signal": "datum[\"seconds\"] !== null && !isNaN(datum[\"seconds\"]) && datum[\"value\"] !== null && !isNaN(datum[\"value\"])"
+          }
+        }
+      }
+    }
+  ],
+  "scales": [
+    {
+      "name": "x",
+      "type": "linear",
+      "domain": {
+        "data": "source_0",
+        "field": "seconds"
+      },
+      "range": [
+        0,
+        {
+          "signal": "width"
+        }
+      ],
+      "nice": true,
+      "zero": false
+    },
+    {
+      "name": "y",
+      "type": "linear",
+      "domain": {
+        "data": "source_0",
+        "field": "value"
+      },
+      "range": [
+        {
+          "signal": "height"
+        },
+        0
+      ],
+      "nice": true,
+      "zero": true
+    }
+  ],
+  "axes": [
+    {
+      "scale": "x",
+      "orient": "bottom",
+      "grid": false,
+      "title": "seconds",
+      "labelFlush": true,
+      "labelOverlap": true,
+      "tickCount": {
+        "signal": "ceil(width/40)"
+      },
+      "zindex": 1
+    },
+    {
+      "scale": "x",
+      "orient": "bottom",
+      "gridScale": "y",
+      "grid": true,
+      "tickCount": {
+        "signal": "ceil(width/40)"
+      },
+      "domain": false,
+      "labels": false,
+      "maxExtent": 0,
+      "minExtent": 0,
+      "ticks": false,
+      "zindex": 0
+    },
+    {
+      "scale": "y",
+      "orient": "left",
+      "grid": false,
+      "title": "value",
+      "labelOverlap": true,
+      "tickCount": {
+        "signal": "ceil(height/40)"
+      },
+      "zindex": 1
+    },
+    {
+      "scale": "y",
+      "orient": "left",
+      "gridScale": "x",
+      "grid": true,
+      "tickCount": {
+        "signal": "ceil(height/40)"
+      },
+      "domain": false,
+      "labels": false,
+      "maxExtent": 0,
+      "minExtent": 0,
+      "ticks": false,
+      "zindex": 0
+    }
+  ]
+}
