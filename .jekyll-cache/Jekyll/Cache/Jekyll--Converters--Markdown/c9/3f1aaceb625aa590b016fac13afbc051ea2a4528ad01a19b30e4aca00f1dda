@@ -1,0 +1,191 @@
+I"�Z<p>I love <a href="https://gitlab.org">GitLab</a>, I use it daily <a href="https://dimension.it">@Dimension</a> and I even have an omnibus instance on a <a href="https://www.intel.com/content/www/us/en/products/boards-kits/nuc.html">NUC</a> @home for my personal projects and scripts.</p>
+
+<p>For instance our teams are adopting Kanban to optimize the process and we heavily rely on <a href="https://about.gitlab.com/product/issueboard/">boards</a> for issue management. One of the key principles of Kanban is called <strong>visualize</strong> and we would strongly like to customize cards background to immediately recognize different kind of issues between <em>features</em>, <em>bugs</em> and generic <em>tasks</em>.</p>
+
+<!--more-->
+
+<p><img src="/assets/images/gitlab/board-white.png#center100r" alt="gitlab-board-white" /></p>
+
+<p>Unfortunately and understandably GitLab doesn’t provide a way to customize that as it would be difficult to generalize, so we came up with a workaround involving custom made browser plugins (Safari, Chrome and Firefox) that injects javascript and CSS in the board pages. Turns out this approach has many issues:</p>
+
+<ul>
+  <li>Hard to maintain: each time a new feature is introduced, every plugin should be updated and everybody needs to download it.</li>
+  <li>Mobile browsers don’t support plugins, so the visualization is inconsistent between platforms.</li>
+  <li>If someone doesn’t upgrade or install the appropriate plugin she’ll have a second class experience.</li>
+</ul>
+
+<p>Turns out there’s a better solution, suggested by <a href="https://gitlab.com/gitlab-org/gitlab-ce/issues/15635#note_15111380">Kenn Hermann</a>, that involves injecting javascript and CSS through nginx on every served page.</p>
+
+<p>This is what we ended up implementing, but beware that there are security considerations to understand: injecting custom javascript can cause misbehaviors, data leakage or worse<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup>.</p>
+
+<p>With this approach we are indeed able to solve every issue we accused using client side browser plugins.</p>
+
+<h3 id="custom-javascript-and-css">Custom Javascript and CSS</h3>
+
+<p>All we need is some place to host a CSS file an one or more javascript documents.
+There are several options, we choose one but you are free to follow other paths.</p>
+
+<ol>
+  <li>Create a new GitLab group (in our case we named it <em>public-group</em>) and project (gitlab-custom-ui), setting the privileges to <em>Internal</em>.</li>
+  <li>Disable the features you don’t need and ensure that everyone has access in file visualization.</li>
+  <li>Leave the the <code class="highlighter-rouge">master</code> branch protected, so only members with at least the <em>maintainer</em> privileges can push on that branch. This is paramount to avoid malware javascript injection by unauthorized users.</li>
+</ol>
+
+<p><img src="/assets/images/gitlab-project-permissions.jpeg#center400" alt="gitlab-project-permissions" /></p>
+
+<ol>
+  <li>Create a <em>custom.css</em> file and <em>custom.js</em> file inside that repository. Those files will be injected on every GitLab page. The external paths will be something like <code class="highlighter-rouge">/public-group/gitlab-custom-ui/raw/master/custom.js</code>. Replace <code class="highlighter-rouge">public-group</code> with the name of your group and <code class="highlighter-rouge">gitlab-custom-ui</code> with the slug of the project, or just copy the proper raw path.</li>
+</ol>
+
+<h3 id="a-second-nginx">A second nginx</h3>
+
+<p><a href="https://docs.gitlab.com/omnibus/">GitLab Omnibus</a> ships everything needed inside a single package, including the nginx web server. However you are free to put another web server like nginx itself in front of GitLab. This is <a href="https://docs.gitlab.com/omnibus/settings/nginx.html#using-a-non-bundled-web-server">fully supported</a>.</p>
+
+<p>So we installed another nginx instance, adjusted the <a href="https://docs.gitlab.com/omnibus/settings/configuration.html"><code class="highlighter-rouge">gitlab.rb</code></a> configuration and created a public project on GitLab itself that will host the javascript and CSS files to be injected.</p>
+
+<h4 id="gitlab-configuration">GitLab configuration</h4>
+
+<p>Open the <a href="https://docs.gitlab.com/omnibus/settings/configuration.html"><code class="highlighter-rouge">gitlab.rb</code></a> file and be sure that the listening port is set to something different than <code class="highlighter-rouge">80</code> if you plan to install the other nginx instance on the same machine. In this case we set to it <code class="highlighter-rouge">8088</code> and disable https listening as the certificate management is demanded to the other nginx instance.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">nginx</span><span class="p">[</span><span class="s1">'listen_port'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">8088</span>
+<span class="n">nginx</span><span class="p">[</span><span class="s1">'listen_https'</span><span class="p">]</span> <span class="o">=</span> <span class="kp">false</span>
+<span class="n">nginx</span><span class="p">[</span><span class="s1">'redirect_http_to_https'</span><span class="p">]</span> <span class="o">=</span> <span class="kp">false</span>
+</code></pre></div></div>
+
+<h4 id="nginx-configuration">nginx configuration</h4>
+
+<p>This is the nginx configuration we used.</p>
+
+<ol>
+  <li>Replace <code class="highlighter-rouge">gitlab.example.com</code> with your domain.</li>
+  <li>Configure TLS properly, I highly suggest <a href="https://letsencrypt.org">LetsEncrypt</a> but every valid TLS certificate is OK.</li>
+  <li>Customize the javascript and CSS injection path based on your needs. We included jQuery as the initial script is lazy, but the it’s completely optional.</li>
+  <li>Include the mime type override only if needed. We did it just because we decided to use directly the raw file provided by GitLab itself. If you choose to host the files elsewhere and the mime type is properly set, that part is not needed.</li>
+</ol>
+
+<div class="language-nginx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">server</span> <span class="p">{</span>
+    <span class="kn">if</span> <span class="s">(</span><span class="nv">$host</span> <span class="p">=</span> <span class="s">gitlab.example.com)</span> <span class="p">{</span>
+        <span class="kn">return</span> <span class="mi">301</span> <span class="s">https://</span><span class="nv">$host$request_uri</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="kn">listen</span> <span class="mi">80</span><span class="p">;</span>
+    <span class="kn">server_name</span> <span class="s">gitlab.example.com</span><span class="p">;</span>
+    <span class="kn">return</span> <span class="mi">404</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">server</span> <span class="p">{</span>
+  <span class="kn">listen</span> <span class="mi">443</span> <span class="s">ssl</span><span class="p">;</span>
+  <span class="kn">server_name</span> <span class="s">gitlab.example.com</span><span class="p">;</span>
+
+  <span class="c1"># Your TLS specification below</span>
+  <span class="kn">ssl_certificate</span> <span class="n">/etc/gitlab/ssl/example.com.crt</span><span class="p">;</span>
+  <span class="kn">ssl_certificate_key</span> <span class="n">/etc/gitlab/ssl/example.com.key</span><span class="p">;</span>
+  <span class="kn">ssl_protocols</span> <span class="s">TLSv1</span> <span class="s">TLSv1.1</span> <span class="s">TLSv1.2</span><span class="p">;</span>
+  <span class="kn">ssl_prefer_server_ciphers</span> <span class="no">on</span><span class="p">;</span>
+  <span class="kn">ssl_ciphers</span> <span class="s">'EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH'</span><span class="p">;</span>
+
+  <span class="kn">client_max_body_size</span> <span class="mi">5024M</span><span class="p">;</span>
+
+  <span class="kn">location</span> <span class="n">/</span> <span class="p">{</span>
+    <span class="c1"># We inject three files on every html returned by GitLab</span>
+    <span class="c1"># * custom.css</span>
+    <span class="c1"># * jQuery from a CDN</span>
+    <span class="c1"># * custom.js</span>
+    <span class="kn">sub_filter</span> <span class="s">'&lt;/head&gt;'</span> <span class="s">'</span><span class="err">\</span><span class="s">n&lt;link</span> <span class="s">rel="stylesheet"</span> <span class="s">media="all"</span> <span class="s">href="/public-group/gitlab-custom-ui/raw/master/custom.css"</span> <span class="s">type="text/css"</span> <span class="n">/&gt;\n&lt;script</span> <span class="s">src="https://code.jquery.com/jquery-3.3.1.slim.min.js"</span> <span class="s">integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="</span> <span class="s">crossorigin="anonymous"&gt;&lt;/script&gt;</span><span class="err">\</span><span class="s">n&lt;script</span> <span class="s">type="text/javascript"</span> <span class="s">src="/public-group/gitlab-custom-ui/raw/master/custom.js"&gt;&lt;/script&gt;</span><span class="err">\</span><span class="s">n&lt;/head&gt;'</span><span class="p">;</span>
+
+    <span class="c1"># The GitLab istante IP and listening port</span>
+    <span class="c1"># You also need to change the GitLab listening port from 80 to 8088</span>
+    <span class="c1"># It is important to not include a trailing forward slash here otherwise the web IDE won't work anymore</span>
+    <span class="kn">proxy_pass</span> <span class="s">http://10.10.1.4:8088</span><span class="p">;</span>
+    <span class="kn">proxy_set_header</span>   <span class="s">Host</span> <span class="nv">$host</span><span class="p">;</span>
+    <span class="kn">proxy_set_header</span>   <span class="s">X-Real-IP</span> <span class="nv">$remote_addr</span><span class="p">;</span>
+    <span class="kn">proxy_set_header</span>   <span class="s">X-Forwarded-For</span> <span class="nv">$proxy_add_x_forwarded_for</span><span class="p">;</span>
+    <span class="kn">proxy_set_header</span>   <span class="s">X-Forwarded-Host</span> <span class="nv">$server_name</span><span class="p">;</span>
+    <span class="kn">proxy_set_header</span>   <span class="s">X-Forwarded-Proto</span>   <span class="s">https</span><span class="p">;</span>
+
+    <span class="c1"># Overriding the mime type of the raw javascript so it can be executed.</span>
+    <span class="c1"># This is necessary</span>
+    <span class="kn">if</span> <span class="s">(</span><span class="nv">$request_uri</span> <span class="p">~</span><span class="sr">*</span> <span class="n">/public-group/gitlab-custom-ui/raw/master/custom.js</span>$<span class="s">)</span> <span class="p">{</span>
+      <span class="kn">add_header</span> <span class="s">Content-Type</span> <span class="s">"text/javascript"</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="colored-cards-background">Colored cards background</h3>
+
+<p>This the lazy javascript we wrote to add background customization based on the labels assigned to each single issue, narrow the width of each column and enlarge the avatars.</p>
+
+<p>In particular if the card includes a label containing a the <code class="highlighter-rouge">feature</code> word it will be green, bugs will red and tasks yellow.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="dl">'</span><span class="s1">use strict</span><span class="dl">'</span><span class="p">;</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">DOMContentLoaded</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+  <span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">top</span> <span class="o">===</span> <span class="nb">window</span><span class="p">)</span> <span class="p">{</span>
+      <span class="kd">function</span> <span class="nx">addStyleString</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">node</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">'</span><span class="s1">style</span><span class="dl">'</span><span class="p">);</span>
+        <span class="nx">node</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">str</span><span class="p">;</span>
+        <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">node</span><span class="p">);</span>
+      <span class="p">}</span>
+
+      <span class="kd">function</span> <span class="nx">setListWidth</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="dl">'</span><span class="s1">gitlab-list-width</span><span class="dl">'</span><span class="p">,</span> <span class="nx">str</span><span class="p">);</span>
+        <span class="nx">addStyleString</span><span class="p">(</span><span class="dl">'</span><span class="s1">.board {width: </span><span class="dl">'</span> <span class="o">+</span> <span class="nx">width</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">px;}</span><span class="dl">'</span><span class="p">);</span>
+      <span class="p">}</span>
+
+      <span class="c1">// Improves the board styles: narrower columns, bigger avatars, colored cards.</span>
+      <span class="k">if</span> <span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">pathname</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="dl">"</span><span class="s2">/boards</span><span class="dl">"</span><span class="p">)</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">width</span> <span class="o">=</span> <span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="dl">'</span><span class="s1">gitlab-list-width</span><span class="dl">'</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">width</span> <span class="o">&amp;&amp;</span> <span class="nx">width</span> <span class="o">&lt;</span> <span class="mi">50</span><span class="p">)</span> <span class="p">{</span>
+          <span class="nx">width</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">width</span> <span class="o">==</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
+          <span class="nx">width</span> <span class="o">=</span> <span class="mi">235</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="nx">addStyleString</span><span class="p">(</span><span class="dl">'</span><span class="s1">.board {width: </span><span class="dl">'</span> <span class="o">+</span> <span class="nx">width</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">px;}</span><span class="dl">'</span><span class="p">);</span>
+        <span class="nx">addStyleString</span><span class="p">(</span><span class="dl">'</span><span class="s1">img.avatar.s24 {width: 32px; height:32px;}</span><span class="dl">'</span><span class="p">);</span>
+        <span class="nx">addStyleString</span><span class="p">(</span><span class="dl">'</span><span class="s1">.board-card.feature {background-color: #ECF9DE; }</span><span class="dl">'</span><span class="p">);</span>
+        <span class="nx">addStyleString</span><span class="p">(</span><span class="dl">'</span><span class="s1">.board-card.task {background-color: #FEFBDA; }</span><span class="dl">'</span><span class="p">);</span>
+        <span class="nx">addStyleString</span><span class="p">(</span><span class="dl">'</span><span class="s1">.board-card.bug {background-color: #F8D9DD; }</span><span class="dl">'</span><span class="p">);</span>
+
+        <span class="nb">window</span><span class="p">.</span><span class="nx">setInterval</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+          <span class="nx">$</span><span class="p">(</span><span class="dl">"</span><span class="s2">li.board-card</span><span class="dl">"</span><span class="p">).</span><span class="nx">each</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">index</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kd">var</span> <span class="nx">match</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">text</span><span class="p">().</span><span class="nx">match</span><span class="p">(</span><span class="sr">/feature/g</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nx">match</span> <span class="o">&amp;&amp;</span> <span class="nx">match</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+              <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="dl">'</span><span class="s1">feature</span><span class="dl">'</span><span class="p">);</span>
+              <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">removeClass</span><span class="p">(</span><span class="dl">'</span><span class="s1">bug</span><span class="dl">'</span><span class="p">);</span>
+              <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">removeClass</span><span class="p">(</span><span class="dl">'</span><span class="s1">task</span><span class="dl">'</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="nx">match</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">text</span><span class="p">().</span><span class="nx">match</span><span class="p">(</span><span class="sr">/task/g</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nx">match</span> <span class="o">&amp;&amp;</span> <span class="nx">match</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+              <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="dl">'</span><span class="s1">task</span><span class="dl">'</span><span class="p">);</span>
+              <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">removeClass</span><span class="p">(</span><span class="dl">'</span><span class="s1">bug</span><span class="dl">'</span><span class="p">);</span>
+              <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">removeClass</span><span class="p">(</span><span class="dl">'</span><span class="s1">fature</span><span class="dl">'</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="nx">match</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">text</span><span class="p">().</span><span class="nx">match</span><span class="p">(</span><span class="sr">/bug/g</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nx">match</span> <span class="o">&amp;&amp;</span> <span class="nx">match</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+              <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="dl">'</span><span class="s1">bug</span><span class="dl">'</span><span class="p">);</span>
+              <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">removeClass</span><span class="p">(</span><span class="dl">'</span><span class="s1">task</span><span class="dl">'</span><span class="p">);</span>
+              <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">removeClass</span><span class="p">(</span><span class="dl">'</span><span class="s1">feature</span><span class="dl">'</span><span class="p">);</span>
+            <span class="p">}</span>
+          <span class="p">});</span>
+        <span class="p">}</span>
+     <span class="p">}</span>
+  <span class="p">})();</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>This is just a suggestion, the javascript can be surely optimized and with this approach you can add more features.</p>
+
+<h3 id="final-board-appearance">Final board appearance</h3>
+
+<p><img src="/assets/images/gitlab/board-colored.png#center100r" alt="gitlab-board-colored" /></p>
+
+<p>If the solution in generalized enough you can even try propose merge it in the GitLab source code so everyone can benefit.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p><a href="https://thenextweb.com/hardfork/2018/08/14/coinhive-mining-monero-profits/">Crypto mining in browsers</a> can be an idea… <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+:ET

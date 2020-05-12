@@ -1,0 +1,58 @@
+I"<p>The <a href="https://en.wikipedia.org/wiki/Quantified_Self">quantified self</a> concept and movement represent an area of great interest to improve the knowledge of yourself and a great stimulus to become a better person.</p>
+
+<p>At the moment I’m leveraging existing tools to measure few areas:</p>
+
+<ul>
+  <li>Body weight with an old style scale each morning.</li>
+  <li>Workouts: running and biking with <a href="https://www.strava.com/athletes/12812427">Strava</a><sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup>.</li>
+  <li>Hearth rate<sup id="fnref:1:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup> with <a href="http://heartwatch.tantsissa.com">HearthWatch</a>.</li>
+  <li>Steps with <a href="http://pedometerplusplus.com">Pedometer++</a>.</li>
+  <li>Hours spent standing<sup id="fnref:1:2" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup>.</li>
+  <li>Active energy burned<sup id="fnref:1:3" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup>.</li>
+  <li>Minutes of daily activity<sup id="fnref:1:4" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup>.</li>
+  <li>Sleep with <a href="https://itunes.apple.com/us/app/autosleep-auto-sleep-tracker-for-watch/id1164801111?mt=8">AutoSleep</a>.</li>
+  <li>Diet (occasionally) with <a href="https://www.myfitnesspal.com">MyFitnessPal</a>.</li>
+  <li>Routes with <a href="https://www.moves-app.com">Moves</a>.</li>
+  <li>Time spent on projects with <a href="https://toggl.com">Toggl</a>.</li>
+  <li>
+    <!--more-->
+  </li>
+</ul>
+
+<p>In order to see in a single place the collected data I’m leveraging <a href="https://gyrosco.pe/">Gyroscope</a>. It looks great and gives some insights, what it lacks though is a way to compare different periods.</p>
+
+<p><a href="https://www.rescuetime.com">RescueTime</a> gives you some insights on productivity during working hours, tracking automatically the app you are using (works on macOS, doesn’t on iOS), the name of the open document and website addresses on browsers. Unfortunately I wanted to have a more precise proxy of my productivity, measured for example in lines of code written and deleted, hours spent in conference calls, number of emails sent and so on.</p>
+
+<p>I wasn’t able to find something alredy existing and I’m also scared to give all this informations to a third party, so this is what I tried:</p>
+
+<ul>
+  <li>Deployed a small VPS with the <a href="https://www.elastic.co/products">ELK stack</a> (ElasticSearch, Logstash, Kibana) able to ingest, store and display charts of specially time series.</li>
+  <li>Created a simple iOS app, with a list of buttons to increase different counters on ElasticSearch.</li>
+  <li>Developed scripts to collect informations from different remote services sending them to Logstash.</li>
+  <li>Setup webhooks, i.e. on GitHub, pointing to Logstash to collect actions from different services.</li>
+  <li>Written Logstash scripts able to read exports of my bank transactions and store them in ElasticSearch.</li>
+  <li>Created different dashboards in Kibana to visualise and compose all the informations coming from different sources.</li>
+</ul>
+
+<p>Unfortunately I wasn’t able to render the picture I desired: a single indicator (sum of many smaller ones) to tell me how much productive I’ve been in a particular day, that can be plotted in a single comprehensive chart.</p>
+
+<p>Those are some of issues I faced:</p>
+
+<ul>
+  <li>Kibana is a great tool specifically designed for time series. When the information is not clearly representative of just a single moment in time, it becomes useless. It has some charts to choose from, but are not very broad nor easily customizable.</li>
+  <li>Automatic tracking for some stuff is impossible due to the absence of open APIs.</li>
+  <li>Manual tracking is tedious, prone to errors and suffers deeply of rapid fatigue.</li>
+</ul>
+
+<p>At the moment I’m stuck, I don’t have this proxy and I’m really bored to track things manually so I stopped doing it.</p>
+
+<p>Do you have any suggestion? Ping me on Twitter <a href="https://twitter.com/macteo">@macteo</a>.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>I own an <a href="https://www.apple.com/apple-watch-series-2/">Apple Watch</a> series 2 that includes a hearth rate sensor, accelerometer, gyroscope and the GPS. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:1:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a> <a href="#fnref:1:2" class="reversefootnote" role="doc-backlink">&#8617;<sup>3</sup></a> <a href="#fnref:1:3" class="reversefootnote" role="doc-backlink">&#8617;<sup>4</sup></a> <a href="#fnref:1:4" class="reversefootnote" role="doc-backlink">&#8617;<sup>5</sup></a></p>
+    </li>
+  </ol>
+</div>
+:ET

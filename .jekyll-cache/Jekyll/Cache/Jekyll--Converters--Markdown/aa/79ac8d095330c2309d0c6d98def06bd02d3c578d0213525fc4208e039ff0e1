@@ -1,0 +1,36 @@
+I"<p>Few weeks ago I had the pleasure to prepare and host a lesson on Bézier Curves during the <em>Analisi matematica con elementi di algebra</em> course, part of the bachelor degree <a href="http://offertaformativa.unitn.it/it/l/interfacce-e-tecnologie-della-comunicazione">Interfacce e Tecnologie della Comunicazione</a> taking place in <a href="https://it.wikipedia.org/wiki/Rovereto">Rovereto</a>.</p>
+
+<p>I’m listing here some existing material that inspired me, and a Swift Playground I’ve prepared for the lesson.</p>
+
+<h5 id="inspiring-sources">Inspiring sources</h5>
+
+<ul>
+  <li>
+    <p><a href="https://vimeo.com/106757336">Bézier Curves - Under the Hood</a> video and related <a href="https://medium.com/sketch-app/mastering-the-bezier-curve-in-sketch-4da8fdf0dbbb#.rhuvgwcq0">article</a> by <a href="https://twitter.com/pnowelldesign">Peter Nowell</a>.</p>
+  </li>
+  <li>
+    <p><a href="https://www.youtube.com/watch?v=Zkx1aKv2z8o">Making things with maths</a> by <a href="https://acko.net/about/">Steven Wittens</a>.</p>
+  </li>
+</ul>
+
+<p>Thanks!</p>
+
+<!--more-->
+
+<h5 id="swift-playground">Swift Playground</h5>
+
+<p>Two different versions of the same playground are available, one compatible with the <a href="http://www.apple.com/swift/playgrounds/">Swift Playground</a> app for iPad, the other with <a href="https://developer.apple.com/xcode/">Xcode</a> on macOS.</p>
+
+<ul>
+  <li>
+    <p><a href="https://github.com/macteo/bezier/raw/develop/Bézier.playground.zip">Download the macOSversion</a>.</p>
+  </li>
+  <li>
+    <p><a href="https://github.com/macteo/bezier/raw/develop/Bézier.playgroundbook.zip">Download the iPad version</a>.</p>
+  </li>
+</ul>
+
+<blockquote>
+  <p>Disclaimer: the hidden code is really rough, I plan to refactor it, but time is definitely a limiting factor.</p>
+</blockquote>
+:ET

@@ -1,0 +1,11 @@
+I"‰<p>I use this little script to keep my mac tools updated and clean.
+It works if you have <a href="https://brew.sh">Homebrew</a> and ruby installed as standard user (I use <a href="http://rvm.io">rvm</a>).</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew update
+brew upgrade
+brew cleanup
+gem update
+gem cleanup
+</code></pre></div></div>
+
+:ET

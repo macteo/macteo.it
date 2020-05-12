@@ -1,0 +1,9 @@
+I"�<p>Apple in their <a href="https://developer.apple.com/ios/human-interface-guidelines/user-interaction/authentication/">Human Interface Guidelines</a> asks developers to avoid using custom Face ID and Touch ID icons:</p>
+
+<blockquote>
+  <p><strong>Don’t use custom icons to identify system authentication features.</strong> When people see icons that look like the system’s Touch ID (thumbprint) and Face ID icons, they think they’re supposed to authenticate. Custom variants of these icons create inconsistency and cause confusion, especially when colorized, displayed at a large size, and presented out of context—like as a button label or on an app’s Settings screen.</p>
+</blockquote>
+
+<p>However they don’t provide such standard assets.</p>
+
+:ET

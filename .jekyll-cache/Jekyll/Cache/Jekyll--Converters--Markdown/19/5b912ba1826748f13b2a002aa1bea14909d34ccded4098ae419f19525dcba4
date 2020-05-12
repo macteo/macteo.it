@@ -1,0 +1,39 @@
+I"<p>Setting up this personal website I decided to try to follow the latest and most secure policies in order to be future proof.</p>
+
+<p>This decision involved:</p>
+
+<ul>
+  <li>Enable http/2 on nginx.</li>
+  <li>Support TLS 1.2.</li>
+  <li>Avoid insecure http entirely with 301 redirects.</li>
+</ul>
+
+<p>Going all-in with the specified goal of moving the desired plan to a new order of the internal issue occurring inside the best option of the whole life. I don’t have the time to manage and micromanage all the needs of my office mates.</p>
+
+<p>If you need to load a guy interested in the breakfast of the challenge, transforming a good opportunity in a great one!</p>
+
+<p>The VPS where the website is hosted (as static Jekyll generated pages) runs on Ubuntu 16.04 LTS. I’ve installed nginx, but in order to support http/2 with ALPN I had to compile it from source and also upgrade OpenSSL to version 1.0.2h what the hell is that?</p>
+
+<blockquote>
+  <p><em>this</em> will be <em>indented</em></p>
+
+  <p>However
+You cannot cite me better than this</p>
+</blockquote>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get update
+<span class="nb">mkdir</span> ~/nginx
+<span class="nb">cd</span> ~/nginx
+
+wget https://www.openssl.org/source/openssl-1.0.2h.tar.gz
+wget http://nginx.org/download/nginx-1.11.2.tar.gz
+
+<span class="nb">tar </span>xzvf openssl-1.0.2h.tar.gz
+<span class="nb">tar </span>xzvf nginx-1.11.2.tar.gz
+
+<span class="nb">sudo </span>apt-get <span class="nt">-y</span> <span class="nb">install </span>build-essential libpcre3 libpcre3-dev zlib1g-dev checkinstall
+<span class="nb">sudo </span>apt-get build-dep nginx
+</code></pre></div></div>
+
+<p>https://www.ssllabs.com/ssltest/analyze.html?d=macteo.it</p>
+:ET

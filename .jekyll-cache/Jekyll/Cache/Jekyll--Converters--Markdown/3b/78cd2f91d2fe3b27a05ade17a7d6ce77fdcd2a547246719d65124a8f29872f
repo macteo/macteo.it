@@ -1,0 +1,21 @@
+I"<p>I’m building modern digital map suitable for hiking in the Alps as the existing ones are lacking too many basic features that you usually need if you are outdoor in the mountains.</p>
+
+<p><img src="/assets/images/hiking-map/Tabacco~015.jpg#center100s" alt="Tabacco Reference image" /></p>
+
+<p>The map above is my reference one: it’s manually drawn by <a href="http://www.tabaccoeditrice.it/eng/azienda.asp">Tabacco</a> and it can be considered the state of the art for paper maps of the Alps. Many other vendors are offering those kind of maps, however the digital versions, when available, have so many drawbacks that the paper ones are always preferable.</p>
+
+<h5 id="those-were-my-base-requirements">Those were my base requirements:</h5>
+
+<ul>
+  <li>Mobile first: available at least on iOS (as it’s the platform I use), better if also on Android.</li>
+  <li>Offline: I should be able to go for a hike with my phone with the map already cached for offline use during the whole trip even without internet connection.</li>
+  <li>Retina screen support.</li>
+  <li>Position: should be able to overlay my current GPS position.</li>
+  <li>Minimal memory footprint.</li>
+  <li>Beautiful: I want it to look great!</li>
+  <li>POI: alpine huts, bivouacs, shelters, inns, hotels, belied paths, peak names and altitude, city names, river names, hospitals, paths numbers, terrain coverage, paths scale, camping sites, information signs, parkings, scale, no vehicle admitted signs, rivers, lakes, waterfalls, springs, fountains, drinking trough, wood, altitude, houses, huts, ruins, bus stops, funiculars, cabin lifts, chair-lifts, ski lifts, passes and saddles, hospitals.</li>
+  <li>Contours: view elevation lines.</li>
+  <li>Hill shades: mountain profiles to better perceive your surroundings.</li>
+</ul>
+
+:ET

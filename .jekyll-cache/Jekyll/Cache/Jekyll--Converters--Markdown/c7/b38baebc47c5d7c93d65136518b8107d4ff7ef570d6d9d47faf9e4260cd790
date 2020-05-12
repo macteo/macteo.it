@@ -1,0 +1,68 @@
+I"�<p>Maps and Apple Music apps in iOS 10 include a brand new way to present modal contents: a floating semi-modal view. Widgets and notifications have been redesigned to be presented with a similar shape.</p>
+
+<blockquote>
+  <p>Due to beta developer agreement I cannot share screenshots of those features. However you can have a look at them visiting the dedicated <a href="http://www.apple.com/ios/ios10-preview/">iOS 10 preview page</a> on Apple’s website.</p>
+</blockquote>
+
+<p>Unfortunately the technique used in iOS 8 and 9 to round the corner won’t work anymore: you’ll end up with rounded corners and a transparent background instead.</p>
+
+<p>There’s an <a href="https://forums.developer.apple.com/message/159201#159201">entire thread</a> on Apple’s Developer Forums with motivations behind this change (you need to register as developer to read it).</p>
+
+<p>However the trick is to avoid using <code class="highlighter-rouge">layer.mask</code> on the view that contains the <code class="highlighter-rouge">UIVisualEffectView</code> as subview or on the <code class="highlighter-rouge">UIVisualEffectView</code> itself as we used to do. Instead you are supposed to use <code class="highlighter-rouge">layer.maskView</code> or, if you just need rounded corners, the <code class="highlighter-rouge">layer.cornerRadius</code> property associated with <code class="highlighter-rouge">layer.masksToBounds = true</code>.</p>
+
+<p>I’ve also found that if you try to add an external shadow to the container view’s layer, you’ll end up without blur. The trick is to set the shadow inside <code class="highlighter-rouge">func layoutSubiviews()</code> override method.</p>
+
+<!--more-->
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="kt">BlurredRoundedView</span><span class="p">:</span> <span class="kt">UIView</span> <span class="p">{</span>
+    <span class="k">let</span> <span class="nv">effectBackground</span> <span class="o">=</span> <span class="kt">UIVisualEffectView</span><span class="p">(</span><span class="nv">effect</span><span class="p">:</span> <span class="n">extraLightBlur</span><span class="p">)</span>
+
+    <span class="kd">required</span> <span class="nf">init</span><span class="p">?(</span><span class="n">coder</span> <span class="nv">aDecoder</span><span class="p">:</span> <span class="kt">NSCoder</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">super</span><span class="o">.</span><span class="nf">init</span><span class="p">(</span><span class="nv">coder</span><span class="p">:</span> <span class="n">aDecoder</span><span class="p">)</span>
+        <span class="nf">commonInit</span><span class="p">()</span>
+    <span class="p">}</span>
+
+    <span class="k">override</span> <span class="nf">init</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">super</span><span class="o">.</span><span class="nf">init</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="n">frame</span><span class="p">)</span>
+        <span class="nf">commonInit</span><span class="p">()</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">commonInit</span><span class="p">()</span>  <span class="p">{</span>
+        <span class="nf">initLayer</span><span class="p">()</span>
+        <span class="nf">initEffectView</span><span class="p">()</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">initLayer</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">backgroundColor</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="o">.</span><span class="nf">clearColor</span><span class="p">()</span>
+        <span class="n">layer</span><span class="o">.</span><span class="n">cornerRadius</span> <span class="o">=</span> <span class="n">cornerRadius</span>
+        <span class="n">layer</span><span class="o">.</span><span class="n">masksToBounds</span> <span class="o">=</span> <span class="kc">false</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">initEffectView</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">effectBackground</span><span class="o">.</span><span class="n">frame</span> <span class="o">=</span> <span class="n">bounds</span>
+        <span class="n">effectBackground</span><span class="o">.</span><span class="n">layer</span><span class="o">.</span><span class="n">cornerRadius</span> <span class="o">=</span> <span class="n">cornerRadius</span>
+        <span class="n">effectBackground</span><span class="o">.</span><span class="n">layer</span><span class="o">.</span><span class="n">masksToBounds</span> <span class="o">=</span> <span class="kc">true</span>
+
+        <span class="nf">addSubview</span><span class="p">(</span><span class="n">effectBackground</span><span class="p">)</span>
+        <span class="nf">sendSubviewToBack</span><span class="p">(</span><span class="n">effectBackground</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="k">override</span> <span class="kd">func</span> <span class="nf">layoutSubviews</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">super</span><span class="o">.</span><span class="nf">layoutSubviews</span><span class="p">()</span>
+        <span class="k">let</span> <span class="nv">shadowPath</span> <span class="o">=</span> <span class="kt">UIBezierPath</span><span class="p">(</span><span class="nv">roundedRect</span><span class="p">:</span> <span class="n">bounds</span><span class="p">,</span> <span class="nv">cornerRadius</span><span class="p">:</span> <span class="n">cornerRadius</span><span class="p">)</span>
+        <span class="n">layer</span><span class="o">.</span><span class="n">masksToBounds</span> <span class="o">=</span> <span class="kc">false</span>
+        <span class="n">layer</span><span class="o">.</span><span class="n">shadowColor</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="o">.</span><span class="nf">lightGrayColor</span><span class="p">()</span><span class="o">.</span><span class="kt">CGColor</span>
+        <span class="n">layer</span><span class="o">.</span><span class="n">shadowOffset</span> <span class="o">=</span> <span class="kt">CGSizeMake</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
+        <span class="n">layer</span><span class="o">.</span><span class="n">shadowOpacity</span> <span class="o">=</span> <span class="mf">0.4</span>
+        <span class="n">layer</span><span class="o">.</span><span class="n">shadowRadius</span> <span class="o">=</span> <span class="mi">4</span>
+        <span class="n">layer</span><span class="o">.</span><span class="n">shadowPath</span> <span class="o">=</span> <span class="n">shadowPath</span><span class="o">.</span><span class="kt">CGPath</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>I’ve prepared an <a href="/g/blurred-rounded-view.zip">Xcode playground</a> to show the final result.</p>
+
+<p><img src="/assets/images/rounded-blurred-uiview.jpg#center320" alt="Final Rounded Blurred View" /></p>
+
+<p>Once you know how to achieve the desired result, it’s really simple. Enjoy.</p>
+:ET
