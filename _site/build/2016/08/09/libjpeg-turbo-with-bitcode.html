@@ -171,7 +171,7 @@
 
 <p>Unfortunately the binary provided by the project maintainers doesn’t include <a href="https://developer.apple.com/library/tvos/documentation/IDEs/Conceptual/AppDistributionGuide/AppThinning/AppThinning.html">bitcode</a> and even if at the moment it’s not compulsory (unless you are targeting <em>WatchOS</em>), I like to be future proof, as Apple will eventually require it to be included in every app binary.</p>
 
-<p>I’ve found a <a href="https://github.com/dhoerl/libjpeg-turbo-builder">dedicated repository</a> by <a href="https://github.com/dhoerl">David Hoerl</a> with instructions to build <code class="highlighter-rouge">libjpeg-turbo</code> for iOS, but unfortunately it doesn’t include bitcode too.</p>
+<p>I’ve found a <a href="https://github.com/dhoerl/libjpeg-turbo-builder">dedicated repository</a> by <a href="https://github.com/dhoerl">David Hoerl</a> with instructions to build <code class="language-plaintext highlighter-rouge">libjpeg-turbo</code> for iOS, but unfortunately it doesn’t include bitcode too.</p>
 
 <p>In the issues on GitHub there’s a <a href="https://github.com/libjpeg-turbo/libjpeg-turbo/issues/5">build script</a> to build with bitcode enabled, but with the current SDK versions it fails.</p>
 
@@ -181,7 +181,7 @@
 
 <ul>
   <li>Developer tools and SDK paths are automatically detected, so it should be compatible even with future Xcode versions (tested with Xcode 7.2.1, 7.3.1 and 8.0 β4).</li>
-  <li>Install required packages: <code class="highlighter-rouge">libtool</code>, <code class="highlighter-rouge">automake</code>, <code class="highlighter-rouge">autoconf</code>, <code class="highlighter-rouge">nasm</code>.</li>
+  <li>Install required packages: <code class="language-plaintext highlighter-rouge">libtool</code>, <code class="language-plaintext highlighter-rouge">automake</code>, <code class="language-plaintext highlighter-rouge">autoconf</code>, <code class="language-plaintext highlighter-rouge">nasm</code>.</li>
   <li>Creates a Universal Binary library with simulator and device architectures.</li>
 </ul>
 
@@ -190,7 +190,7 @@
 <ul>
   <li>Install Xcode and command line tools.</li>
   <li>Install <a href="http://brew.sh">Homebrew</a> on your Mac.</li>
-  <li>Open terminal and <code class="highlighter-rouge">cd</code> into a temporary directory.</li>
+  <li>Open terminal and <code class="language-plaintext highlighter-rouge">cd</code> into a temporary directory.</li>
 </ul>
 
 <p>Download and run the script that your can find <a href="/g/libturbo-jpeg.sh">here</a> with just a single line of code.</p>
@@ -200,7 +200,7 @@
 
 <p><strong>I’m not responsible if something goes wrong.</strong></p>
 
-<p>You’ll find the fat library with bitcode inside the <code class="highlighter-rouge">../libs/universal</code> folder.</p>
+<p>You’ll find the fat library with bitcode inside the <code class="language-plaintext highlighter-rouge">../libs/universal</code> folder.</p>
 
 <blockquote>
   <p>Architectures in the fat file: libturbojpeg.a are: armv7 armv7s i386 x86_64 arm64</p>

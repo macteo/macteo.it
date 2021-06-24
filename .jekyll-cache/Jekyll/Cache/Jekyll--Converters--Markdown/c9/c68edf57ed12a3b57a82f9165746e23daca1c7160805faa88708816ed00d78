@@ -1,4 +1,4 @@
-I"�<p>I use this little script to keep my mac tools updated and clean.
+I" <p>I use this little script to keep my mac tools updated and clean.
 It works if you have <a href="https://brew.sh">Homebrew</a> and ruby installed as standard user (I use <a href="http://rvm.io">rvm</a>).</p>
 
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew update
@@ -10,11 +10,11 @@ gem cleanup
 
 <!--more-->
 
-<p>I know they’re just 5 commands, but I love to be up to date my two computers (an <a href="http://www.everymac.com/systems/apple/imac/specs/imac-core-i7-3.4-27-inch-aluminum-mid-2011-thunderbolt-specs.html">iMac</a> and a <a href="http://www.everymac.com/systems/apple/macbook/specs/macbook-core-m7-1.3-12-early-2016-specs.html">MacBook</a>), so it’s a convenient way to just merge them. I also decided to avoid using cron to run the script every day because I need to do it deliberately as the upgrade process can even break my workflow. It also includes the <code class="highlighter-rouge">cleanup</code> phase to free disk space removing outdated stuff.</p>
+<p>I know they’re just 5 commands, but I love to be up to date my two computers (an <a href="http://www.everymac.com/systems/apple/imac/specs/imac-core-i7-3.4-27-inch-aluminum-mid-2011-thunderbolt-specs.html">iMac</a> and a <a href="http://www.everymac.com/systems/apple/macbook/specs/macbook-core-m7-1.3-12-early-2016-specs.html">MacBook</a>), so it’s a convenient way to just merge them. I also decided to avoid using cron to run the script every day because I need to do it deliberately as the upgrade process can even break my workflow. It also includes the <code class="language-plaintext highlighter-rouge">cleanup</code> phase to free disk space removing outdated stuff.</p>
 
 <p>You can find the raw version <a href="/g/update.sh">here</a>.</p>
 
-<p>I saved the file in the <code class="highlighter-rouge">/usr/local/bin/</code> folder named <code class="highlighter-rouge">update</code> and made it executable <code class="highlighter-rouge">chmod +x /usr/local/bin/update</code> so it can be run from everywhere.</p>
+<p>I saved the file in the <code class="language-plaintext highlighter-rouge">/usr/local/bin/</code> folder named <code class="language-plaintext highlighter-rouge">update</code> and made it executable <code class="language-plaintext highlighter-rouge">chmod +x /usr/local/bin/update</code> so it can be run from everywhere.</p>
 
 <p>If you feel really adventurous (the remote file can be changed at any time - use at your own risk) you can even execute it remotely.</p>
 

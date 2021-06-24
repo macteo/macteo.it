@@ -177,9 +177,9 @@
 
 <p>There’s an <a href="https://forums.developer.apple.com/message/159201#159201">entire thread</a> on Apple’s Developer Forums with motivations behind this change (you need to register as developer to read it).</p>
 
-<p>However the trick is to avoid using <code class="highlighter-rouge">layer.mask</code> on the view that contains the <code class="highlighter-rouge">UIVisualEffectView</code> as subview or on the <code class="highlighter-rouge">UIVisualEffectView</code> itself as we used to do. Instead you are supposed to use <code class="highlighter-rouge">layer.maskView</code> or, if you just need rounded corners, the <code class="highlighter-rouge">layer.cornerRadius</code> property associated with <code class="highlighter-rouge">layer.masksToBounds = true</code>.</p>
+<p>However the trick is to avoid using <code class="language-plaintext highlighter-rouge">layer.mask</code> on the view that contains the <code class="language-plaintext highlighter-rouge">UIVisualEffectView</code> as subview or on the <code class="language-plaintext highlighter-rouge">UIVisualEffectView</code> itself as we used to do. Instead you are supposed to use <code class="language-plaintext highlighter-rouge">layer.maskView</code> or, if you just need rounded corners, the <code class="language-plaintext highlighter-rouge">layer.cornerRadius</code> property associated with <code class="language-plaintext highlighter-rouge">layer.masksToBounds = true</code>.</p>
 
-<p>I’ve also found that if you try to add an external shadow to the container view’s layer, you’ll end up without blur. The trick is to set the shadow inside <code class="highlighter-rouge">func layoutSubiviews()</code> override method.</p>
+<p>I’ve also found that if you try to add an external shadow to the container view’s layer, you’ll end up without blur. The trick is to set the shadow inside <code class="language-plaintext highlighter-rouge">func layoutSubiviews()</code> override method.</p>
 
 <!--more-->
 

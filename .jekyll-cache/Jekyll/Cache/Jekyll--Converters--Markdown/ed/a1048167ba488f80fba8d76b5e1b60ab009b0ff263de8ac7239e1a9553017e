@@ -1,12 +1,12 @@
-I" <p>I just forked <a href="http://macdown.uranusjr.com">MacDown</a>, a popular open-source markdown editor for Mac as I have a few ideas to improve it to better suit my needs.</p>
+I"Q<p>I just forked <a href="http://macdown.uranusjr.com">MacDown</a>, a popular open-source markdown editor for Mac as I have a few ideas to improve it to better suit my needs.</p>
 
 <p>I’m looking to add some features that I wasn’t able to find in any other Mac editor to help me write blog posts. This blog like many others is powered by <a href="http://jekyllrb.com">Jekyll</a>, a ruby application capable to parse <a href="http://daringfireball.net/projects/markdown/syntax">markdown formatted</a> text files and generate a <a href="https://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/">static website</a>.</p>
 
-<p>What I’m missing from MacDown is the ability to seamlessly write and preview my posts <strong>exactly</strong><sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup> as they will appear on the website. I’m currently able to do it with the combination of 7 apps:</p>
+<p>What I’m missing from MacDown is the ability to seamlessly write and preview my posts <strong>exactly</strong><sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> as they will appear on the website. I’m currently able to do it with the combination of 7 apps:</p>
 
 <ul>
   <li><a href="https://atom.io">Atom</a> (or any other text editor like MacDown itself) to write the post and</li>
-  <li><a href="https://en.wikipedia.org/wiki/Terminal_(OS_X)">Terminal</a>, to run the command <code class="highlighter-rouge">bundle exec guard</code> that launches</li>
+  <li><a href="https://en.wikipedia.org/wiki/Terminal_(OS_X)">Terminal</a>, to run the command <code class="language-plaintext highlighter-rouge">bundle exec guard</code> that launches</li>
   <li><a href="https://github.com/guard/guard">Guard</a> that tells</li>
   <li><a href="http://jekyllrb.com">Jekyll</a> to regenerate the pages as soon as the file is modified and saved to disk, and also run</li>
   <li><a href="https://github.com/guard/guard-livereload">guard-livereload</a> that in combination with the</li>
@@ -14,7 +14,7 @@
   <li><a href="https://en.wikipedia.org/wiki/Safari_(web_browser)">Safari</a> as soon as a new version is available.</li>
 </ul>
 
-<p>What I’m aiming for is to be able to reduce the amount of apps needed to obtain the same result. With just <a href="https://github.com/macteo/macdown/commit/e5d28fd0d570b6856b2ce0146c36fbcc3a29a649">40 added and 4 removed lines</a> to the MacDown source code, I made a hack to remove from the workflow <a href="https://atom.io">Atom</a>, <a href="https://github.com/guard/guard">Guard</a>, <a href="https://github.com/guard/guard-livereload">guard-livereload</a>, the <a href="http://livereload.com/extensions/">LiveReload Safari Extension</a> and <a href="https://en.wikipedia.org/wiki/Safari_(web_browser)">Safari</a> itself reducing the needed apps to just three<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote">2</a></sup>.</p>
+<p>What I’m aiming for is to be able to reduce the amount of apps needed to obtain the same result. With just <a href="https://github.com/macteo/macdown/commit/e5d28fd0d570b6856b2ce0146c36fbcc3a29a649">40 added and 4 removed lines</a> to the MacDown source code, I made a hack to remove from the workflow <a href="https://atom.io">Atom</a>, <a href="https://github.com/guard/guard">Guard</a>, <a href="https://github.com/guard/guard-livereload">guard-livereload</a>, the <a href="http://livereload.com/extensions/">LiveReload Safari Extension</a> and <a href="https://en.wikipedia.org/wiki/Safari_(web_browser)">Safari</a> itself reducing the needed apps to just three<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>.</p>
 
 <video width="100%" controls="" class="bordered">
   <source src="/assets/videos/macdown-fork-live-preview.m4v" type="video/mp4" />

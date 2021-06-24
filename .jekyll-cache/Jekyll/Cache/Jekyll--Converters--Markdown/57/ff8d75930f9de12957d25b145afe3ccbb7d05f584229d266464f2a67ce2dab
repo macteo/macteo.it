@@ -1,4 +1,4 @@
-I"Î <p>Iâ€™m building modern digital map suitable for hiking in the Alps as the existing ones are lacking too many basic features that you usually need if you are outdoor in the mountains.</p>
+I"á <p>Iâ€™m building modern digital map suitable for hiking in the Alps as the existing ones are lacking too many basic features that you usually need if you are outdoor in the mountains.</p>
 
 <p><img src="/assets/images/hiking-map/Tabacco~015.jpg#center100s" alt="Tabacco Reference image" /></p>
 
@@ -65,7 +65,7 @@
 
 <p>The biggest limit that prevents me to use the OpenStreetMap data directly through the Mapbox platform is that Mapbox exposes a subset of the informations available on the OpenStreetMap database.</p>
 
-<p>For example every mountain trail usually has an attribute called <a href="http://www.sac-cas.ch/nc/unterwegs/schwierigkeits-skalen.html?cid=1512&amp;did=1000352&amp;sechash=bdae41d3"><code class="highlighter-rouge">sac_scale</code>
+<p>For example every mountain trail usually has an attribute called <a href="http://www.sac-cas.ch/nc/unterwegs/schwierigkeits-skalen.html?cid=1512&amp;did=1000352&amp;sechash=bdae41d3"><code class="language-plaintext highlighter-rouge">sac_scale</code>
 </a> that <a href="http://wiki.openstreetmap.org/wiki/Key:sac_scale">based on the reference guidelines</a> can assume different values:</p>
 
 <ul>

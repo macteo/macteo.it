@@ -1,4 +1,4 @@
-I"¬Z<p>I love <a href="https://gitlab.org">GitLab</a>, I use it daily <a href="https://dimension.it">@Dimension</a> and I even have an omnibus instance on a <a href="https://www.intel.com/content/www/us/en/products/boards-kits/nuc.html">NUC</a> @home for my personal projects and scripts.</p>
+I"è[<p>I love <a href="https://gitlab.org">GitLab</a>, I use it daily <a href="https://dimension.it">@Dimension</a> and I even have an omnibus instance on a <a href="https://www.intel.com/content/www/us/en/products/boards-kits/nuc.html">NUC</a> @home for my personal projects and scripts.</p>
 
 <p>For instance our teams are adopting Kanban to optimize the process and we heavily rely on <a href="https://about.gitlab.com/product/issueboard/">boards</a> for issue management. One of the key principles of Kanban is called <strong>visualize</strong> and we would strongly like to customize cards background to immediately recognize different kind of issues between <em>features</em>, <em>bugs</em> and generic <em>tasks</em>.</p>
 
@@ -16,7 +16,7 @@
 
 <p>Turns out there‚Äôs a better solution, suggested by <a href="https://gitlab.com/gitlab-org/gitlab-ce/issues/15635#note_15111380">Kenn Hermann</a>, that involves injecting javascript and CSS through nginx on every served page.</p>
 
-<p>This is what we ended up implementing, but beware that there are security considerations to understand: injecting custom javascript can cause misbehaviors, data leakage or worse<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup>.</p>
+<p>This is what we ended up implementing, but beware that there are security considerations to understand: injecting custom javascript can cause misbehaviors, data leakage or worse<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>.</p>
 
 <p>With this approach we are indeed able to solve every issue we accused using client side browser plugins.</p>
 
@@ -28,24 +28,24 @@ There are several options, we choose one but you are free to follow other paths.
 <ol>
   <li>Create a new GitLab group (in our case we named it <em>public-group</em>) and project (gitlab-custom-ui), setting the privileges to <em>Internal</em>.</li>
   <li>Disable the features you don‚Äôt need and ensure that everyone has access in file visualization.</li>
-  <li>Leave the the <code class="highlighter-rouge">master</code> branch protected, so only members with at least the <em>maintainer</em> privileges can push on that branch. This is paramount to avoid malware javascript injection by unauthorized users.</li>
+  <li>Leave the the <code class="language-plaintext highlighter-rouge">master</code> branch protected, so only members with at least the <em>maintainer</em> privileges can push on that branch. This is paramount to avoid malware javascript injection by unauthorized users.</li>
 </ol>
 
 <p><img src="/assets/images/gitlab-project-permissions.jpeg#center400" alt="gitlab-project-permissions" /></p>
 
 <ol>
-  <li>Create a <em>custom.css</em> file and <em>custom.js</em> file inside that repository. Those files will be injected on every GitLab page. The external paths will be something like <code class="highlighter-rouge">/public-group/gitlab-custom-ui/raw/master/custom.js</code>. Replace <code class="highlighter-rouge">public-group</code> with the name of your group and <code class="highlighter-rouge">gitlab-custom-ui</code> with the slug of the project, or just copy the proper raw path.</li>
+  <li>Create a <em>custom.css</em> file and <em>custom.js</em> file inside that repository. Those files will be injected on every GitLab page. The external paths will be something like <code class="language-plaintext highlighter-rouge">/public-group/gitlab-custom-ui/raw/master/custom.js</code>. Replace <code class="language-plaintext highlighter-rouge">public-group</code> with the name of your group and <code class="language-plaintext highlighter-rouge">gitlab-custom-ui</code> with the slug of the project, or just copy the proper raw path.</li>
 </ol>
 
 <h3 id="a-second-nginx">A second nginx</h3>
 
 <p><a href="https://docs.gitlab.com/omnibus/">GitLab Omnibus</a> ships everything needed inside a single package, including the nginx web server. However you are free to put another web server like nginx itself in front of GitLab. This is <a href="https://docs.gitlab.com/omnibus/settings/nginx.html#using-a-non-bundled-web-server">fully supported</a>.</p>
 
-<p>So we installed another nginx instance, adjusted the <a href="https://docs.gitlab.com/omnibus/settings/configuration.html"><code class="highlighter-rouge">gitlab.rb</code></a> configuration and created a public project on GitLab itself that will host the javascript and CSS files to be injected.</p>
+<p>So we installed another nginx instance, adjusted the <a href="https://docs.gitlab.com/omnibus/settings/configuration.html"><code class="language-plaintext highlighter-rouge">gitlab.rb</code></a> configuration and created a public project on GitLab itself that will host the javascript and CSS files to be injected.</p>
 
 <h4 id="gitlab-configuration">GitLab configuration</h4>
 
-<p>Open the <a href="https://docs.gitlab.com/omnibus/settings/configuration.html"><code class="highlighter-rouge">gitlab.rb</code></a> file and be sure that the listening port is set to something different than <code class="highlighter-rouge">80</code> if you plan to install the other nginx instance on the same machine. In this case we set to it <code class="highlighter-rouge">8088</code> and disable https listening as the certificate management is demanded to the other nginx instance.</p>
+<p>Open the <a href="https://docs.gitlab.com/omnibus/settings/configuration.html"><code class="language-plaintext highlighter-rouge">gitlab.rb</code></a> file and be sure that the listening port is set to something different than <code class="language-plaintext highlighter-rouge">80</code> if you plan to install the other nginx instance on the same machine. In this case we set to it <code class="language-plaintext highlighter-rouge">8088</code> and disable https listening as the certificate management is demanded to the other nginx instance.</p>
 
 <div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">nginx</span><span class="p">[</span><span class="s1">'listen_port'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">8088</span>
 <span class="n">nginx</span><span class="p">[</span><span class="s1">'listen_https'</span><span class="p">]</span> <span class="o">=</span> <span class="kp">false</span>
@@ -57,7 +57,7 @@ There are several options, we choose one but you are free to follow other paths.
 <p>This is the nginx configuration we used.</p>
 
 <ol>
-  <li>Replace <code class="highlighter-rouge">gitlab.example.com</code> with your domain.</li>
+  <li>Replace <code class="language-plaintext highlighter-rouge">gitlab.example.com</code> with your domain.</li>
   <li>Configure TLS properly, I highly suggest <a href="https://letsencrypt.org">LetsEncrypt</a> but every valid TLS certificate is OK.</li>
   <li>Customize the javascript and CSS injection path based on your needs. We included jQuery as the initial script is lazy, but the it‚Äôs completely optional.</li>
   <li>Include the mime type override only if needed. We did it just because we decided to use directly the raw file provided by GitLab itself. If you choose to host the files elsewhere and the mime type is properly set, that part is not needed.</li>
@@ -115,7 +115,7 @@ There are several options, we choose one but you are free to follow other paths.
 
 <p>This the lazy javascript we wrote to add background customization based on the labels assigned to each single issue, narrow the width of each column and enlarge the avatars.</p>
 
-<p>In particular if the card includes a label containing a the <code class="highlighter-rouge">feature</code> word it will be green, bugs will red and tasks yellow.</p>
+<p>In particular if the card includes a label containing a the <code class="language-plaintext highlighter-rouge">feature</code> word it will be green, bugs will red and tasks yellow.</p>
 
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="dl">'</span><span class="s1">use strict</span><span class="dl">'</span><span class="p">;</span>
 <span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">DOMContentLoaded</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>

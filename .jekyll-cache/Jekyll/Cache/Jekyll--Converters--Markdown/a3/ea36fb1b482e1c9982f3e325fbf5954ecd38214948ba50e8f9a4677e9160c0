@@ -1,8 +1,8 @@
-I",<p>For a little side project I’m developing for iOS, I needed to build <a href="http://libjpeg-turbo.virtualgl.org">libjpeg-turbo</a>.</p>
+I"?<p>For a little side project I’m developing for iOS, I needed to build <a href="http://libjpeg-turbo.virtualgl.org">libjpeg-turbo</a>.</p>
 
 <p>Unfortunately the binary provided by the project maintainers doesn’t include <a href="https://developer.apple.com/library/tvos/documentation/IDEs/Conceptual/AppDistributionGuide/AppThinning/AppThinning.html">bitcode</a> and even if at the moment it’s not compulsory (unless you are targeting <em>WatchOS</em>), I like to be future proof, as Apple will eventually require it to be included in every app binary.</p>
 
-<p>I’ve found a <a href="https://github.com/dhoerl/libjpeg-turbo-builder">dedicated repository</a> by <a href="https://github.com/dhoerl">David Hoerl</a> with instructions to build <code class="highlighter-rouge">libjpeg-turbo</code> for iOS, but unfortunately it doesn’t include bitcode too.</p>
+<p>I’ve found a <a href="https://github.com/dhoerl/libjpeg-turbo-builder">dedicated repository</a> by <a href="https://github.com/dhoerl">David Hoerl</a> with instructions to build <code class="language-plaintext highlighter-rouge">libjpeg-turbo</code> for iOS, but unfortunately it doesn’t include bitcode too.</p>
 
 <p>In the issues on GitHub there’s a <a href="https://github.com/libjpeg-turbo/libjpeg-turbo/issues/5">build script</a> to build with bitcode enabled, but with the current SDK versions it fails.</p>
 
